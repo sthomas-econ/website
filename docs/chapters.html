@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -104,11 +124,9 @@ https://badge.dimensions.ai/
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="Chapters in Books – Dr.&nbsp;Susan Thomas">
-<meta property="og:description" content="Academic Website for Dr.&nbsp;Susan Thomas">
 <meta property="og:image" content="https://quarto.org/quarto.png">
 <meta property="og:site_name" content="Dr. Susan Thomas">
 <meta name="twitter:title" content="Chapters in Books – Dr.&nbsp;Susan Thomas">
-<meta name="twitter:description" content="Academic Website for Dr.&nbsp;Susan Thomas">
 <meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -130,29 +148,10 @@ https://badge.dimensions.ai/
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">About</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
-        <li>
-    <a class="dropdown-item" href="./bod.html">
- <span class="dropdown-text">Board of Directors</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./car.html">
- <span class="dropdown-text">Committees and Advisory Roles</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./expwit.html">
- <span class="dropdown-text">Expert witness presentations to Parliamentary Committees</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./teaching.html">
- <span class="dropdown-text">Teaching</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Research</span>
@@ -186,30 +185,12 @@ https://badge.dimensions.ai/
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/nsf-biosketch.pdf"> 
+    <a class="nav-link" href="./files/sue-res.pdf"> 
 <span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://xkdr.org/"> 
-<span class="menu-text"><img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://in.linkedin.com/in/susan-thomas-417869"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=0QRD90YAAAAJ&amp;hl=en"> 
-<span class="menu-text"><i class="ai  ai-google-scholar"></i></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -218,8 +199,14 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -243,85 +230,99 @@ https://badge.dimensions.ai/
 </header>
 
 
-<p>Indradeep Ghosh and Susan Thomas (Jan.&nbsp;2023). “Financial Inclusion Measurement: Deepening the Evidence”. In: 17th Inclusive Finance India Report. Ed. by N. S. Vishwanathan. Access Publishers. Chap. 9, pp.117–125</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>K. P. Krishnan, Ajay Shah, and Susan Thomas (Oct.&nbsp;2020). “New thinking on resolution of small firms”. In: Insolvency and Bankruptcy regime in India: A Narrative. Insolvency and Bankruptcy Board of India. Chap. 29, pp.267–273</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Rajeswari Sengupta, Anjali Sharma, and Susan Thomas (Nov.&nbsp;2017). “Evolution of the insolvency framework for non-financial firms in India”. In: India Development Report, 2017. Oxford University Press</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Renuka Sane and Susan Thomas (2012). “Borrowings by Indian firms”. In: India Development Report, 2012. Oxford University Press, pp.151–158</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas and Jayant Varma (2010). “Derivatives Markets”. In: Capital Markets in India. Ed. by Rajesh Chakrabarti and Sankar De. Nomura Institute of Capital Markets Research, Tokyo, and Indian School of Business, Hyderabad. Chap. 4, pp.177–224</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas and Ajay Shah (2007). “Stock market indexes”. In: The Oxford Companion to Economics in India. Ed. by Kaushik Basu. Oxford, pp.503–504</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas (2005c). “How the financial sector in India was reformed”. In: Documenting Reforms: Case Studies from India. Ed. by S. Narayan. Observer Research Foundation</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas (2005a). “Commodity Markets”. In: Encyclopedia of India. Ed. by Stanley Wolpert. Charles Scribner’s Sons</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>P. S. Srinivas and Susan Thomas (2003a). “Institutional mechanisms in pension fund management: Lessons from three Indian case studies”. In: Rethinking pension provision for India 2003. Ed. by Anand Bordia and Gautam Bhardwaj. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 5, pp.177–204</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (2003b). “Policy issues in Indian securities markets”. In: Reforming India’s External, Financial and Fiscal Policies. Ed. by Anne Krueger and Sajjid Z. Chinoy. Stanford Studies in International Economics and Development. Stanford University Press. Chap. 4, pp.129–147</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (2003c). “Securities market efficiency”. In: Globalization and national financial systems. Ed. by James A. Hanson, Patrick Honohan, and Giovanni Majnoni. The World Bank and Oxford University Press. Chap. 6, pp.145–175</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas (2003b). “The jaggery futures market at Muzaffarnagar: Status and policy recommendations”. In: Derivatives markets in India 2003. Ed. by Susan Thomas. Invest India Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 6, pp.123–142</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (2003a). “Equity derivatives in India: The state of the art”. In: Derivatives markets in India 2003. Ed. by Susan Thomas. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 1, pp.1–25</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (2002). “Interest rates and their markets”. In: India Development Report 2002. Ed. by Kirit S. Parikh and R. Radhakrishna. Oxford University Press. Chap. 12, pp.177–194</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (2000b). “Policy issues in India’s capital markets in 2000”. In: New economic policies for a new India. Ed. by Surjit S. Bhalla. ICSSR. chap.&nbsp;9, pp.185–210</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (1999c). “Risk and the Indian economy”. In: India Development Report 1999. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 16, pp.231–242</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (1999b). “Rethinking prudential regulation”. In: India Development Report 1999. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 17, pp.243–255</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (1999a). “Developing the Indian capital market”. In: India: A financial sector for the Twenty-first century. Ed. by James Hanson and Sanjay Kathuria. Oxford University Press. Chap. 7, pp.205–265</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (Summer 1998). Market microstructure considerations in index construction. In: CBOT Research Symposium Proceedings. Chicago Board of Trade, pp.173–193</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah and Susan Thomas (Feb.&nbsp;1997). “Securities Markets”. In: India Development Report 1997. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 10, pp.167–192</p>
+<ul>
+<li>Estimating capacity requirements of the National Company Law Tribunal: Notes from the field”. In: Technology and Analytics for Law and Justice. Ed. by DAKSH Centre of Excellence for Law and Justice and IIT Delhi. OakBridge Pub-lishing. Chap. 21, pp.431–451 (<span class="citation" data-cites="ThomasZaveri-Shah2023_estncltrequirements">Thomas and Zaveri-Shah (<a href="#ref-ThomasZaveri-Shah2023_estncltrequirements" role="doc-biblioref">2023</a>)</span>)</li>
+<li>“Financial Inclusion Measurement: Deepening the Evidence”. In: 17th Inclusive Finance India Report. Ed. by N. S. Vishwanathan. Access Pub-lishers. Chap. 9, pp.117–125 (<span class="citation" data-cites="GhoshThomas2023_finclumdeepeningevidence">Ghosh and Thomas (<a href="#ref-GhoshThomas2023_finclumdeepeningevidence" role="doc-biblioref">2023</a>)</span>)</li>
+<li>“New thinking on resolution of small firms”. In: Insolvency and Bankruptcy regime in India: A Narrative. Insolvency and Bankruptcy Board of India. Chap. 29, pp.267–273 (<span class="citation" data-cites="Krishnanetal2020">Krishnan, Shah, and Thomas (<a href="#ref-Krishnanetal2020" role="doc-biblioref">2020</a>)</span>)</li>
+<li>“Evolution of the insolvency framework for non-financial firms in India”. In: India Development Report, 2017. Oxford Univer-sity Press (<span class="citation" data-cites="Senguptaetal2017_IDRcorpinsolvency">Sengupta, Sharma, and Thomas (<a href="#ref-Senguptaetal2017_IDRcorpinsolvency" role="doc-biblioref">2017</a>)</span>)</li>
+<li>“Borrowings by Indian firms”. In: India Development Report, 2012. Oxford University Press, pp.151–158 (<span class="citation" data-cites="SaneThomas2012_idr_firmborrowings">Sane and Thomas (<a href="#ref-SaneThomas2012_idr_firmborrowings" role="doc-biblioref">2012</a>)</span>)</li>
+<li>“Derivatives Markets”. In: Capital Markets in India. Ed. by Rajesh Chakrabarti and Sankar De. Nomura Institute of Capital Markets Research, Tokyo, and Indian School of Business, Hyderabad. Chap. 4, pp.177–224 (<span class="citation" data-cites="ThomasVarma_handbook_nomura">Thomas and Varma (<a href="#ref-ThomasVarma_handbook_nomura" role="doc-biblioref">2010</a>)</span>)</li>
+<li>“Stock market indexes”. In: The Oxford Companion to Eco-nomics in India. Ed. by Kaushik Basu. Oxford, pp.503–504 (<span class="citation" data-cites="ThomasShah2007_encyc_indexes">Thomas and Shah (<a href="#ref-ThomasShah2007_encyc_indexes" role="doc-biblioref">2007</a>)</span>)</li>
+<li>“How the financial sector in India was reformed”. In: Documenting Re-forms: Case Studies from India. Ed. by S. Narayan. Observer Research Foundation (<span class="citation" data-cites="Thomas2005_financialsectorreforms">Thomas (<a href="#ref-Thomas2005_financialsectorreforms" role="doc-biblioref">2005b</a>)</span>)</li>
+<li>“Commodity Markets”. In: Encyclopedia of India. Ed. by Stanley Wolpert. Charles Scribner’s Sons (<span class="citation" data-cites="Thomas2005_commodities_encyclopediaofindia">Thomas (<a href="#ref-Thomas2005_commodities_encyclopediaofindia" role="doc-biblioref">2005a</a>)</span>)</li>
+<li>“Institutional mechanisms in pension fund manage-ment: Lessons from three Indian case studies”. In: Rethinking pension provision for India 2003. Ed. by Anand Bordia and Gautam Bhardwaj. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 5, pp.177–204 (<span class="citation" data-cites="SrinivasThomas2003_lessons_pensionfundmanagement">Srinivas and Thomas (<a href="#ref-SrinivasThomas2003_lessons_pensionfundmanagement" role="doc-biblioref">2003</a>)</span>)</li>
+<li>Policy issues in Indian securities markets”. In: Reform-ing India’s External, Financial and Fiscal Policies. Ed. by Anne Krueger and Sajjid Z. Chinoy. Stan-ford Studies in International Economics and Development. Stanford University Press. Chap. 4, pp.129–147 (<span class="citation" data-cites="ShahThomas2003_credpr">Shah and Thomas (<a href="#ref-ShahThomas2003_credpr" role="doc-biblioref">2003b</a>)</span>)</li>
+<li>“Securities market efficiency”. In: Globalization and na-tional financial systems. Ed. by James A. Hanson, Patrick Honohan, and Giovanni Majnoni. The World Bank and Oxford University Press. Chap. 6, pp.145–175 (<span class="citation" data-cites="ShahThomas2003_smallmarkets">Shah and Thomas (<a href="#ref-ShahThomas2003_smallmarkets" role="doc-biblioref">2003c</a>)</span>)</li>
+<li>“The jaggery futures market at Muzaffarnagar: Status and policy rec-ommendations”. In: Derivatives markets in India 2003. Ed. by Susan Thomas. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 6, pp.123–142 (<span class="citation" data-cites="Thomas2003_muzaffarnagarfutures">Thomas (<a href="#ref-Thomas2003_muzaffarnagarfutures" role="doc-biblioref">2003</a>)</span>)</li>
+<li>“Equity derivatives in India: The state of the art”. In: Derivatives markets in India 2003. Ed. by Susan Thomas. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 1, pp.1–25 (<span class="citation" data-cites="ShahThomas2003_eqderivatives_soa">Shah and Thomas (<a href="#ref-ShahThomas2003_eqderivatives_soa" role="doc-biblioref">2003a</a>)</span>)</li>
+<li>“Interest rates and their markets”. In: India Development Report 2002. Ed. by Kirit S. Parikh and R. Radhakrishna. Oxford University Press. Chap. 12, pp.177–194 (<span class="citation" data-cites="ShahThomas2002_idr_intrates">Shah and Thomas (<a href="#ref-ShahThomas2002_idr_intrates" role="doc-biblioref">2002</a>)</span>)</li>
+<li>“Policy issues in India’s capital markets in 2000”. In: New economic policies for a new India. Ed. by Surjit S. Bhalla. ICSSR. chap.&nbsp;9, pp.185–210 (<span class="citation" data-cites="ShahThomas2000_policycapmarkets2000_icssr">Shah and Thomas (<a href="#ref-ShahThomas2000_policycapmarkets2000_icssr" role="doc-biblioref">2000</a>)</span>)</li>
+<li>“Risk and the Indian economy”. In: India Development Report 1999. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 16, pp.231–242 (<span class="citation" data-cites="ShahThomas1999_risk">Shah and Thomas (<a href="#ref-ShahThomas1999_risk" role="doc-biblioref">1999c</a>)</span>)</li>
+<li>“Rethinking prudential regulation”. In: India Develop-ment Report 1999. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 17, pp.243–255 (<span class="citation" data-cites="ShahThomas1999_micropru">Shah and Thomas (<a href="#ref-ShahThomas1999_micropru" role="doc-biblioref">1999b</a>)</span>)</li>
+<li>“Developing the Indian capital market”. In: India: A fi-nancial sector for the Twenty-first century. Ed. by James Hanson and Sanjay Kathuria. Oxford Uni-versity Press. Chap. 7, pp.205–265 (<span class="citation" data-cites="ShahThomas1999_Indiancapmarket21stcentury">Shah and Thomas (<a href="#ref-ShahThomas1999_Indiancapmarket21stcentury" role="doc-biblioref">1999a</a>)</span>)</li>
+<li>Market microstructure considerations in index construction. In: CBOT Research Symposium Proceedings. Chicago Board of Trade, pp.173–193 (<span class="citation" data-cites="ShahThomas1998_cbot">Shah and Thomas (<a href="#ref-ShahThomas1998_cbot" role="doc-biblioref">1998</a>)</span>)</li>
+<li>“Securities Markets”. In: India Development Report 1997. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 10, pp.167–192 (<span class="citation" data-cites="ShahThomas1997_idr_securities_markets">Shah and Thomas (<a href="#ref-ShahThomas1997_idr_securities_markets" role="doc-biblioref">1997</a>)</span>)</li>
+</ul>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-GhoshThomas2023_finclumdeepeningevidence" class="csl-entry" role="listitem">
+Ghosh, Indradeep, and Susan Thomas. 2023. <span>“<span class="nocase">Financial Inclusion Measurement: Deepening the Evidence</span>.”</span> In <em><span>17th Inclusive Finance India Report</span></em>, edited by N. S. Vishwanathan, 117–25. <span>Access Publishers</span>. <a href="https://inclusivefinanceindia.org/wp-content/uploads/2023/01/Inclusive-Finance-India-Summit-Report-2022.pdf">https://inclusivefinanceindia.org/wp-content/uploads/2023/01/Inclusive-Finance-India-Summit-Report-2022.pdf</a>.
+</div>
+<div id="ref-Krishnanetal2020" class="csl-entry" role="listitem">
+Krishnan, K. P., Ajay Shah, and Susan Thomas. 2020. <span>“New Thinking on Resolution of Small Firms.”</span> In <em><span class="nocase">Insolvency and Bankruptcy regime in India: A Narrative</span></em>, 267–73. <span>Insolvency and Bankruptcy Board of India</span>.
+</div>
+<div id="ref-SaneThomas2012_idr_firmborrowings" class="csl-entry" role="listitem">
+Sane, Renuka, and Susan Thomas. 2012. <span>“Borrowings by <span>I</span>ndian Firms.”</span> In <em><span>India Development Report</span>, 2012</em>, 151–58. <span>Oxford University Press</span>. <a href="http://www.igidr.ac.in/pdf/publication/IDR-2012-13.pdf">http://www.igidr.ac.in/pdf/publication/IDR-2012-13.pdf</a>.
+</div>
+<div id="ref-Senguptaetal2017_IDRcorpinsolvency" class="csl-entry" role="listitem">
+Sengupta, Rajeswari, Anjali Sharma, and Susan Thomas. 2017. <span>“<span class="nocase">Evolution of the insolvency framework for non-financial firms in India</span>.”</span> In <em><span>India Development Report</span>, 2017</em>. <span>Oxford University Press</span>.
+</div>
+<div id="ref-ShahThomas1997_idr_securities_markets" class="csl-entry" role="listitem">
+Shah, Ajay, and Susan Thomas. 1997. <span>“Securities Markets.”</span> In <em><span>India Development Report</span> 1997</em>, edited by Kirit S. Parikh, 167–92. Oxford University Press.
+</div>
+<div id="ref-ShahThomas1998_cbot" class="csl-entry" role="listitem">
+———. 1998. <span>“Market Microstructure Considerations in Index Construction.”</span> In <em>CBOT Research Symposium Proceedings</em>, 173–93. Chicago Board of Trade. <a href="http://www.mayin.org/ajayshah/PDFDOCS/ShahThomas1998_cbot.pdf">http://www.mayin.org/ajayshah/PDFDOCS/ShahThomas1998_cbot.pdf</a>.
+</div>
+<div id="ref-ShahThomas1999_Indiancapmarket21stcentury" class="csl-entry" role="listitem">
+———. 1999a. <span>“Developing the <span>I</span>ndian Capital Market.”</span> In <em><span class="nocase">India: A financial sector for the Twenty-first century</span></em>, edited by James Hanson and Sanjay Kathuria, 205–65. Oxford University Press.
+</div>
+<div id="ref-ShahThomas1999_micropru" class="csl-entry" role="listitem">
+———. 1999b. <span>“Rethinking Prudential Regulation.”</span> In <em><span>India Development Report</span> 1999</em>, edited by Kirit S. Parikh, 243–55. Oxford University Press.
+</div>
+<div id="ref-ShahThomas1999_risk" class="csl-entry" role="listitem">
+———. 1999c. <span>“Risk and the Indian Economy.”</span> In <em><span>India Development Report</span> 1999</em>, edited by Kirit S. Parikh, 231–42. Oxford University Press.
+</div>
+<div id="ref-ShahThomas2000_policycapmarkets2000_icssr" class="csl-entry" role="listitem">
+———. 2000. <span>“Policy Issues in <span>I</span>ndia’s Capital Markets in 2000.”</span> In <em><span class="nocase">New economic policies for a new India</span></em>, edited by Surjit S. Bhalla, 185–210. ICSSR.
+</div>
+<div id="ref-ShahThomas2002_idr_intrates" class="csl-entry" role="listitem">
+———. 2002. <span>“Interest Rates and Their Markets.”</span> In <em><span>India Development Report</span> 2002</em>, edited by Kirit S. Parikh and R. Radhakrishna, 177–94. Oxford University Press.
+</div>
+<div id="ref-ShahThomas2003_eqderivatives_soa" class="csl-entry" role="listitem">
+———. 2003a. <span>“Equity Derivatives in <span>I</span>ndia: <span>T</span>he State of the Art.”</span> In <em>Derivatives Markets in <span>India</span> 2003</em>, edited by Susan Thomas, 1–25. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
+</div>
+<div id="ref-ShahThomas2003_credpr" class="csl-entry" role="listitem">
+———. 2003b. <span>“Policy Issues in <span>I</span>ndian Securities Markets.”</span> In <em>Reforming <span>I</span>ndia’s <span>E</span>xternal, <span>F</span>inancial and <span>F</span>iscal <span>P</span>olicies</em>, edited by Anne Krueger and Sajjid Z. Chinoy, 129–47. Stanford <span>S</span>tudies in <span>I</span>nternational <span>E</span>conomics and <span>D</span>evelopment. Stanford University Press.
+</div>
+<div id="ref-ShahThomas2003_smallmarkets" class="csl-entry" role="listitem">
+———. 2003c. <span>“Securities Market Efficiency.”</span> In <em>Globalization and National Financial Systems</em>, edited by James A. Hanson, Patrick Honohan, and Giovanni Majnoni, 145–75. The World Bank; Oxford University Press.
+</div>
+<div id="ref-SrinivasThomas2003_lessons_pensionfundmanagement" class="csl-entry" role="listitem">
+Srinivas, P. S., and Susan Thomas. 2003. <span>“Institutional Mechanisms in Pension Fund Management: <span>L</span>essons from Three <span>I</span>ndian Case Studies.”</span> In <em>Rethinking Pension Provision for <span>I</span>ndia 2003</em>, edited by Anand Bordia and Gautam Bhardwaj, 177–204. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
+</div>
+<div id="ref-Thomas2003_muzaffarnagarfutures" class="csl-entry" role="listitem">
+Thomas, Susan. 2003. <span>“The Jaggery Futures Market at <span>M</span>uzaffarnagar: <span>S</span>tatus and Policy Recommendations.”</span> In <em>Derivatives Markets in <span>India</span> 2003</em>, edited by Susan Thomas, 123–42. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
+</div>
+<div id="ref-Thomas2005_commodities_encyclopediaofindia" class="csl-entry" role="listitem">
+———. 2005a. <span>“Commodity <span>M</span>arkets.”</span> In <em>Encyclopedia of <span>India</span></em>, edited by Stanley Wolpert. Charles Scribner’s Sons.
+</div>
+<div id="ref-Thomas2005_financialsectorreforms" class="csl-entry" role="listitem">
+———. 2005b. <span>“How the Financial Sector in <span>I</span>ndia Was Reformed.”</span> In <em><span class="nocase">Documenting Reforms: Case Studies from India</span></em>, edited by S. Narayan. <span>Observer Research Foundation</span>.
+</div>
+<div id="ref-ThomasShah2007_encyc_indexes" class="csl-entry" role="listitem">
+Thomas, Susan, and Ajay Shah. 2007. <span>“Stock Market Indexes.”</span> In <em>The Oxford Companion to Economics in India</em>, edited by Kaushik Basu, 503–4. Oxford.
+</div>
+<div id="ref-ThomasVarma_handbook_nomura" class="csl-entry" role="listitem">
+Thomas, Susan, and Jayant Varma. 2010. <span>“Derivatives <span>M</span>arkets.”</span> In <em>Capital <span>M</span>arkets in <span>I</span>ndia</em>, edited by Rajesh Chakrabarti and Sankar De, 177–224. <span>Nomura Institute of Capital Markets Research, Tokyo, and Indian School of Business, Hyderabad</span>.
+</div>
+<div id="ref-ThomasZaveri-Shah2023_estncltrequirements" class="csl-entry" role="listitem">
+Thomas, Susan, and Bhargavi Zaveri-Shah. 2023. <span>“Estimating Capacity Requirements of the <span class="nocase">National Company Law Tribunal: Notes from the field</span>.”</span> In <em><span class="nocase">Technology and Analytics for Law and Justice</span></em>, edited by DAKSH Centre of Excellence for Law and Justice and IIT Delhi, 431–51. <span>OakBridge Publishing</span>. <a href="https://papers.xkdr.org/papers/2023ThomasZaveri-Shah_Chapter21-TechnologyandAnalyticsforLawandJustice.pdf">https://papers.xkdr.org/papers/2023ThomasZaveri-Shah_Chapter21-TechnologyandAnalyticsforLawandJustice.pdf</a>.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -736,8 +737,8 @@ https://badge.dimensions.ai/
 <script>document.write(new Date().getFullYear())</script>
 </div>   
     <div class="nav-footer-center">
-<p>Built on Quarto</p>
-</div>
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

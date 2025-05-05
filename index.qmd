@@ -12,13 +12,6 @@ about:
   template: trestles
   image-width: 70%
   links:
-    - icon: envelope
-      text: E-mail
-      href: mailto:sthomas.entp@gmail.com  
-    - icon: linkedin
-      text: LinkedIn
-      href: https://in.linkedin.com/in/susan-thomas-417869
-      target: _blank
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en
       target: _blank
@@ -37,29 +30,3 @@ about:
 :::{#hero-heading}
 
 Susan Thomas has studied at IIT Bombay and the University of Southern California. She has been faculty at the Indira Gandhi Institute for Development Research. Her research lies in the areas of finance, markets and the economy. She worked in the design of the NSE-50 ("Nifty") index and the risk management systems of the Indian equity derivatives markets. Her policy engagements with the Ministry of Finance included being a member of the Standing Council of the competitiveness of the Indian Financial Sector (2013), and the Bankruptcy Legislative Reforms Committee (2014). She led the research team that designed and drafted the Insolvency and Bankruptcy Code (2016) and worked with the Ministry of Corporate Affairs on the organisational structure of the Insolvency and Bankruptcy Board of India and the National Companies Law Tribunal.
-
-## Positions
-
-Senior Research Fellow and Co-founder, XKDR Forum, (2021 –)
-
-Research Professor of Business, O. P. Jindal School of Business, (2021 –)
-
-Assistant Professor, Indira Gandhi Institute of Development Research (1998-2020)
-
-Visiting Research Associate, Indira Gandhi Institute of Development Research (1996-1998)
-
-Visiting Scholar, Indian School of Business, Hyderabad (2004-2005)
-
-Consultant, Rand Corporation, Santa Monica (1990-1992)
-
-## Education
-
-Ph.D. in Economics, University of Southern California, Los Angeles.
-
-B.Tech. in Civil Engineering, Indian Institute of Technology, Bombay.
-
-## Honours
-
-Skoch Challenger Award for Innovative ICT initiatives, for the Parallel Risk Management (prism) system, February 2004.
-
-Outstanding paper award for Sarma, Thomas and Shah (1999) at IIIrd Capital Markets Conference at UTI ICM, December 1999.

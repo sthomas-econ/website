@@ -6,80 +6,25 @@ description-meta: "Journal Publications"
 title-block-banner: false
 css: custom.css
 hide_references: true
-bibliography: references.bib # Add this line to link your .bib file
+bibliography: sue_res.bib
 ---
 
+- “Rethinking innovation policy in India: Amplifying spillovers through contracting-out”. @Mashelkaretal2024
+- “Do decreases in Distance-to-Default predict rating downgrades?” @Aggarwaletal2023_dtdchange
+- “When is the Order to Trade Ratio fee effective?” @Aggarwaletal2023_otrfee
+- “From participation to repurchase: Low income households and micro-insurance” @SaneThomas2020
+- “When stock futures dominate price discovery” @ThomasAggarwal2019
+- “The real cost of credit constraints: Evidence from micro-finance” @SaneThomas2013_apimpact
+- "In search of inclusion: informal sector participation in a voluntary, defined contribution pensions” @SaneThomas2015_npsspersistence
+- “The case of the missing billions: Estimating losses to customers on account of mis-selling life insurance policies” @Halanetal2014_missellinginsurance
+- “What should regulation do in the field of Micro-Finance?” @SaneThomas2012_mfiregs_epw
+- “Liquidity considerations in estimating volatility indexes” @ThomasGrover2011_liquidityvix
+- “Resilience of liquidity in Indian securities markets” @Thomas2006_epw-liquidityresilience
+- “Selection of Value at Risk models” @SarmaThomasShah2003_var_selection
+- “Institutional mechanisms in pension fund management: Lessons from three Indian case studies” @SrinivasThomas2003_lessonspensionfundmanagement_epw
+- “David and Goliath: Displacing a primary market” @ShahThomas2000_jgfm update
 
-Nidhi Aggarwal, Venkatesh Panchapagesan, and Susan Thomas (July 2022). “When is the Order to Trade Ratio fee effective?” *Journal of Financial Markets*
+## References
 
-<center><hr style="width:50%"></center>
-
-Renuka Sane and Susan Thomas (Sept. 2020). “From participation to repurchase: Low income households and micro-insurance”. *Journal of Risk & Insurance* 87(3), 783–814
-
-<center><hr style="width:50%"></center>
-
-Nidhi Aggarwal and Susan Thomas (Mar. 2019). “When stock futures dominate price discovery”. *Journal of Futures Markets* 39(3), 263–278
-
-<center><hr style="width:50%"></center>
-
-Renuka Sane and Susan Thomas (Jan. 2016). “The real cost of credit constraints: Evidence from micro-finance”. *B E Journal of Applied Economic Analysis and Policy* 16(1), 151–183
-
-<center><hr style="width:50%"></center>
-
-Renuka Sane and Susan Thomas (Aug. 2015). “In search of inclusion: informal sector participation in a voluntary, defined contribution pensions”. *Journal of Development Studies* 51 (10), 1409–1424
-
-<center><hr style="width:50%"></center>
-
-Monika Halan, Renuka Sane, and Susan Thomas (Oct. 2014). “The case of the missing billions: Estimating losses to customers on account of mis-selling life insurance policies”. *Journal of Economic Policy Reform* 17 (4), 285–302
-
-<center><hr style="width:50%"></center>
-
-Renuka Sane and Susan Thomas (Feb. 2013). “What should regulation do in the field of micro-finance?” *Economic and Political Weekly* XLVIII(5), 59–66
-
-<center><hr style="width:50%"></center>
-
-Rohini Grover and Susan Thomas (Aug. 2012). “Liquidity considerations in estimating volatility indexes”. *Journal of Futures Markets* 32(8), 714–741
-
-<center><hr style="width:50%"></center>
-
-Susan Thomas (Aug. 2006b). “Resilience of liquidity in Indian securities markets”. *Economic and Political Weekly* XLI(32), 3452–3454
-
-<center><hr style="width:50%"></center>
-
-Mandira Sarma, Susan Thomas, and Ajay Shah (2003). “Selection of Value at Risk models”. *Journal of Forecasting* 22(4), 337–358
-
-<center><hr style="width:50%"></center>
-
-P. S. Srinivas and Susan Thomas (Feb. 2003b). “Institutional mechanisms in pension fund management: Lessons from three Indian case studies”. *Economic and Political Weekly* XXXVIII(8), 706–715
-
-<center><hr style="width:50%"></center>
-
-Ajay Shah and Susan Thomas (Spring 2000a). “David and Goliath: Displacing a primary market”. *Journal of Global Financial Markets* 1(1), 14–21
-
-<center><hr style="width:50%"></center>
-
-*Insolvency and bankruptcy reforms in India* [@thomas2022insolvency]
-<br>Thomas, S. (2022). Springer.
-
-<center><hr style="width:50%"></center>
-
-Price discovery across multiple spot and futures markets [@thomas2001price]
-<br>Thomas, S., & Karande, K. (2001). *IGIDR Finance Seminar Series*. Citeseer.
-
-<center><hr style="width:50%"></center>
-
-High Frequency Data in Finance: A Study of the Indian Equity Markets [@thomas2002high]
-<br>Thomas, S. (2002). *IGIDR Working Paper*.
-
-<center><hr style="width:50%"></center>
-
-How the financial sector in India was reformed [@thomas2006financial]
-<br>Thomas, S. (2006). *Documenting reforms: Case studies from India*, 171-210.
-
-<center><hr style="width:50%"></center>
-
-Securities markets infrastructure for small countries [@shah2001securities]
-<br>Shah, A., & Thomas, S. (2001). *IGIDR, World Bank Project*. Citeseer.
-
-
-{{< include /files/includes/_socialshare.qmd >}}
+::: {#refs}
+:::

@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -104,11 +124,9 @@ https://badge.dimensions.ai/
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="Working Papers – Dr.&nbsp;Susan Thomas">
-<meta property="og:description" content="Academic Website for Dr.&nbsp;Susan Thomas">
 <meta property="og:image" content="https://quarto.org/quarto.png">
 <meta property="og:site_name" content="Dr. Susan Thomas">
 <meta name="twitter:title" content="Working Papers – Dr.&nbsp;Susan Thomas">
-<meta name="twitter:description" content="Academic Website for Dr.&nbsp;Susan Thomas">
 <meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -130,29 +148,10 @@ https://badge.dimensions.ai/
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">About</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
-        <li>
-    <a class="dropdown-item" href="./bod.html">
- <span class="dropdown-text">Board of Directors</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./car.html">
- <span class="dropdown-text">Committees and Advisory Roles</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./expwit.html">
- <span class="dropdown-text">Expert witness presentations to Parliamentary Committees</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./teaching.html">
- <span class="dropdown-text">Teaching</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Research</span>
@@ -186,30 +185,12 @@ https://badge.dimensions.ai/
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/nsf-biosketch.pdf"> 
+    <a class="nav-link" href="./files/sue-res.pdf"> 
 <span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://xkdr.org/"> 
-<span class="menu-text"><img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://in.linkedin.com/in/susan-thomas-417869"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=0QRD90YAAAAJ&amp;hl=en"> 
-<span class="menu-text"><i class="ai  ai-google-scholar"></i></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -218,8 +199,14 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -243,66 +230,79 @@ https://badge.dimensions.ai/
 </header>
 
 
-<p>Natasha D’cruze et al.&nbsp;(Feb.&nbsp;2034). Measuring Financial Inclusion: A project report. Tech. rep. Dvara Research Foundation and XKDR Forum</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Pavithra Manivannan, Susan Thomas, and Bhargavi Zaveri-Shah (Nov.&nbsp;2022). Evaluating contract enforcement by courts in India: a litigant’s lens. Tech. rep. XKDR Forum Working Paper No.&nbsp;16</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Nidhi Aggarwal, Manish Singh, and Susan Thomas (Sept.&nbsp;2022). Informational efficiency of creditrating. Tech. rep. XKDR Forum Working Paper No.&nbsp;14</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Anjali Sharma and Susan Thomas (Nov.&nbsp;2021). The footprint of union government procurement in India. Tech. rep. XKDR Forum Working Paper No.&nbsp;10</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ayush Patnaik et al.&nbsp;(Oct.&nbsp;2021). But clouds got in my way: Bias and bias correction of VIIRS night-time lights data in the presence of clouds. Tech. rep. XKDR Forum Working Paper No.&nbsp;7</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas and Diya Uday (Feb.&nbsp;2021). Does the quality of land records affect credit access of households in India? Tech. rep. XKDR Forum Working Paper No.&nbsp;1</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Nidhi Aggarwal and Susan Thomas (Sept.&nbsp;2017). Response of firms to listing: evidence from SME exchanges. Tech. rep. Finance Research Group, Indira Gandhi Institute of Development Research</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Arpita Pattanaik and Susan Thomas (Aug.&nbsp;2017). Assessing the impact of a commodity transactions tax. Tech. rep. Finance Research Group, Indira Gandhi Institute of Development Research</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Nidhi Aggarwal, Sargam Jain, and Susan Thomas (June 2014). Do futures markets help in price discovery and risk management. Tech. rep. Indira Gandhi Institute of Development Research</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Nidhi Aggarwal and Susan Thomas (July 2014). The causal impact of algorithmic trading on market quality. Tech. rep. Indira Gandhi Institute of Development Research</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Natasha Agarwal et al.&nbsp;(Oct.&nbsp;2013). A systematic approach to identify systemically important firms. Tech. rep. Indira Gandhi Institute of Development Research</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Nidhi Aggarwal, Manish Singh, and Susan Thomas (Apr.&nbsp;2012). Do changes in distance-to-default anticipate changes in the credit rating? Tech. rep. Indira Gandhi Institute of Development Research</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Rajat Tayal and Susan Thomas (Apr.&nbsp;2012). Measuring and analysing the asymmetry of liquidity. Tech. rep. Indira Gandhi Institute of Development Research</p>
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+<ul>
+<li>“Improving supply chain management of medicines for public healthcare in India” <span class="citation" data-cites="Manivannanetal2024_publicprocurementofdrugs">Manivannan, Mehta, and Thomas (<a href="#ref-Manivannanetal2024_publicprocurementofdrugs" role="doc-biblioref">2024</a>)</span></li>
+<li>“Who lends to the Indian state?” <span class="citation" data-cites="Chitgupietal2024_lendingtoIndianstate">Chitgupi et al. (<a href="#ref-Chitgupietal2024_lendingtoIndianstate" role="doc-biblioref">2024</a>)</span></li>
+<li>“Learning by doing for public procurement” <span class="citation" data-cites="ChitgupiThomas2023_learningbydoing">Chitgupi and Thomas (<a href="#ref-ChitgupiThomas2023_learningbydoing" role="doc-biblioref">2023</a>)</span></li>
+<li>“Measuring Financial Inclusion: A project report” <span class="citation" data-cites="Dcruzeetal2023_finclumreport">D’cruze et al. (<a href="#ref-Dcruzeetal2023_finclumreport" role="doc-biblioref">2023</a>)</span></li>
+<li>“Evaluating contract enforcement by courts in India: a litigant’s lens” <span class="citation" data-cites="Manivannanetal2022_contractenforcementlitigantlens">Manivannan, Thomas, and Zaveri-Shah (<a href="#ref-Manivannanetal2022_contractenforcementlitigantlens" role="doc-biblioref">2022</a>)</span></li>
+<li>“Informational efficiency of credit rating” <span class="citation" data-cites="Singhetal2022_infoefficiencycreditrating">Aggarwal, Singh, and Thomas (<a href="#ref-Singhetal2022_infoefficiencycreditrating" role="doc-biblioref">2022</a>)</span></li>
+<li>“The footprint of union government procurement in India” <span class="citation" data-cites="SharmaThomas2021_footprintprocurement">Sharma and Thomas (<a href="#ref-SharmaThomas2021_footprintprocurement" role="doc-biblioref">2021</a>)</span></li>
+<li>“But clouds got in my way: Bias and bias correction of VIIRS nighttime lights data in the presence of clouds” <span class="citation" data-cites="Patnaiketal2021_nightlights">Patnaik et al. (<a href="#ref-Patnaiketal2021_nightlights" role="doc-biblioref">2021</a>)</span></li>
+<li>“Does the quality of land records affect credit access of households in India?” <span class="citation" data-cites="ThomasUday2021_lrsi">Thomas and Uday (<a href="#ref-ThomasUday2021_lrsi" role="doc-biblioref">2021</a>)</span></li>
+<li>“Response of firms to listing: evidence from SME exchanges” <span class="citation" data-cites="AggarwalThomas2017_ipo">Aggarwal and Thomas (<a href="#ref-AggarwalThomas2017_ipo" role="doc-biblioref">2017</a>)</span></li>
+<li>“Assessing the impact of a commodity transactions tax” <span class="citation" data-cites="PattanaikThomas2017_ctt">Pattanaik and Thomas (<a href="#ref-PattanaikThomas2017_ctt" role="doc-biblioref">2017</a>)</span></li>
+<li>“Do futures markets help in price discovery and risk management” <span class="citation" data-cites="Aggarwaletal2014_commderivs">Aggarwal, Jain, and Thomas (<a href="#ref-Aggarwaletal2014_commderivs" role="doc-biblioref">2014</a>)</span></li>
+<li>“The causal impact of algorithmic trading on market quality” <span class="citation" data-cites="AggarwalThomas2014_atcausal">Aggarwal and Thomas (<a href="#ref-AggarwalThomas2014_atcausal" role="doc-biblioref">2014</a>)</span></li>
+<li>“A systematic approach to identify systemically important firms” <span class="citation" data-cites="Agarwaletal2013_indiansifs">Agarwal et al. (<a href="#ref-Agarwaletal2013_indiansifs" role="doc-biblioref">2013</a>)</span></li>
+<li>“Do changes in distance-to-default anticipate changes in the credit rating?” <span class="citation" data-cites="Aggarwaletal2012_DtD">Aggarwal, Singh, and Thomas (<a href="#ref-Aggarwaletal2012_DtD" role="doc-biblioref">2012</a>)</span></li>
+<li>“Measuring and analysing the asymmetry of liquidity” <span class="citation" data-cites="TayalThomas2012_asymmetry">Tayal and Thomas (<a href="#ref-TayalThomas2012_asymmetry" role="doc-biblioref">2012</a>)</span></li>
+</ul>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Agarwaletal2013_indiansifs" class="csl-entry" role="listitem">
+Agarwal, Natasha, Sanchit Arora, Akhil Behl, Rohini Grover, Shashwat Khanna, and Susan Thomas. 2013. <span>“A Systematic Approach to Identify Systemically Important Firms.”</span> <span>Indira Gandhi Institute of Development Research</span>. <a href="http://ifrogs.org/releases/Thomasetal2013_systemicRisk.html">http://ifrogs.org/releases/Thomasetal2013_systemicRisk.html</a>.
 </div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+<div id="ref-Aggarwaletal2014_commderivs" class="csl-entry" role="listitem">
+Aggarwal, Nidhi, Sargam Jain, and Susan Thomas. 2014. <span>“<span class="nocase">Do futures markets help in price discovery and risk management</span>.”</span> <span>Indira Gandhi Institute of Development Research</span>. <a href="http://ifrogs.org/releases/Aggarwaletal2014_pricediscoveryriskmanagementCommodities.html">http://ifrogs.org/releases/Aggarwaletal2014_pricediscoveryriskmanagementCommodities.html</a>.
+</div>
+<div id="ref-Aggarwaletal2012_DtD" class="csl-entry" role="listitem">
+Aggarwal, Nidhi, Manish Singh, and Susan Thomas. 2012. <span>“Do Changes in Distance-to-Default Anticipate Changes in the Credit Rating?”</span> <span>Indira Gandhi Institute of Development Research</span>. <a href="http://ifrogs.org/releases/Aggarwaletal2012_distancetodefaultAnticipatecreditrating.html">http://ifrogs.org/releases/Aggarwaletal2012_distancetodefaultAnticipatecreditrating.html</a>.
+</div>
+<div id="ref-Singhetal2022_infoefficiencycreditrating" class="csl-entry" role="listitem">
+———. 2022. <span>“Informational Efficiency of Credit Rating.”</span> <span>XKDR Forum Working Paper No. 14</span>. <a href="https://xkdr.org/paper/informational-efficiency-of-credit-ratings">https://xkdr.org/paper/informational-efficiency-of-credit-ratings</a>.
+</div>
+<div id="ref-AggarwalThomas2014_atcausal" class="csl-entry" role="listitem">
+Aggarwal, Nidhi, and Susan Thomas. 2014. <span>“<span class="nocase">The causal impact of algorithmic trading on market quality</span>.”</span> <span>Indira Gandhi Institute of Development Research</span>. <a href="http://ifrogs.org/releases/ThomasAggarwal2014_algorithmicTradingImpact.html">http://ifrogs.org/releases/ThomasAggarwal2014_algorithmicTradingImpact.html</a>.
+</div>
+<div id="ref-AggarwalThomas2017_ipo" class="csl-entry" role="listitem">
+———. 2017. <span>“<span class="nocase">Response of firms to listing: evidence from SME exchanges</span>.”</span> <span>Finance Research Group, Indira Gandhi Institute of Development Research</span>. <a href="http://ifrogs.org/releases/AggarwalThomas2017_listings.html">http://ifrogs.org/releases/AggarwalThomas2017_listings.html</a>.
+</div>
+<div id="ref-Chitgupietal2024_lendingtoIndianstate" class="csl-entry" role="listitem">
+Chitgupi, Aneesha, Ajay Shah, Manish K. Singh, Susan Thomas, and Harsh Vardhan. 2024. <span>“Who Lends to the Indian State?”</span> XKDR Forum Working paper 34. <a href="https://xkdr.org/paper/who-lends-to-the-indian-state">https://xkdr.org/paper/who-lends-to-the-indian-state</a>.
+</div>
+<div id="ref-ChitgupiThomas2023_learningbydoing" class="csl-entry" role="listitem">
+Chitgupi, Aneesha, and Susan Thomas. 2023. <span>“Learning by Doing for Public Procurement.”</span> XKDR Forum Working paper 22. <a href="https://xkdr.org/paper/learning-by-doing-for-public-procurement">https://xkdr.org/paper/learning-by-doing-for-public-procurement</a>.
+</div>
+<div id="ref-Dcruzeetal2023_finclumreport" class="csl-entry" role="listitem">
+D’cruze, Natasha, Indradeep Ghosh, Geetika Palta, Misha Sharma, and Susan Thomas. 2023. <span>“Measuring <span>Financial Inclusion: A</span> Project Report.”</span> <span>Dvara Research Foundation and XKDR Forum</span>.
+</div>
+<div id="ref-Manivannanetal2024_publicprocurementofdrugs" class="csl-entry" role="listitem">
+Manivannan, Pavithra, Charmi Mehta, and Susan Thomas. 2024. <span>“Improving Supply Chain Management of Medicines for Public Healthcare in India.”</span> XKDR Forum Working paper 36. <a href="https://xkdr.org/paper/improving-supply-chain-management-of-medicines-for-public-healthcare-in-india">https://xkdr.org/paper/improving-supply-chain-management-of-medicines-for-public-healthcare-in-india</a>.
+</div>
+<div id="ref-Manivannanetal2022_contractenforcementlitigantlens" class="csl-entry" role="listitem">
+Manivannan, Pavithra, Susan Thomas, and Bhargavi Zaveri-Shah. 2022. <span>“Evaluating Contract Enforcement by Courts in <span>I</span>ndia: A Litigant’s Lens.”</span> <span>XKDR Forum Working Paper No. 16</span>. <a href="https://xkdr.org/paper/evaluating-contract-enforcement-by-courts-in-india-a-litigants-lens">https://xkdr.org/paper/evaluating-contract-enforcement-by-courts-in-india-a-litigants-lens</a>.
+</div>
+<div id="ref-Patnaiketal2021_nightlights" class="csl-entry" role="listitem">
+Patnaik, Ayush, Ajay Shah, Anshul Tayal, and Susan Thomas. 2021. <span>“<span class="nocase">But clouds got in my way: Bias and bias correction of VIIRS nighttime lights data in the presence of clouds</span>.”</span> <span>XKDR Forum Working Paper No. 7</span>. <a href="https://xkdr.org/releases/PatnaikShahTayalThomas_2021_bias_correction_nighttime_lights.html">https://xkdr.org/releases/PatnaikShahTayalThomas_2021_bias_correction_nighttime_lights.html</a>.
+</div>
+<div id="ref-PattanaikThomas2017_ctt" class="csl-entry" role="listitem">
+Pattanaik, Arpita, and Susan Thomas. 2017. <span>“<span class="nocase">Assessing the impact of a commodity transactions tax</span>.”</span> <span>Finance Research Group, Indira Gandhi Institute of Development Research</span>. <a href="http://ifrogs.org/releases/PattanaikThomas2017_ctt.html">http://ifrogs.org/releases/PattanaikThomas2017_ctt.html</a>.
+</div>
+<div id="ref-SharmaThomas2021_footprintprocurement" class="csl-entry" role="listitem">
+Sharma, Anjali, and Susan Thomas. 2021. <span>“<span class="nocase">The footprint of union government procurement in India</span>.”</span> <span>XKDR Forum Working Paper No. 10</span>. <a href="https://xkdr.org/releases/SharmaThomas_publicprocurementestimation.html">https://xkdr.org/releases/SharmaThomas_publicprocurementestimation.html</a>.
+</div>
+<div id="ref-TayalThomas2012_asymmetry" class="csl-entry" role="listitem">
+Tayal, Rajat, and Susan Thomas. 2012. <span>“Measuring and Analysing the Asymmetry of Liquidity.”</span> <span>Indira Gandhi Institute of Development Research</span>. <a href="http://ifrogs.org/releases/TayalThomas2012_asymmetryofLiquidity.html">http://ifrogs.org/releases/TayalThomas2012_asymmetryofLiquidity.html</a>.
+</div>
+<div id="ref-ThomasUday2021_lrsi" class="csl-entry" role="listitem">
+Thomas, Susan, and Diya Uday. 2021. <span>“<span class="nocase">Does the quality of land records affect credit access of households in India?</span>”</span> <span>XKDR Forum Working Paper No. 1</span>. <a href="https://xkdr.org/releases/ThomasUday2021_lrsiAndHouseholdBorrowing.html">https://xkdr.org/releases/ThomasUday2021_lrsiAndHouseholdBorrowing.html</a>.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -717,8 +717,8 @@ https://quarto.org/docs/authoring/includes.html
 <script>document.write(new Date().getFullYear())</script>
 </div>   
     <div class="nav-footer-center">
-<p>Built on Quarto</p>
-</div>
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -104,11 +124,9 @@ https://badge.dimensions.ai/
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="Books – Dr.&nbsp;Susan Thomas">
-<meta property="og:description" content="Academic Website for Dr.&nbsp;Susan Thomas">
 <meta property="og:image" content="https://quarto.org/quarto.png">
 <meta property="og:site_name" content="Dr. Susan Thomas">
 <meta name="twitter:title" content="Books – Dr.&nbsp;Susan Thomas">
-<meta name="twitter:description" content="Academic Website for Dr.&nbsp;Susan Thomas">
 <meta name="twitter:image" content="https://quarto.org/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -130,29 +148,10 @@ https://badge.dimensions.ai/
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">About</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
-        <li>
-    <a class="dropdown-item" href="./bod.html">
- <span class="dropdown-text">Board of Directors</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./car.html">
- <span class="dropdown-text">Committees and Advisory Roles</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./expwit.html">
- <span class="dropdown-text">Expert witness presentations to Parliamentary Committees</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./teaching.html">
- <span class="dropdown-text">Teaching</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Research</span>
@@ -186,30 +185,12 @@ https://badge.dimensions.ai/
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/nsf-biosketch.pdf"> 
+    <a class="nav-link" href="./files/sue-res.pdf"> 
 <span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://xkdr.org/"> 
-<span class="menu-text"><img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://in.linkedin.com/in/susan-thomas-417869"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://scholar.google.com/citations?user=0QRD90YAAAAJ&amp;hl=en"> 
-<span class="menu-text"><i class="ai  ai-google-scholar"></i></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -218,8 +199,14 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -243,34 +230,35 @@ https://badge.dimensions.ai/
 </header>
 
 
-<p>Susan Thomas, ed.&nbsp;(2022). Insolvency and bankruptcy reforms in India. India studies in Business and Economics. Springer Nature</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Ajay Shah, Susan Thomas, and Michael Gorham (Aug.&nbsp;2008). India’s Financial Markets: An Insider’s Guide to How the Markets Work. Elsevier and IIT Stuart Center for Financial Markets Press</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas, ed.&nbsp;(2003a). Derivatives markets in India 2003. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas, ed.&nbsp;(1998a). Derivatives markets in India 1998. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill</p>
-<center>
-<hr style="width:50%">
-</center>
-<p>Susan Thomas, ed.&nbsp;(1998b). Fund management in India 1998. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill</p>
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+<ul>
+<li>Insolvency and bankruptcy reforms in India. India studies in Business Economics. Springer Nature (<span class="citation" data-cites="Thomas2022_ibcreforms">Thomas (<a href="#ref-Thomas2022_ibcreforms" role="doc-biblioref">2022</a>)</span>)</li>
+<li>India’s Financial Markets: An Insider’s Guide to How the Markets Work. Elsevier and IIT Stuart Center for Financial Markets Press (<span class="citation" data-cites="ShahThomasGorham2008">Shah, Thomas, and Gorham (<a href="#ref-ShahThomasGorham2008" role="doc-biblioref">2008</a>)</span>)</li>
+<li>Derivatives markets in India 2003. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill (<span class="citation" data-cites="Thomas2003_dbook">Thomas (<a href="#ref-Thomas2003_dbook" role="doc-biblioref">2003</a>)</span>)</li>
+<li>Derivatives markets in India 1998. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill (<span class="citation" data-cites="Thomas1998_dbook">Thomas (<a href="#ref-Thomas1998_dbook" role="doc-biblioref">1998a</a>)</span>)</li>
+<li>Fund management in India 1998. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill (<span class="citation" data-cites="Thomas1998_fmbook">Thomas (<a href="#ref-Thomas1998_fmbook" role="doc-biblioref">1998b</a>)</span>)</li>
+</ul>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-ShahThomasGorham2008" class="csl-entry" role="listitem">
+Shah, Ajay, Susan Thomas, and Michael Gorham. 2008. <em>India’s <span>F</span>inancial <span>M</span>arkets: <span>A</span>n <span>I</span>nsider’s <span>G</span>uide to <span>H</span>ow the <span>M</span>arkets <span>W</span>ork</em>. Elsevier; <span>IIT</span> <span>S</span>tuart <span>C</span>enter for <span>F</span>inancial <span>M</span>arkets <span>P</span>ress.
 </div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+<div id="ref-Thomas1998_dbook" class="csl-entry" role="listitem">
+Thomas, Susan, ed. 1998a. <em>Derivatives Markets in <span>India</span> 1998</em>. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
+</div>
+<div id="ref-Thomas1998_fmbook" class="csl-entry" role="listitem">
+———, ed. 1998b. <em>Fund Management in <span>India</span> 1998</em>. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
+</div>
+<div id="ref-Thomas2003_dbook" class="csl-entry" role="listitem">
+———, ed. 2003. <em>Derivatives Markets in <span>India</span> 2003</em>. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
+</div>
+<div id="ref-Thomas2022_ibcreforms" class="csl-entry" role="listitem">
+———, ed. 2022. <em>Insolvency and Bankruptcy Reforms in India</em>. India Studies in Business and Economics. Springer Nature. <a href="https://link.springer.com/book/10.1007/978-981-16-0854-4">https://link.springer.com/book/10.1007/978-981-16-0854-4</a>.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -685,8 +673,8 @@ https://quarto.org/docs/authoring/includes.html
 <script>document.write(new Date().getFullYear())</script>
 </div>   
     <div class="nav-footer-center">
-<p>Built on Quarto</p>
-</div>
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
