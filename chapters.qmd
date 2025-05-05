@@ -6,32 +6,10 @@ description-meta: "Chapters in Books"
 title-block-banner: false
 css: custom.css
 hide_references: true
-bibliography: sue_res.bib # Add this line to link your .bib file
+bibliography: sue_res.bib
+nocite: |
+    @ThomasZaveri-Shah2023_estncltrequirements @GhoshThomas2023_finclumdeepeningevidence @Krishnanetal2020 @Senguptaetal2017_IDRcorpinsolvency @SaneThomas2012_idr_firmborrowings @ThomasVarma_handbook_nomura @ThomasShah2007_encyc_indexes @Thomas2005_financialsectorreforms @Thomas2005_commodities_encyclopediaofindia @SrinivasThomas2003_lessons_pensionfundmanagement @ShahThomas2003_credpr @ShahThomas2003_smallmarkets @Thomas2003_muzaffarnagarfutures @ShahThomas2003_eqderivatives_soa @ShahThomas2002_idr_intrates @ShahThomas2000_policycapmarkets2000_icssr @ShahThomas1999_risk @ShahThomas1999_micropru @ShahThomas1999_Indiancapmarket21stcentury @ShahThomas1998_cbot @ShahThomas1997_idr_securities_markets
 ---
-
-- Estimating capacity requirements of the National Company Law Tribunal: Notes from the field”. In: Technology and Analytics for Law and Justice. Ed. by DAKSH Centre of Excellence for Law and Justice and IIT Delhi. OakBridge Pub-lishing. Chap. 21, pp.431–451 (@ThomasZaveri-Shah2023_estncltrequirements)
-- “Financial Inclusion Measurement: Deepening the Evidence”. In: 17th Inclusive Finance India Report. Ed. by N. S. Vishwanathan. Access Pub-lishers. Chap. 9, pp.117–125 (@GhoshThomas2023_finclumdeepeningevidence)
-- “New thinking on resolution of small firms”. In: Insolvency and Bankruptcy regime in India: A Narrative. Insolvency and Bankruptcy Board of India. Chap. 29, pp.267–273 (@Krishnanetal2020)
-- “Evolution of the insolvency framework for non-financial firms in India”. In: India Development Report, 2017. Oxford Univer-sity Press (@Senguptaetal2017_IDRcorpinsolvency)
-- “Borrowings by Indian firms”. In: India Development Report, 2012. Oxford University Press, pp.151–158 (@SaneThomas2012_idr_firmborrowings)
-- “Derivatives Markets”. In: Capital Markets in India. Ed. by Rajesh Chakrabarti and Sankar De. Nomura Institute of Capital Markets Research, Tokyo, and Indian School of Business, Hyderabad. Chap. 4, pp.177–224 (@ThomasVarma_handbook_nomura)
-- “Stock market indexes”. In: The Oxford Companion to Eco-nomics in India. Ed. by Kaushik Basu. Oxford, pp.503–504 (@ThomasShah2007_encyc_indexes)
-- “How the financial sector in India was reformed”. In: Documenting Re-forms: Case Studies from India. Ed. by S. Narayan. Observer Research Foundation (@Thomas2005_financialsectorreforms)
-- “Commodity Markets”. In: Encyclopedia of India. Ed. by Stanley Wolpert. Charles Scribner’s Sons (@Thomas2005_commodities_encyclopediaofindia)
-- “Institutional mechanisms in pension fund manage-ment: Lessons from three Indian case studies”. In: Rethinking pension provision for India 2003. Ed. by Anand Bordia and Gautam Bhardwaj. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 5, pp.177–204 (@SrinivasThomas2003_lessons_pensionfundmanagement)
-- Policy issues in Indian securities markets”. In: Reform-ing India's External, Financial and Fiscal Policies. Ed. by Anne Krueger and Sajjid Z. Chinoy. Stan-ford Studies in International Economics and Development. Stanford University Press. Chap. 4, pp.129–147 (@ShahThomas2003_credpr)
-- “Securities market efficiency”. In: Globalization and na-tional financial systems. Ed. by James A. Hanson, Patrick Honohan, and Giovanni Majnoni. The World Bank and Oxford University Press. Chap. 6, pp.145–175 (@ShahThomas2003_smallmarkets)
-- “The jaggery futures market at Muzaffarnagar: Status and policy rec-ommendations”. In: Derivatives markets in India 2003. Ed. by Susan Thomas. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 6, pp.123–142 (@Thomas2003_muzaffarnagarfutures)
-- “Equity derivatives in India: The state of the art”. In: Derivatives markets in India 2003. Ed. by Susan Thomas. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 1, pp.1–25 (@ShahThomas2003_eqderivatives_soa)
-- “Interest rates and their markets”. In: India Development Report 2002. Ed. by Kirit S. Parikh and R. Radhakrishna. Oxford University Press. Chap. 12, pp.177–194 (@ShahThomas2002_idr_intrates)
-- “Policy issues in India's capital markets in 2000”. In: New economic policies for a new India. Ed. by Surjit S. Bhalla. ICSSR. chap. 9, pp.185–210 (@ShahThomas2000_policycapmarkets2000_icssr)
-- “Risk and the Indian economy”. In: India Development Report 1999. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 16, pp.231–242 (@ShahThomas1999_risk)
-- “Rethinking prudential regulation”. In: India Develop-ment Report 1999. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 17, pp.243–255 (@ShahThomas1999_micropru)
-- “Developing the Indian capital market”. In: India: A fi-nancial sector for the Twenty-first century. Ed. by James Hanson and Sanjay Kathuria. Oxford Uni-versity Press. Chap. 7, pp.205–265 (@ShahThomas1999_Indiancapmarket21stcentury)
-- Market microstructure considerations in index construction. In: CBOT Research Symposium Proceedings. Chicago Board of Trade, pp.173–193 (@ShahThomas1998_cbot)
-- “Securities Markets”. In: India Development Report 1997. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 10, pp.167–192 (@ShahThomas1997_idr_securities_markets)
-
-## References
 
 ::: {#refs}
 :::

@@ -5,26 +5,10 @@ description-meta: "Journal Publications"
 #back-to-top-navigation: true
 title-block-banner: false
 css: custom.css
-hide_references: true
 bibliography: sue_res.bib
+nocite: |
+  @ShahThomas1999_risk, @Mashelkaretal2024, @Aggarwaletal2023_dtdchange, @Aggarwaletal2023_otrfee, @SaneThomas2020, @ThomasAggarwal2019, @SaneThomas2013_apimpact, @SaneThomas2015_npsspersistence, @Halanetal2014_missellinginsurance, @SaneThomas2012_mfiregs_epw, @ThomasGrover2011_liquidityvix, @Thomas2006_epw-liquidityresilience, @SarmaThomasShah2003_var_selection, @SrinivasThomas2003_lessonspensionfundmanagement_epw, @ShahThomas2000_jgfm
 ---
-
-- “Rethinking innovation policy in India: Amplifying spillovers through contracting-out”. @Mashelkaretal2024
-- “Do decreases in Distance-to-Default predict rating downgrades?” @Aggarwaletal2023_dtdchange
-- “When is the Order to Trade Ratio fee effective?” @Aggarwaletal2023_otrfee
-- “From participation to repurchase: Low income households and micro-insurance” @SaneThomas2020
-- “When stock futures dominate price discovery” @ThomasAggarwal2019
-- “The real cost of credit constraints: Evidence from micro-finance” @SaneThomas2013_apimpact
-- "In search of inclusion: informal sector participation in a voluntary, defined contribution pensions” @SaneThomas2015_npsspersistence
-- “The case of the missing billions: Estimating losses to customers on account of mis-selling life insurance policies” @Halanetal2014_missellinginsurance
-- “What should regulation do in the field of Micro-Finance?” @SaneThomas2012_mfiregs_epw
-- “Liquidity considerations in estimating volatility indexes” @ThomasGrover2011_liquidityvix
-- “Resilience of liquidity in Indian securities markets” @Thomas2006_epw-liquidityresilience
-- “Selection of Value at Risk models” @SarmaThomasShah2003_var_selection
-- “Institutional mechanisms in pension fund management: Lessons from three Indian case studies” @SrinivasThomas2003_lessonspensionfundmanagement_epw
-- “David and Goliath: Displacing a primary market” @ShahThomas2000_jgfm update
-
-## References
 
 ::: {#refs}
 :::

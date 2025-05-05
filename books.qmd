@@ -6,18 +6,12 @@ description-meta: "Books"
 title-block-banner: false
 css: custom.css
 hide_references: true
-bibliography: sue_res.bib # Add this line to link your .bib file
+bibliography: sue_res.bib
+nocite: |
+    @Thomas2022_ibcreforms @ShahThomasGorham2008 @Thomas2003_dbook @Thomas1998_dbook @Thomas1998_fmbook
 ---
-
-- Insolvency and bankruptcy reforms in India. India studies in Business Economics. Springer Nature (@Thomas2022_ibcreforms)
-- India's Financial Markets: An Insider's Guide to How the Markets Work. Elsevier and IIT Stuart Center for Financial Markets Press (@ShahThomasGorham2008)
-- Derivatives markets in India 2003. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill (@Thomas2003_dbook)
-- Derivatives markets in India 1998. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill (@Thomas1998_dbook)
-- Fund management in India 1998. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill (@Thomas1998_fmbook)
-
-## References
-
 ::: {#refs}
 :::
+
 
 

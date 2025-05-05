@@ -6,29 +6,14 @@ description-meta: "Working Papers"
 title-block-banner: false
 css: custom.css
 hide_references: true
-bibliography: sue_res.bib # Add this line to link your .bib file
+bibliography: sue_res.bib
+nocite: |
+    @Manivannanetal2024_publicprocurementofdrugs @Chitgupietal2024_lendingtoIndianstate @ChitgupiThomas2023_learningbydoing @Dcruzeetal2023_finclumreport @Manivannanetal2022_contractenforcementlitigantlens @Singhetal2022_infoefficiencycreditrating @SharmaThomas2021_footprintprocurement @Patnaiketal2021_nightlights @ThomasUday2021_lrsi @AggarwalThomas2017_ipo @PattanaikThomas2017_ctt @Aggarwaletal2014_commderivs @AggarwalThomas2014_atcausal @Agarwaletal2013_indiansifs @Aggarwaletal2012_DtD @TayalThomas2012_asymmetry
+
 ---
-
-- “Improving supply chain management of medicines for public healthcare in India” @Manivannanetal2024_publicprocurementofdrugs
-- “Who lends to the Indian state?” @Chitgupietal2024_lendingtoIndianstate
-- “Learning by doing for public procurement” @ChitgupiThomas2023_learningbydoing
-- “Measuring Financial Inclusion: A project report” @Dcruzeetal2023_finclumreport
-- “Evaluating contract enforcement by courts in India: a litigant's lens” @Manivannanetal2022_contractenforcementlitigantlens
-- “Informational efficiency of credit rating” @Singhetal2022_infoefficiencycreditrating
-- “The footprint of union government procurement in India” @SharmaThomas2021_footprintprocurement
-- “But clouds got in my way: Bias and bias correction of VIIRS nighttime lights data in the presence of clouds” @Patnaiketal2021_nightlights
-- “Does the quality of land records affect credit access of households in India?” @ThomasUday2021_lrsi
-- “Response of firms to listing: evidence from SME exchanges” @AggarwalThomas2017_ipo
-- “Assessing the impact of a commodity transactions tax” @PattanaikThomas2017_ctt
-- “Do futures markets help in price discovery and risk management” @Aggarwaletal2014_commderivs
-- “The causal impact of algorithmic trading on market quality” @AggarwalThomas2014_atcausal
-- “A systematic approach to identify systemically important firms” @Agarwaletal2013_indiansifs
-- “Do changes in distance-to-default anticipate changes in the credit rating?” @Aggarwaletal2012_DtD
-- “Measuring and analysing the asymmetry of liquidity” @TayalThomas2012_asymmetry
-
-## References
 
 ::: {#refs}
 :::
+
 
 
