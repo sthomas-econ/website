@@ -1,0 +1,104 @@
+project:
+  type: website
+  output-dir: docs
+
+# Meta
+description-meta: "Academic webpage for Dr. Susan Thomas"
+author-meta: "Dr. Susan Thomas"
+
+website:
+  title: "Dr. Susan Thomas"
+  image: "https://quarto.org/quarto.png"
+  description: "Academic Website for Dr. Susan Thomas"
+ 
+  navbar:
+    background: light
+
+    left:
+#      - text: Home
+#        href: index.qmd
+      - text: About
+        menu:   
+          - text: Board of Directors
+            href: bod.qmd
+          - text: Committees and Advisory Roles
+            href: car.qmd   
+          - text: Expert witness presentations to Parliamentary Committees
+            href: expwit.qmd
+          - text: Teaching
+            href: teaching.qmd     
+      - text: Research
+        menu:
+          - text: Journal Publications
+            href: journal_publications.qmd
+          - text: Working Papers
+            href: working_papers.qmd                                
+      - text: Books
+        menu:
+        - text: Books
+          href: books.qmd
+        - text: Chapters in Books
+          href: chapters.qmd
+
+    right: 
+      - text: CV
+        href: files/nsf-biosketch.pdf
+      - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15">'
+        href: https://xkdr.org/
+      - icon: linkedin
+        href: https://in.linkedin.com/in/susan-thomas-417869
+      - text: "{{< ai google-scholar >}}"
+        href: https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en
+  page-navigation: true
+  
+  page-footer: 
+    left: "[Dr. Susan Thomas](https://github.com/SusanXKDR) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    center: "Built on Quarto"
+    right:  
+      - icon: linkedin
+        href: https://in.linkedin.com/in/susan-thomas-417869
+      - text: "{{< ai google-scholar >}}"
+        href: https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en
+      - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15">'
+        href: https://xkdr.org/
+  
+  search:
+    location: navbar
+    type: textbox
+  
+  reader-mode: true
+
+  draft-mode: unlinked
+  
+  repo-url: https://github.com/drganghe/quarto-academic-website-template
+#  repo-actions: [edit, issue, source]
+  
+  open-graph: true
+  
+  twitter-card: true 
+#  card-style: summary      
+  
+  site-url: "https://drganghe.github.io/quarto-academic-website-template"
+  
+  google-analytics:
+    tracking-id: ""  # Please delete or replace with your own tracking ID
+    anonymize-ip: true 
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    footnotes-hover: true
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    link-external-icon: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+    link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
+    include-in-header: "files/includes/_academic.qmd"
+

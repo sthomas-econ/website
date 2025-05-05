@@ -1,0 +1,88 @@
+---
+title: "Chapters in Books"
+description-meta: "Chapters in Books"
+#page-layout: full
+#back-to-top-navigation: true
+title-block-banner: false
+css: custom.css
+hide_references: true
+bibliography: references.bib # Add this line to link your .bib file
+---
+
+Indradeep Ghosh and Susan Thomas (Jan. 2023). “Financial Inclusion Measurement: Deepening the Evidence”. In: 17th Inclusive Finance India Report. Ed. by N. S. Vishwanathan. Access Publishers. Chap. 9, pp.117–125
+
+<center><hr style="width:50%"></center>
+
+K. P. Krishnan, Ajay Shah, and Susan Thomas (Oct. 2020). “New thinking on resolution of small firms”. In: Insolvency and Bankruptcy regime in India: A Narrative. Insolvency and Bankruptcy Board of India. Chap. 29, pp.267–273
+
+<center><hr style="width:50%"></center>
+
+Rajeswari Sengupta, Anjali Sharma, and Susan Thomas (Nov. 2017). “Evolution of the insolvency framework for non-financial firms in India”. In: India Development Report, 2017. Oxford University Press 
+
+<center><hr style="width:50%"></center>
+
+Renuka Sane and Susan Thomas (2012). “Borrowings by Indian firms”. In: India Development Report, 2012. Oxford University Press, pp.151–158
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas and Jayant Varma (2010). “Derivatives Markets”. In: Capital Markets in India. Ed. by Rajesh Chakrabarti and Sankar De. Nomura Institute of Capital Markets Research, Tokyo, and Indian School of Business, Hyderabad. Chap. 4, pp.177–224
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas and Ajay Shah (2007). “Stock market indexes”. In: The Oxford Companion to Economics in India. Ed. by Kaushik Basu. Oxford, pp.503–504
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas (2005c). “How the financial sector in India was reformed”. In: Documenting Reforms: Case Studies from India. Ed. by S. Narayan. Observer Research Foundation
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas (2005a). “Commodity Markets”. In: Encyclopedia of India. Ed. by Stanley Wolpert. Charles Scribner's Sons
+
+<center><hr style="width:50%"></center>
+
+P. S. Srinivas and Susan Thomas (2003a). “Institutional mechanisms in pension fund management: Lessons from three Indian case studies”. In: Rethinking pension provision for India 2003. Ed. by Anand Bordia and Gautam Bhardwaj. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 5, pp.177–204
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (2003b). “Policy issues in Indian securities markets”. In: Reforming India's External, Financial and Fiscal Policies. Ed. by Anne Krueger and Sajjid Z. Chinoy. Stanford Studies in International Economics and Development. Stanford University Press. Chap. 4, pp.129–147
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (2003c). “Securities market efficiency”. In: Globalization and national financial systems. Ed. by James A. Hanson, Patrick Honohan, and Giovanni Majnoni. The World Bank and Oxford University Press. Chap. 6, pp.145–175
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas (2003b). “The jaggery futures market at Muzaffarnagar: Status and policy recommendations”. In: Derivatives markets in India 2003. Ed. by Susan Thomas. Invest India Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 6, pp.123–142
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (2003a). “Equity derivatives in India: The state of the art”. In: Derivatives markets in India 2003. Ed. by Susan Thomas. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill. Chap. 1, pp.1–25
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (2002). “Interest rates and their markets”. In: India Development Report 2002. Ed. by Kirit S. Parikh and R. Radhakrishna. Oxford University Press. Chap. 12, pp.177–194
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (2000b). “Policy issues in India's capital markets in 2000”. In: New economic policies for a new India. Ed. by Surjit S. Bhalla. ICSSR. chap. 9, pp.185–210
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (1999c). “Risk and the Indian economy”. In: India Development Report 1999. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 16, pp.231–242
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (1999b). “Rethinking prudential regulation”. In: India Development Report 1999. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 17, pp.243–255
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (1999a). “Developing the Indian capital market”. In: India: A financial sector for the Twenty-first century. Ed. by James Hanson and Sanjay Kathuria. Oxford University Press. Chap. 7, pp.205–265
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (Summer 1998). Market microstructure considerations in index construction. In: CBOT Research Symposium Proceedings. Chicago Board of Trade, pp.173–193
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah and Susan Thomas (Feb. 1997). “Securities Markets”. In: India Development Report 1997. Ed. by Kirit S. Parikh. Oxford University Press. Chap. 10, pp.167–192

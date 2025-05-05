@@ -1,0 +1,62 @@
+---
+title: "Working Papers"
+description-meta: "Working Papers"
+#page-layout: full
+#back-to-top-navigation: true
+title-block-banner: false
+css: custom.css
+hide_references: true
+bibliography: references.bib # Add this line to link your .bib file
+---
+
+Natasha D'cruze et al. (Feb. 2034). Measuring Financial Inclusion: A project report. Tech. rep. Dvara Research Foundation and XKDR Forum 
+
+<center><hr style="width:50%"></center>
+
+Pavithra Manivannan, Susan Thomas, and Bhargavi Zaveri-Shah (Nov. 2022). Evaluating contract enforcement by courts in India: a litigant's lens. Tech. rep. XKDR Forum Working Paper No. 16
+
+<center><hr style="width:50%"></center>
+
+Nidhi Aggarwal, Manish Singh, and Susan Thomas (Sept. 2022). Informational efficiency of creditrating. Tech. rep. XKDR Forum Working Paper No. 14
+
+<center><hr style="width:50%"></center>
+
+Anjali Sharma and Susan Thomas (Nov. 2021). The footprint of union government procurement in India. Tech. rep. XKDR Forum Working Paper No. 10
+
+<center><hr style="width:50%"></center>
+
+Ayush Patnaik et al. (Oct. 2021). But clouds got in my way: Bias and bias correction of VIIRS night-time lights data in the presence of clouds. Tech. rep. XKDR Forum Working Paper No. 7
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas and Diya Uday (Feb. 2021). Does the quality of land records affect credit access of households in India? Tech. rep. XKDR Forum Working Paper No. 1
+
+<center><hr style="width:50%"></center>
+
+Nidhi Aggarwal and Susan Thomas (Sept. 2017). Response of firms to listing: evidence from SME exchanges. Tech. rep. Finance Research Group, Indira Gandhi Institute of Development Research
+
+<center><hr style="width:50%"></center>
+
+Arpita Pattanaik and Susan Thomas (Aug. 2017). Assessing the impact of a commodity transactions tax. Tech. rep. Finance Research Group, Indira Gandhi Institute of Development Research
+
+<center><hr style="width:50%"></center>
+
+Nidhi Aggarwal, Sargam Jain, and Susan Thomas (June 2014). Do futures markets help in price discovery and risk management. Tech. rep. Indira Gandhi Institute of Development Research
+
+<center><hr style="width:50%"></center>
+
+Nidhi Aggarwal and Susan Thomas (July 2014). The causal impact of algorithmic trading on market quality. Tech. rep. Indira Gandhi Institute of Development Research
+
+<center><hr style="width:50%"></center>
+
+Natasha Agarwal et al. (Oct. 2013). A systematic approach to identify systemically important firms. Tech. rep. Indira Gandhi Institute of Development Research
+
+<center><hr style="width:50%"></center>
+
+Nidhi Aggarwal, Manish Singh, and Susan Thomas (Apr. 2012). Do changes in distance-to-default anticipate changes in the credit rating? Tech. rep. Indira Gandhi Institute of Development Research
+
+<center><hr style="width:50%"></center>
+
+Rajat Tayal and Susan Thomas (Apr. 2012). Measuring and analysing the asymmetry of liquidity. Tech. rep. Indira Gandhi Institute of Development Research
+
+{{< include /files/includes/_socialshare.qmd >}}

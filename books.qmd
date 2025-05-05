@@ -1,0 +1,30 @@
+---
+title: "Books"
+description-meta: "Books"
+#page-layout: full
+#back-to-top-navigation: true
+title-block-banner: false
+css: custom.css
+hide_references: true
+bibliography: references.bib # Add this line to link your .bib file
+---
+
+Susan Thomas, ed. (2022). Insolvency and bankruptcy reforms in India. India studies in Business and Economics. Springer Nature
+
+<center><hr style="width:50%"></center>
+
+Ajay Shah, Susan Thomas, and Michael Gorham (Aug. 2008). India's Financial Markets: An Insider's Guide to How the Markets Work. Elsevier and IIT Stuart Center for Financial Markets Press
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas, ed. (2003a). Derivatives markets in India 2003. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas, ed. (1998a). Derivatives markets in India 1998. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill
+
+<center><hr style="width:50%"></center>
+
+Susan Thomas, ed. (1998b). Fund management in India 1998. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill
+
+{{< include /files/includes/_socialshare.qmd >}}
