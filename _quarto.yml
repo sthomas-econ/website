@@ -3,13 +3,12 @@ project:
   output-dir: docs
 
 # Meta
-description-meta: "Academic webpage for Dr. Susan Thomas"
-author-meta: "Dr. Susan Thomas"
+description-meta: "Academic webpage for Susan Thomas"
+author-meta: "Susan Thomas"
 
 website:
-  title: "Dr. Susan Thomas"
-  image: "https://quarto.org/quarto.png"
-  description: "Academic Website for Dr. Susan Thomas"
+  image: "files/images/XKDR_Logomark_RGB_Full_Colour.png"
+  description: "Academic Website for Susan Thomas"
  
   navbar:
     background: light
@@ -17,6 +16,8 @@ website:
     left:
       - text: Home
         href: index.qmd  
+      - text: About
+        href: about.qmd
       - text: Research
         menu:
           - text: Journal Publications
@@ -29,10 +30,8 @@ website:
           href: books.qmd
         - text: Chapters in Books
           href: chapters.qmd
-
-    right: 
-      - text: CV
-        href: files/sue-res.pdf
+      - text: Posts
+        href: posts.qmd
 #      - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15">'
 #        href: https://xkdr.org/
 #      - icon: linkedin
@@ -42,7 +41,7 @@ website:
   page-navigation: true
   
   page-footer: 
-    left: "[Dr. Susan Thomas](https://github.com/SusanXKDR) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    left: "[Susan Thomas](https://github.com/SusanXKDR) &copy; <script>document.write(new Date().getFullYear())</script>" 
 #    center: "Built on Quarto"
     right:  
       - icon: linkedin
@@ -60,7 +59,7 @@ website:
 
   draft-mode: unlinked
   
-  repo-url: https://github.com/drganghe/quarto-academic-website-template
+  repo-url: https://github.com/rounakhande/personal_website
 #  repo-actions: [edit, issue, source]
   
   open-graph: true
@@ -68,7 +67,7 @@ website:
   twitter-card: true 
 #  card-style: summary      
   
-  site-url: "https://drganghe.github.io/quarto-academic-website-template"
+  site-url: "https://rounakhande.github.io/personal_website/"
   
   google-analytics:
     tracking-id: ""  # Please delete or replace with your own tracking ID
@@ -89,6 +88,6 @@ format:
     link-external-icon: false
     link-external-newwindow: true
     email-obfuscation: javascript
-    link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
+    link-external-filter: '^(?:http:|https:)\/\/rounakhande\.github\.io\/personal_website'
     include-in-header: "files/includes/_academic.qmd"
 

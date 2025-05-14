@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Susan Thomas">
-<meta name="description" content="Journal Publications">
+<meta name="description" content="Posts about papers, events, news, and more">
 
-<title>Journal Publications</title>
+<title>What’s New &amp; Updated</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -52,6 +32,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -90,6 +72,35 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -120,14 +131,44 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="custom.css">
-<meta property="og:title" content="Journal Publications">
+<meta property="og:title" content="What’s New &amp; Updated">
+<meta property="og:description" content="Posts about papers, events, news, and more">
 <meta property="og:image" content="https://rounakhande.github.io/personal_website/files/images/XKDR_Logomark_RGB_Full_Colour.png">
 <meta property="og:image:height" content="612">
 <meta property="og:image:width" content="866">
-<meta name="twitter:title" content="Journal Publications">
+<meta name="twitter:title" content="What’s New &amp; Updated">
+<meta name="twitter:description" content="Posts about papers, events, news, and more">
 <meta name="twitter:image" content="https://rounakhande.github.io/personal_website/files/images/XKDR_Logomark_RGB_Full_Colour.png">
 <meta name="twitter:image-height" content="612">
 <meta name="twitter:image-width" content="866">
@@ -185,7 +226,7 @@ https://badge.dimensions.ai/
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link active" href="./posts.html" aria-current="page"> 
 <span class="menu-text">Posts</span></a>
   </li>  
 </ul>
@@ -199,15 +240,16 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ZXZlbnQ=">event <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJlc2VudGF0aW9u">presentation <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Journal Publications</h1>
+<h1 class="title">What’s New &amp; Updated</h1>
+<p class="subtitle lead">Posts about papers, events, news, and more</p>
 </div>
 
 
@@ -224,57 +266,102 @@ https://badge.dimensions.ai/
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-Aggarwaletal2023_otrfee" class="csl-entry" role="listitem">
-Aggarwal, Nidhi, Venkatesh Panchapagesan, and Susan Thomas. 2023. <span>“When Is the <span class="nocase">Order to Trade Ratio</span> Fee Effective?”</span> <em>Journal of <span>Financial Markets</span></em> 62. <a href="https://DOI 10.1016/j.finmar.2022.100762">DOI 10.1016/j.finmar.2022.100762</a>.
-</div>
-<div id="ref-Aggarwaletal2023_dtdchange" class="csl-entry" role="listitem">
-Aggarwal, Nidhi, Manish Singh, and Susan Thomas. 2023. <span>“Do Decreases in Distance-to-Default Predict Rating Downgrades?”</span> <em>Economic <span>M</span>odelling</em> 129. <a href="https://DOI 10.1016/j.econmod.2023.106558">DOI 10.1016/j.econmod.2023.106558</a>.
-</div>
-<div id="ref-ThomasAggarwal2019" class="csl-entry" role="listitem">
-Aggarwal, Nidhi, and Susan Thomas. 2019. <span>“When Stock Futures Dominate Price Discovery.”</span> <em><span>Journal of Futures Markets</span></em> 39 (3): 263–78. <a href="https://doi.org/10.1002/fut.21973">https://doi.org/10.1002/fut.21973</a>.
-</div>
-<div id="ref-ThomasGrover2011_liquidityvix" class="csl-entry" role="listitem">
-Grover, Rohini, and Susan Thomas. 2012. <span>“Liquidity Considerations in Estimating Volatility Indexes.”</span> <em><span>Journal of Futures Markets</span></em> 32 (8): 714–41. <a href="https://doi.org/10.1002/fut.21543">https://doi.org/10.1002/fut.21543</a>.
-</div>
-<div id="ref-Halanetal2014_missellinginsurance" class="csl-entry" role="listitem">
-Halan, Monika, Renuka Sane, and Susan Thomas. 2014. <span>“The Case of the Missing Billions: Estimating Losses to Customers on Account of Mis-Selling Life Insurance Policies.”</span> <em><span>Journal of Economic Policy Reform</span></em> 17: 285–302. <a href="https://doi.org/10.1080/17487870.2014.971797">https://doi.org/10.1080/17487870.2014.971797</a>.
-</div>
-<div id="ref-Mashelkaretal2024" class="csl-entry" role="listitem">
-Mashelkar, R. A., Ajay Shah, and Susan Thomas. 2024. <span>“Rethinking Innovation Policy in <span>India: Amplifying</span> Spillovers Through Contracting-Out.”</span> <em>Accounting <span>Theory and Practice</span></em> 1. <a href="https://DOI 10.1016/j.accoth.2024.100004">DOI 10.1016/j.accoth.2024.100004</a>.
-</div>
-<div id="ref-SaneThomas2012_mfiregs_epw" class="csl-entry" role="listitem">
-Sane, Renuka, and Susan Thomas. 2013. <span>“What Should Regulation Do in the Field of Micro-Finance?”</span> <em><span>Economic and Political Weekly</span></em> XLVIII (5): 59–66.
-</div>
-<div id="ref-SaneThomas2015_npsspersistence" class="csl-entry" role="listitem">
-———. 2015. <span>“In Search of Inclusion: Informal Sector Participation in a Voluntary, Defined Contribution Pensions.”</span> <em><span>Journal of Development Studies</span></em> 51: 1409–24. <a href="https://doi.org/10.1080/00220388.2014.997220">https://doi.org/10.1080/00220388.2014.997220</a>.
-</div>
-<div id="ref-SaneThomas2013_apimpact" class="csl-entry" role="listitem">
-———. 2016. <span>“The Real Cost of Credit Constraints: <span>E</span>vidence from Micro-Finance.”</span> <em><span>B E Journal of Applied Economic Analysis and Policy</span></em> 16 (1): 151–83. <a href="https://doi.org/10.1515/bejeap-2014-0154">https://doi.org/10.1515/bejeap-2014-0154</a>.
-</div>
-<div id="ref-SaneThomas2020" class="csl-entry" role="listitem">
-———. 2020. <span>“<span class="nocase">From participation to repurchase: Low income households and micro-insurance</span>.”</span> <em><span>Journal of Risk &amp; Insurance</span></em> 87 (3): 783–814. <a href="http://ifrogs.org/releases/SaneThomas2016_microInsurance.html">http://ifrogs.org/releases/SaneThomas2016_microInsurance.html</a>.
-</div>
-<div id="ref-SarmaThomasShah2003_var_selection" class="csl-entry" role="listitem">
-Sarma, Mandira, Susan Thomas, and Ajay Shah. 2003. <span>“Selection of <span class="nocase">Value at Risk</span> Models.”</span> <em>Journal of Forecasting</em> 22 (4): 337–58. <a href="https://doi.org/10.1002/for.868">https://doi.org/10.1002/for.868</a>.
-</div>
-<div id="ref-ShahThomas1999_risk" class="csl-entry" role="listitem">
-Shah, Ajay, and Susan Thomas. 1999. <span>“Risk and the Indian Economy.”</span> In <em><span>India Development Report</span> 1999</em>, edited by Kirit S. Parikh, 231–42. Oxford University Press.
-</div>
-<div id="ref-ShahThomas2000_jgfm" class="csl-entry" role="listitem">
-———. 2000. <span>“<span class="nocase">David and Goliath: Displacing a primary market</span>.”</span> <em>Journal of Global Financial Markets</em> 1 (1): 14–21. <a href="http://www.mayin.org/ajayshah/PDFDOCS/ShahThomas2000_jgfm.pdf">http://www.mayin.org/ajayshah/PDFDOCS/ShahThomas2000_jgfm.pdf</a>.
-</div>
-<div id="ref-SrinivasThomas2003_lessonspensionfundmanagement_epw" class="csl-entry" role="listitem">
-Srinivas, P. S., and Susan Thomas. 2003. <span>“Institutional Mechanisms in Pension Fund Management: <span>L</span>essons from Three <span>I</span>ndian Case Studies.”</span> <em><span>Economic and Political Weekly</span></em> XXXVIII (8): 706–15.
-</div>
-<div id="ref-Thomas2006_epw-liquidityresilience" class="csl-entry" role="listitem">
-Thomas, Susan. 2006. <span>“Resilience of Liquidity in <span>I</span>ndian Securities Markets.”</span> <em>Economic and Political Weekly</em> XLI (32): 3452–54.
-</div>
-</div>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Date - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Date - Newest
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="ZXZlbnQlMkNwcmVzZW50YXRpb24=" data-listing-date-sort="1747161000000" data-listing-file-modified-sort="1747207611895" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="./posts/event-title/masani.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/event-title/masani.html" class="no-external">Masani reading group</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJlc2VudGF0aW9u'); return false;">presentation</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/event-title/masani.html" class="no-external">
+<p>Masani reading group</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/event-title/masani.html" class="no-external">
+<div class="listing-date">
+May 14, 2025
+</div>
+<div class="listing-author">
+Susan Thomas
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1746815400000" data-listing-file-modified-sort="1747207069790" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="./posts/news-title/ibc_book.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/news-title/ibc_book.html" class="no-external">IBC Book</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
+
+</div>
+<div class="delink listing-description"><a href="./posts/news-title/ibc_book.html" class="no-external">
+<p>IBC book writeup</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/news-title/ibc_book.html" class="no-external">
+<div class="listing-date">
+May 10, 2025
+</div>
+<div class="listing-author">
+Susan Thomas
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

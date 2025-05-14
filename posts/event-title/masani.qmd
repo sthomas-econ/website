@@ -1,0 +1,18 @@
+---
+title: "Masani reading group"
+description: "Masani reading group"
+author: "Susan Thomas"
+date: "2025-05-14"
+categories: [event, presentation]
+#css: /custom.css
+#draft: true
+---
+
+## Summary
+
+Masani reading group
+
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}

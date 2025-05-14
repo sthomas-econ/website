@@ -1,6 +1,16 @@
 [
   {
-    "listing": "/people.html",
-    "items": []
+    "listing": "/index.html",
+    "items": [
+      "/posts/event-title/masani.html",
+      "/posts/news-title/ibc_book.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/event-title/masani.html",
+      "/posts/news-title/ibc_book.html"
+    ]
   }
 ]

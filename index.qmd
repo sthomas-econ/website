@@ -1,8 +1,7 @@
 ---
-title: "Dr. Susan Thomas"
-description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
+title: "Susan Thomas"
+description-meta: "Academic Website for Susan Thomas"
 image: "files/images/headshot.jpg"
-page-navigation: false
 toc: false
 #sidebar: false
 page-layout: full
@@ -10,7 +9,7 @@ page-layout: full
 about:
   id: hero-heading
   template: trestles
-  image-width: 70%
+  image-width: 50%
   links:
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en
@@ -24,9 +23,35 @@ about:
     - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15"> XKDR Forum'
       href: https://xkdr.org/
       target: _blank
+    - text: "CV"
+      href: files/sue-res.pdf
 
+listing:
+  - id: recent-posts
+    contents: 
+      - posts
+    exclude:
+      title: ""
+    type: grid
+    max-items: 3
+    page-size: 3 #set same as max-times to remove the page number setting
+    fields: [date, title, subtitle]
+    max-description-length: 75
+    sort: 
+      - "date desc"
+      - "title asc"
 ---
+
 
 :::{#hero-heading}
 
-Susan Thomas has studied at IIT Bombay and the University of Southern California. She has been faculty at the Indira Gandhi Institute for Development Research. Her research lies in the areas of finance, markets and the economy. She worked in the design of the NSE-50 ("Nifty") index and the risk management systems of the Indian equity derivatives markets. Her policy engagements with the Ministry of Finance included being a member of the Standing Council of the competitiveness of the Indian Financial Sector (2013), and the Bankruptcy Legislative Reforms Committee (2014). She led the research team that designed and drafted the Insolvency and Bankruptcy Code (2016) and worked with the Ministry of Corporate Affairs on the organisational structure of the Insolvency and Bankruptcy Board of India and the National Companies Law Tribunal.
+This page is to collaborate with other people. Please check out the work I'm doing and reach out if you are interested
+:::
+
+## Recent Posts
+Check out the latest &nbsp; &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
+
+:::{#recent-posts}
+:::
+
+<p align="right">[All Posts »](/posts.qmd)</p>

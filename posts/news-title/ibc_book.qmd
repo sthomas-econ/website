@@ -1,0 +1,18 @@
+---
+title: "IBC Book"
+description: "IBC book writeup"
+author: "Susan Thomas"
+date: "2025-05-10"
+categories: [news]
+#css: /custom.css
+#draft: true
+---
+
+
+## Summary
+
+IBC book writeup
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
