@@ -1,17 +1,22 @@
 ---
-title: "IBC Book"
-description: "IBC book writeup"
-author: "Susan Thomas"
-date: "2025-05-10"
+title: "Insolvency and Bankruptcy Reforms in India"
+description: ""
+image: "/files/images/ibc_book_cover.jpeg"
 categories: [news]
+date: "2025-05-22"
 #css: /custom.css
 #draft: true
 ---
 
 
-## Summary
+## About
 
-IBC book writeup
+![](/files/images/ibc_book_cover.jpeg){width="20%"}
+
+This book is about the establishment of the Insolvency and Bankruptcy Code, in 2016, one of the most important new developments in Indian commercial law. The law has major implications for firms, their creditors, and a variety of the professional services that feed into the decisions of borrowers and lenders including lawyers, accountants and valuers. A new profession of insolvency professionals has come to exist owing to the law. There are several questions about bankruptcy reform in the mind of researchers, policy makers and practitioners. How has the reform progressed? How has it reshaped the incentives of firms? What are the difficulties faced? What are the optimal paths for borrowers and lenders and their advisors under the rubric of the law? How should laws and institutions be modified? The book has a unique set of chapters, by key people who have shaped the field which offer novel insights into these questions.
+
+
+The book has been edited by key people who have worked on bankruptcy reform since 2010. Dr. Sahoo has been the chairperson of the Insolvency and Bankruptcy Board of India since the establishment of this regulatory agency. Dr. Thomas was a member of the Bankruptcy Law Reforms Committee which drafted the IBC, and led the internal team of the BLRC which drafted the law. The book is an authentic and credible analysis of the happenings in the Indian insolvency and bankruptcy ecosystem from the start, with interest areas for international and domestic, economics/finance and law, researcher and practitioner communities.
 
 <!--Include social share buttons-->
 
