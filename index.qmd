@@ -36,6 +36,7 @@ listing:
     max-items: 3
     page-size: 3 #set same as max-times to remove the page number setting
     fields: [image,title] #date, #subtitle
+    image-height: 250px
     max-description-length: 75
     sort:
       - "date desc"
