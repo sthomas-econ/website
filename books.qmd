@@ -1,10 +1,10 @@
 ---
 title: "Books"
 description-meta: "Books"
-#page-layout: full
 #back-to-top-navigation: true
 title-block-banner: false
-css: custom.css
+page-layout: full
+#css: /custom.css
 hide_references: true
 bibliography: sue_res.bib
 nocite: |

@@ -5,6 +5,9 @@ image: "/files/images/ibc_book_cover.jpeg"
 categories: [news]
 date: "2025-05-22"
 #css: /custom.css
+page-layout: full
+toc: false
+sidebar: false
 #draft: true
 ---
 

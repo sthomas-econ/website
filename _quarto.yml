@@ -16,8 +16,8 @@ website:
     left:
       - text: Home
         href: index.qmd  
-      - text: About
-        href: about.qmd
+      - text: CV
+        href: files/sue-res.pdf
       - text: Research
         menu:
           - text: Journal Publications
@@ -30,8 +30,6 @@ website:
           href: books.qmd
         - text: Chapters in Books
           href: chapters.qmd
-      - text: Posts
-        href: posts.qmd
 #      - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15">'
 #        href: https://xkdr.org/
 #      - icon: linkedin
@@ -77,8 +75,8 @@ bibliography: sue_res.bib
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: default
+    css: custom.css
     toc: true
     footnotes-hover: true
     code-copy: true
@@ -90,4 +88,6 @@ format:
     email-obfuscation: javascript
     link-external-filter: '^(?:http:|https:)\/\/rounakhande\.github\.io\/personal_website'
     include-in-header: "files/includes/_academic.qmd"
+    grid:
+      sidebar-width: 2000px
 

@@ -5,7 +5,10 @@ date: "2025-05-22"
 categories: [event, book club]
 image: "/files/images/against_the_grain.jpg"
 #css: /custom.css
+toc: false
+sidebar: false
 #draft: true
+page-layout: full
 ---
 ## About
 The Masani reading group is a once-monthly book discussion group focusing on different themes from urban development to anthopology of the state. All are welcome to attend. 

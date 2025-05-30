@@ -1,7 +1,7 @@
 ---
-title: "New Posts"
-subtitle: "Posts about events, news, and more"
-description-meta: "Posts about events, news, and more"
+title: "Projects & Initiatives"
+subtitle: "A comprehensive overview of our current and past work"
+description-meta: "All the latest on our projects, events, and organisational news"
 listing: 
   sort: "date desc"
   type: default
@@ -14,7 +14,8 @@ listing:
       - posts
 #      categories: [] 
 
-#page-layout: full
+page-layout: full
+#css: /custom.css
 draft-mode: unlinked
 page-navigation: false
 title-block-banner: false

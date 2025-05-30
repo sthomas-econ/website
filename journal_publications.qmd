@@ -1,10 +1,10 @@
 ---
 title: "Journal Publications"
 description-meta: "Journal Publications"
-#page-layout: full
 #back-to-top-navigation: true
 title-block-banner: false
-css: custom.css
+page-layout: full
+#css: /custom.css
 bibliography: sue_res.bib
 nocite: |
   @ShahThomas1999_risk, @Mashelkaretal2024, @Aggarwaletal2023_dtdchange, @Aggarwaletal2023_otrfee, @SaneThomas2020, @ThomasAggarwal2019, @SaneThomas2013_apimpact, @SaneThomas2015_npsspersistence, @Halanetal2014_missellinginsurance, @SaneThomas2012_mfiregs_epw, @ThomasGrover2011_liquidityvix, @Thomas2006_epw-liquidityresilience, @SarmaThomasShah2003_var_selection, @SrinivasThomas2003_lessonspensionfundmanagement_epw, @ShahThomas2000_jgfm

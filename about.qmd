@@ -4,7 +4,8 @@ description-meta: "About me"
 #page-layout: full
 #back-to-top-navigation: true
 title-block-banner: false
-css: custom.css
+page-layout: full
+#css: /custom.css
 ---
 
 Susan Thomas has studied at IIT Bombay and the University of Southern California. She has been faculty at the Indira Gandhi Institute for Development Research. Her research lies in the areas of finance, markets and the economy. She worked in the design of the NSE-50 ("Nifty") index and the risk management systems of the Indian equity derivatives markets. Her policy engagements with the Ministry of Finance included being a member of the Standing Council of the competitiveness of the Indian Financial Sector (2013), and the Bankruptcy Legislative Reforms Committee (2014). She led the research team that designed and drafted the Insolvency and Bankruptcy Code (2016) and worked with the Ministry of Corporate Affairs on the organisational structure of the Insolvency and Bankruptcy Board of India and the National Companies Law Tribunal.

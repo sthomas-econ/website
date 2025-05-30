@@ -1,5 +1,668 @@
+/* Add Merriweather font from Google Fonts */
+/* Preload fonts for better performance */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@200;300;400;500;700&display=swap');
+/* Added 700 weight for bolder text if needed */
 
-/*Inline block*/
-span.__dimensions_badge_embed__, div.altmetric-embed {
-  display: inline-block;
+/* Define CSS Variables for theming */
+:root {
+  /* Light Theme Colors */
+  --color-background: #FDFDF2;
+  --color-text: #2a2a2a;
+  --color-heading: #1a1a1a;
+  --color-primary: #A51C30; /* Red - Consistent primary accent */
+  --color-secondary: #D9B18E; /* Beige/Gold - Complementary accent */
+  --color-text-muted: #7f7f7f; /* Slightly darker muted grey for better readability */
+  --color-border: rgba(165, 28, 48, 0.1);
+  --color-border-strong: rgba(165, 28, 48, 0.2); /* Slightly stronger border */
+  --color-shadow-light: rgba(165, 28, 48, 0.05);
+  --color-shadow-medium: rgba(165, 28, 48, 0.1); /* Increased medium shadow for more depth */
+  --color-shadow-strong: rgba(165, 28, 48, 0.15); /* Increased strong shadow for more impact */
+  --color-shadow-hover-light: rgba(165, 28, 48, 0.15); /* Increased hover shadows */
+  --color-shadow-hover-medium: rgba(165, 28, 48, 0.2);
+  --color-shadow-hover-strong: rgba(165, 28, 48, 0.25);
+  --color-accent-bg: rgba(165, 28, 48, 0.03); /* Lighter accent background for subtlety */
+  --color-blockquote-border: rgba(165, 28, 48, 0.8);
+  --color-blockquote-bg: rgba(165, 28, 48, 0.015); /* Even lighter blockquote background */
+  --color-publication-border: rgba(165, 28, 48, 0.8);
+
+  /* Spacing Variables (New) */
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+
+  /* Border Radius (New) */
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+
+  /* Font Weights (New) */
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+/* ===== BASE STYLES & LAYOUT ===== */
+/* Reset some default browser styles for consistency */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  line-height: 1.7; /* Slightly increased line height for better readability */
+  color: var(--color-text);
+  background-color: var(--color-background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased; /* Improved font rendering on macOS/iOS */
+  -moz-osx-font-smoothing: grayscale; /* Improved font rendering on macOS/iOS */
+}
+
+/* Global focus style for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Width & Layout Overrides - Refined for better control and clarity */
+.quarto-container,
+.container-fluid,
+main.quarto-container-main,
+.page-columns {
+  width: 100% !important;
+  /* Removed !important where possible for easier overriding */
+}
+
+.column-page,
+.column-page-left,
+.column-page-right {
+  max-width: 100% !important; /* Explicitly set to 100% */
+  /* Consider if 'none' is truly desired or if a sensible max-width would be better on very wide screens */
+}
+
+.content-wrapper {
+  max-width: 850px; /* Slightly increased max-width for content */
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+/* ===== REFINED TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', system-ui, sans-serif;
+  color: var(--color-heading);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.02em;
+  transition: color 0.2s ease;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4.5vw, 3.2rem); /* Slightly larger clamp values */
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-light);
+  color: var(--color-primary);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.2rem); /* Slightly larger clamp values */
+  position: relative;
+  padding-bottom: 0.6rem; /* Slightly more padding */
+  margin-bottom: var(--spacing-lg); /* More space below h2 */
+  font-weight: var(--font-weight-normal); /* Default Merriweather normal is good */
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px; /* Slightly longer initial underline */
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease-out;
+}
+
+h2:hover::after {
+  width: 80px; /* Longer hover effect */
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.8vw, 1.8rem); /* Slightly larger clamp values */
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  margin-top: var(--spacing-lg);
+}
+
+h4, h5, h6 {
+  font-size: 1.2rem; /* Slightly larger base for these */
+  font-weight: var(--font-weight-medium);
+  color: var(--color-heading);
+  margin-top: var(--spacing-md);
+}
+
+p {
+  margin-bottom: 1em; /* Consistent paragraph spacing */
+}
+
+/* ===== CLEAN NAVIGATION ===== */
+.navbar {
+  background: var(--color-primary); /* Already using variable */
+  border-bottom: 1px solid var(--color-border-strong); /* Stronger border for nav */
+  /* backdrop-filter: blur(20px); - Keep if background is semi-transparent, otherwise remove for performance */
+  box-shadow: 0 2px 5px var(--color-shadow-medium); /* Stronger initial shadow */
+  transition: box-shadow 0.3s ease;
+  padding: 0.8rem var(--spacing-md); /* Consistent padding */
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 16px var(--color-shadow-hover-medium); /* More pronounced hover shadow */
+}
+
+.navbar-brand {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: var(--font-weight-bold); /* Bold brand for emphasis */
+  font-size: 1.3rem; /* Slightly larger brand */
+  color: white !important;
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-2px) scale(1.02); /* More dynamic hover */
+  color: rgba(255, 255, 255, 0.9) !important; /* Slight color change on hover */
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: var(--font-weight-normal);
+  color: white !important;
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
+  position: relative;
+  padding: 0.5rem 1rem; /* Adjust padding for nav links */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* Adjust underline position */
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.9) !important; /* Consistent hover color */
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after { /* Also apply to active link */
+  width: calc(100% - 20px); /* Underline slightly shorter than text width */
+}
+
+.navbar-nav .nav-link.active { /* Style for active nav link */
+  font-weight: var(--font-weight-medium);
+  color: white !important;
+}
+
+/* ===== CONTENT CONTAINERS ===== */
+/* .content-wrapper defined in base styles */
+
+/* ===== ELEVATED CARDS ===== */
+.card, .panel {
+  background: var(--color-background);
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg); /* Consistent padding */
+  margin-bottom: var(--spacing-lg); /* Consistent margin */
+  box-shadow: 0 2px 8px var(--color-shadow-medium); /* Stronger initial shadow */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before, .panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px; /* Slightly thicker top border */
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left; /* Animation starts from left */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover, .panel:hover {
+  transform: translateY(-3px); /* More pronounced lift */
+  box-shadow: 0 6px 20px var(--color-shadow-hover-medium); /* Stronger hover shadow */
+}
+
+.card:hover::before, .panel:hover::before {
+  transform: scaleX(1);
+}
+
+/* ===== MODERN CODE BLOCKS ===== */
+pre, code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  background: var(--color-accent-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+pre {
+  padding: var(--spacing-md);
+  overflow-x: auto;
+  line-height: 1.5;
+  margin-top: var(--spacing-md); /* Consistent margin */
+  margin-bottom: var(--spacing-md);
+}
+
+pre:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: 0 3px 10px var(--color-shadow-strong); /* Stronger hover shadow */
+}
+
+code {
+  padding: 0.2em 0.4em; /* Use em for relative sizing */
+  font-size: 0.9em;
+  color: var(--color-primary);
+  background: var(--color-accent-bg);
+}
+
+/* Inline code in paragraphs */
+p > code {
+  white-space: nowrap; /* Prevent inline code from breaking */
+}
+
+/* ===== ELEGANT TABLES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-lg) 0;
+  background: var(--color-background);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden; /* Ensures rounded corners clip content */
+  box-shadow: 0 2px 8px var(--color-shadow-medium);
+  transition: box-shadow 0.3s ease;
+}
+
+table:hover {
+  box-shadow: 0 4px 12px var(--color-shadow-hover-medium);
+}
+
+th {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: var(--font-weight-medium);
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  border: none;
+}
+
+td {
+  padding: 0.7rem var(--spacing-md); /* Slightly less padding for td */
+  border-bottom: 1px solid var(--color-border); /* Lighter border for rows */
+  transition: background-color 0.2s ease;
+}
+
+tr:last-child td {
+  border-bottom: none; /* Remove border from last row */
+}
+
+tr:hover td {
+  background-color: var(--color-accent-bg);
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-blockquote-bg);
+}
+
+/* ===== INTERACTIVE BUTTONS & LINKS ===== */
+.btn, button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  padding: 0.75rem 1.5rem; /* Adjusted padding for better click area */
+  color: white;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  cursor: pointer;
+  display: inline-flex; /* Use flex for potential icon alignment */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent text wrap */
+}
+
+.btn::before, button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  opacity: 0; /* Hidden initially */
+  transition: all 0.5s ease-out; /* Slower, more subtle ripple */
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover, button:hover {
+  transform: translateY(-2px); /* More noticeable lift */
+  box-shadow: 0 4px 12px var(--color-shadow-hover-strong);
+}
+
+.btn:hover::before, button:hover::before {
+  width: 250%; /* Larger ripple */
+  height: 250%;
+  opacity: 1;
+}
+
+a:not(.btn) {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
+}
+
+a:not(.btn):hover {
+  color: var(--color-primary); /* Keep color consistent on hover */
+  border-bottom-color: var(--color-primary);
+}
+
+/* ===== ACADEMIC PUBLICATION STYLES ===== */
+.publication-item {
+  background: var(--color-background);
+  border-left: 4px solid var(--color-publication-border); /* Thicker border */
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  box-shadow: 0 2px 8px var(--color-shadow-medium);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-left-color 0.3s ease-out;
+}
+
+.publication-item:hover {
+  transform: translateX(5px); /* More pronounced slide */
+  box-shadow: 0 4px 12px var(--color-shadow-hover-medium);
+  border-left-color: var(--color-primary);
+}
+
+.publication-title {
+  font-size: 1.15rem; /* Slightly larger title */
+  font-weight: var(--font-weight-medium);
+  color: var(--color-heading);
+  margin-bottom: 0.4rem; /* Reduced margin */
+  transition: color 0.2s ease;
+}
+
+.publication-item:hover .publication-title {
+  color: var(--color-primary);
+}
+
+.publication-authors {
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: 0.4rem;
+  font-size: 0.9em; /* Use em for relative font size */
+}
+
+.publication-venue {
+  color: var(--color-text);
+  font-weight: var(--font-weight-normal);
+  font-size: 0.85em; /* Use em for relative font size */
+}
+
+/* ===== REFINED PROFILE SECTION ===== */
+.profile-section {
+  background: linear-gradient(135deg, var(--color-accent-bg) 0%, rgba(165, 28, 48, 0.08) 100%); /* Slightly more varied gradient */
+  padding: var(--spacing-lg) var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 3px 10px var(--color-shadow-light); /* Initial shadow */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.profile-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--color-shadow-hover-medium);
+}
+
+.profile-image {
+  width: 130px; /* Slightly larger image */
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid transparent; /* Thicker border */
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  padding: 4px; /* Adjust padding for border effect */
+  margin-bottom: var(--spacing-md);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+  object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.profile-image:hover {
+  transform: scale(1.05); /* More pronounced scale */
+  box-shadow: 0 8px 25px var(--color-shadow-hover-strong);
+  border-color: var(--color-primary);
+}
+
+/* ===== CLEAN LISTS ===== */
+ul, ol {
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+
+li {
+  margin-bottom: 0.5rem; /* Consistent list item spacing */
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
+}
+
+li:hover {
+  color: var(--color-primary);
+  transform: translateX(3px); /* More pronounced slide */
+}
+
+/* ===== ENHANCED BLOCKQUOTES ===== */
+blockquote {
+  border-left: 4px solid var(--color-blockquote-border); /* Thicker border */
+  background: var(--color-blockquote-bg);
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  padding: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  font-style: italic;
+  color: var(--color-text);
+  box-shadow: 0 1px 5px var(--color-shadow-light); /* Subtle initial shadow */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+blockquote:hover {
+  transform: translateX(5px); /* More pronounced slide */
+  box-shadow: 0 3px 10px var(--color-shadow-medium);
+}
+
+/* ===== MODERN FOOTER ===== */
+footer {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-text-muted) 100%); /* Changed secondary to muted for a softer transition */
+  color: white;
+  padding: var(--spacing-lg) 0;
+  margin-top: var(--spacing-lg);
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: var(--spacing-sm);
+  }
+
+  .publication-item {
+    padding: var(--spacing-sm);
+  }
+
+  .profile-section {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem); /* Adjusted clamp for smaller screens */
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0.75rem; /* Tighter padding for mobile nav */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .btn, button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9em;
+  }
+}
+
+/* ===== FIGURE CAPTIONS ===== */
+.figure-caption,
+figcaption {
+  font-size: 0.8em; /* Use em for relativity */
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* ===== UTILITIES ===== */
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--color-border-strong);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.spacer {
+  height: var(--spacing-md);
+}
+
+.small-caps {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+}
+
+/* ===== SMOOTH ANIMATIONS & SCROLL ===== */
+/* Removed the commented out global transition */
+
+/* Ensure smooth transitions are applied where needed */
+
+/* Refined Typography Transitions */
+/* Kept existing color transition, added for consistency to all headings */
+h1, h2, h3, h4, h5, h6 {
+  transition: color 0.2s ease, transform 0.2s ease; /* Added transform for consistency */
+}
+
+/* ===== FOCUS STATES FOR ACCESSIBILITY ===== */
+/* Already well-defined above with :focus-visible */
+
+
+/* ===== SCROLL ANIMATIONS (Consider Intersection Observer for production) ===== */
+/* For a production site, consider using JavaScript with Intersection Observer API
+   to trigger animations only when elements enter the viewport, which is more
+   performant than applying animations directly to all elements. */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Applied selectively, as animating all cards/panels on page load can be heavy */
+/* Consider adding a JS class like 'animate-on-scroll' */
+.card,
+.panel,
+.publication-item,
+.profile-section { /* Added profile section to animation */
+  animation: fadeInUp 0.6s ease-out forwards; /* 'forwards' keeps the end state */
+  opacity: 0; /* Start hidden for animation */
+}
+
+/* TOC in margin */
+#toc .nav-link,
+.toc .nav-link,
+.sidebar-navigation a.sidebar-link {
+  font-family: 'Merriweather', system-ui, sans-serif;
+  color: var(--color-text-muted); /* Muted initial color */
+  transition: color 0.2s ease, text-decoration 0.2s ease, font-weight 0.2s ease;
+}
+
+#toc .nav-link:hover,
+.toc .nav-link:hover,
+.sidebar-navigation a.sidebar-link:hover {
+  color: var(--color-primary) !important;
+  text-decoration: underline;
+}
+
+#toc .nav-link.active,
+.toc .nav-link.active,
+.sidebar-navigation a.sidebar-link.active {
+  color: var(--color-primary) !important;
+  font-weight: var(--font-weight-medium); /* Make active link bold */
+  text-decoration: underline; /* Underline active for clear indication */
+}
+
+/* Style for "On this page" title */
+.toc-title {
+    color: var(--color-primary);
+    font-family: 'Merriweather', system-ui, sans-serif;
+    font-weight: var(--font-weight-bold); /* Bold title */
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Scrollbar styling (optional, for aesthetics) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+  border: 2px solid var(--color-background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
 }

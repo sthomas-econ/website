@@ -5,6 +5,9 @@ image: "/files/images/all_growth_rates_histogram_freedman.png"
 categories: [news]
 date: "2025-05-22"
 #css: /custom.css
+toc: false
+sidebar: false
+page-layout: full
 #draft: true
 ---
 

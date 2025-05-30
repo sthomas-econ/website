@@ -3,13 +3,13 @@ title: "Susan Thomas"
 description-meta: "Academic Website for Susan Thomas"
 image: "files/images/headshot.jpg"
 toc: false
-#sidebar: false
+sidebar: false
 page-layout: full
-
+#css: /custom.css
 about:
   id: hero-heading
   template: trestles
-  image-width: 50%
+  image-width: 40%
   links:
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en
@@ -23,24 +23,25 @@ about:
     - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15"> XKDR Forum'
       href: https://xkdr.org/
       target: _blank
-    - text: "CV"
-      href: files/sue-res.pdf
-
+    - text: "{{< fa envelope >}} Email"
+      href: mailto:sthomas.entp@gmail.com
+      target: _blank
 listing:
   - id: recent-posts
-    contents: 
+    contents:
       - posts
     exclude:
       title: ""
     type: grid
     max-items: 3
     page-size: 3 #set same as max-times to remove the page number setting
-    fields: [image, date, title, subtitle]
+    fields: [image,title] #date, #subtitle
     max-description-length: 75
-    sort: 
+    sort:
       - "date desc"
       - "title asc"
 ---
+
 
 
 :::{#hero-heading}
@@ -48,10 +49,11 @@ listing:
 This page is to collaborate with other people. Please check out the work I'm doing and reach out if you are interested
 :::
 
-## Recent Posts
-Check out the latest &nbsp; &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
+<div style="margin-top: 50px;"></div>
+
+## Active Projects & Initiatives
 
 :::{#recent-posts}
 :::
 
-<p align="right">[All Posts »](/posts.qmd)</p>
+<p align="right">[All projects »](/posts.qmd)</p>

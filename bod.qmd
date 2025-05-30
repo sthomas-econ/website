@@ -1,5 +1,7 @@
 ---
 title: "Board of Directors"
+page-layout: full
+#css: /custom.css
 ---
 
 Board of Directors, FinCare Small Finance Bank Ltd. (2017-2020)
