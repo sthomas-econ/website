@@ -39,7 +39,7 @@ website:
   page-navigation: true
   
   page-footer: 
-    left: "[Susan Thomas](https://github.com/SusanXKDR) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    left: "[Susan Thomas](https://github.com/sthomas-econ) &copy; <script>document.write(new Date().getFullYear())</script>" 
 #    center: "Built on Quarto"
     right:  
       - icon: linkedin
@@ -57,7 +57,7 @@ website:
 
   draft-mode: unlinked
   
-  repo-url: https://github.com/rounakhande/personal_website
+  repo-url: https://github.com/sthomas-econ/website
 #  repo-actions: [edit, issue, source]
   
   open-graph: true
@@ -65,7 +65,7 @@ website:
   twitter-card: true 
 #  card-style: summary      
   
-  site-url: "https://rounakhande.github.io/personal_website/"
+  site-url: "https://sthomas-econ.github.io/website/"
   
   google-analytics:
     tracking-id: ""  # Please delete or replace with your own tracking ID
@@ -86,7 +86,7 @@ format:
     link-external-icon: false
     link-external-newwindow: true
     email-obfuscation: javascript
-    link-external-filter: '^(?:http:|https:)\/\/rounakhande\.github\.io\/personal_website'
+    link-external-filter: '^(?:http:|https:)\/\/sthomas-econ\.github\.io\/website'
     include-in-header: "files/includes/_academic.qmd"
     grid:
       sidebar-width: 2000px

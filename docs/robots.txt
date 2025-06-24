@@ -1,1 +1,1 @@
-Sitemap: https://rounakhande.github.io/personal_website/sitemap.xml
+Sitemap: https://sthomas-econ.github.io/website/sitemap.xml
