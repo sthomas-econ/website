@@ -10,9 +10,9 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/event-title/masani.html",
       "/posts/news-title/ibc_book.html",
-      "/posts/news-title/graph.html"
+      "/posts/news-title/graph.html",
+      "/posts/event-title/masani.html"
     ]
   }
 ]
