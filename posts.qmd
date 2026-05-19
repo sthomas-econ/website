@@ -1,5 +1,5 @@
 ---
-title: "Projects & Initiatives"
+title: "Projects and Initiatives"
 subtitle: "A comprehensive overview of our current and past work"
 description-meta: "All the latest on our projects, events, and organisational news"
 listing: 

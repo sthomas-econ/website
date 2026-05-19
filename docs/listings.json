@@ -1,18 +1,18 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/news-title/ibc_book.html",
-      "/posts/event-title/masani.html",
-      "/posts/news-title/graph.html"
-    ]
-  },
-  {
     "listing": "/posts.html",
     "items": [
       "/posts/news-title/ibc_book.html",
       "/posts/news-title/graph.html",
       "/posts/event-title/masani.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/news-title/ibc_book.html",
+      "/posts/event-title/masani.html",
+      "/posts/news-title/graph.html"
     ]
   }
 ]
