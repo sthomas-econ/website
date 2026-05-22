@@ -1,0 +1,10 @@
+- title: Information Extraction from Fiscal Documents using LLMs
+  year: '2025'
+  meta: XKDR WP 43 · Nov 2025
+  authors: Vikram Aggarwal, Jay Kulkarni, Aakriti Narang, Aditi Mascarenhas, Siddarth Raman, Ajay Shah, Susan Thomas
+  url: https://www.xkdr.org/paper/information-extraction-from-fiscal-documents-using-llms
+  abstract: Large Language Models (LLMs) have demonstrated remarkable capabilities in text comprehension, but their ability to process complex, hierarchical tabular data remains underexplored. We present a novel approach to extracting structured data from multi-page government fiscal documents using LLM-based techniques. Applied to large annual fiscal documents from the State of Karnataka in India, our method achieves high accuracy through a multi-stage pipeline that leverages domain knowledge, sequential context, and algorithmic validation. Traditional OCR methods work poorly with errors that are hard to detect. The inherent structure of fiscal tables, with totals at each level of the hierarchy, allows for robust internal validation of the extracted data. We use these hierarchical relationships to create multi-level validation checks. We demonstrate that LLMs can read tables and also process document-specific structural hierarchies, offering a scalable process for converting PDF-based fiscal disclosures into research-ready databases. Our implementation shows promise for broader applications across developing country contexts.
+  tags:
+  - Public Finance
+  - Technology
+  _type: Working Paper

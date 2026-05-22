@@ -5,56 +5,69 @@ image: "files/images/headshot.jpg"
 toc: false
 sidebar: false
 page-layout: full
-#css: /custom.css
+listing:
+  - id: active-projects
+    contents: active_projects.yml
+    template: home_active_projects.ejs
+    sort: false
+  - id: latest-paper
+    contents: papers.yml
+    template: home_recent_paper.ejs
+    max-items: 1
+    sort: false
+  - id: latest-event
+    contents: latest_event.yml
+    template: home_latest_event.ejs
+    sort: false
 about:
   id: hero-heading
   template: trestles
   image-width: 40%
   links:
-    - text: "{{< ai google-scholar >}} Google Scholar"
+    - text: "{{< ai google-scholar >}}"
       href: https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en
       target: _blank
-    - text: "{{< ai ideas-repec >}} Repec"
+    - text: "{{< ai ideas-repec >}}"
       href: https://ideas.repec.org/e/pth170.html
       target: _blank
-    - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
+    - text: "{{< ai orcid >}}"
       href: https://orcid.org/0000-0003-3124-6671
       target: _blank
-    - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15"> XKDR Forum'
+    - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Forum" height="15">'
       href: https://xkdr.org/
       target: _blank
-    - text: "{{< fa envelope >}} Email"
+    - text: "{{< fa envelope >}}"
       href: mailto:sthomas.entp@gmail.com
       target: _blank
-listing:
-  - id: recent-posts
-    contents:
-      - posts
-    exclude:
-      title: ""
-    type: grid
-    max-items: 3
-    page-size: 3 #set same as max-times to remove the page number setting
-    fields: [image,title] #date, #subtitle
-    image-height: 250px
-    max-description-length: 75
-    sort:
-      - "date desc"
-      - "title asc"
 ---
-
 
 
 :::{#hero-heading}
 
-This page is to collaborate with other people. Please check out the work I'm doing and reach out if you are interested
+I am an economist studying markets, institutions and public finance. My work spans market microstructure, public procurement, insolvency law, and climate finance. I collaborate with researchers and policymakers — reach out if our interests overlap.
 :::
 
-<div style="margin-top: 50px;"></div>
-
-## Active Projects & Initiatives
-
-:::{#recent-posts}
+```{=html}
+<section class="home-section">
+  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem;">
+    <div class="home-section-label" style="margin-bottom: 0;">Active Projects</div>
+    <a href="posts.html" style="font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 500; color: var(--accent); text-decoration: none;">Projects & Initiatives ↗</a>
+  </div>
+```
+:::{#active-projects}
 :::
+```{=html}
+</section>
 
-<p align="right">[All projects »](/posts.qmd)</p>
+<section class="home-section">
+  <div class="home-section-label">Latest Work</div>
+  <div class="home-activity-strip">
+```
+:::{#latest-paper}
+:::
+:::{#latest-event}
+:::
+```{=html}
+  </div>
+</section>
+```

@@ -1,0 +1,268 @@
+---
+title: "Blog Posts"
+description-meta: "LEAP Blog posts by Susan Thomas"
+toc: false
+sidebar: false
+page-layout: full
+---
+
+```{=html}
+<div class="blog-page-header">
+  <p class="blog-page-subtitle">
+    Posts published at <a href="https://blog.theleapjournal.org" target="_blank">The LEAP Journal</a> — a research blog on law, economics, and policy in India.
+  </p>
+</div>
+```
+
+```{=html}
+<div class="blog-full-list">
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2025</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2025/11/electricity-cost-recovery-and-political.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Nov 2025</span><span class="blog-entry-co">with Ajay Shah</span></div>
+        <div class="blog-entry-title">Electricity cost recovery and the political imagination: A comparison between private and public distribution in India's biggest cities</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2025/08/the-economies-of-russia-and-ukraine-in.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Aug 2025</span><span class="blog-entry-co">with Rounak Hande, Ayush Patnaik, Ajay Shah</span></div>
+        <div class="blog-entry-title">The economies of Russia and Ukraine in the war</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2025/07/households-that-live-within-their-means.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Jul 2025</span><span class="blog-entry-co">with Jay Kulkarni</span></div>
+        <div class="blog-entry-title">Households that live within their means in India</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2025/06/get-them-to-court-on-time-bumps-in-road.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Jun 2025</span><span class="blog-entry-co">with Mugdha Mohapatra, Siddarth Raman</span></div>
+        <div class="blog-entry-title">Get them to the court on time: bumps in the road to justice</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2024</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2024/08/who-lends-to-indian-state.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Aug 2024</span><span class="blog-entry-co">with Aneesha Chitgupi, Ajay Shah, Manish Kumar Singh, Harsh Vardhan</span></div>
+        <div class="blog-entry-title">Who lends to the Indian state?</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2024/03/rethinking-innovation-policy-in-india.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Mar 2024</span></div>
+        <div class="blog-entry-title">Rethinking innovation policy in India: amplifying spillovers through contracting-out</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2024/01/survey-based-measurement-of-indian.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Jan 2024</span><span class="blog-entry-co">with Pavithra Manivannan, Bhargavi Zaveri-Shah</span></div>
+        <div class="blog-entry-title">Survey-based measurement of Indian courts</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2023</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2023/12/how-substantial-are-non-substantive.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Dec 2023</span><span class="blog-entry-co">with Pavithra Manivannan, Karthik Suresh, Bhargavi Zaveri-Shah</span></div>
+        <div class="blog-entry-title">How substantial are non-substantive hearings in Indian courts: some estimates from Bombay</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2023/06/helping-litigants-make-informed-choices.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Jun 2023</span><span class="blog-entry-co">with Pavithra Manivannan, Bhargavi Zaveri-Shah</span></div>
+        <div class="blog-entry-title">Helping litigants make informed choices in resolving debt disputes</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2022</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2022/11/the-litigant-perspective-upon-courts.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Nov 2022</span><span class="blog-entry-co">with Pavithra Manivannan, Bhargavi Zaveri-Shah</span></div>
+        <div class="blog-entry-title">The litigant perspective upon courts</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2022/11/learning-by-doing-and-public.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Nov 2022</span><span class="blog-entry-co">with Aneesha Chitgupi, Abhishek Gorsi</span></div>
+        <div class="blog-entry-title">Learning by doing and public procurement in India</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2022/09/the-make-vs-buy-decision-of-union.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Sep 2022</span><span class="blog-entry-co">with Aneesha Chitgupi</span></div>
+        <div class="blog-entry-title">The make vs. buy decision of the union government</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2022/07/identifying-roadblocks-in-highway.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Jul 2022</span><span class="blog-entry-co">with Charmi Mehta</span></div>
+        <div class="blog-entry-title">Identifying roadblocks in highway contracting: lessons from NHAI litigation</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2022/07/measuring-financial-inclusion-how-much.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Jul 2022</span><span class="blog-entry-co">with Geetika Palta, Mithila A. Sarah</span></div>
+        <div class="blog-entry-title">Measuring financial inclusion: how much do households participate in the formal financial system?</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2022/03/how-did-courts-respond-to-pandemic.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Mar 2022</span><span class="blog-entry-co">with Pavithra Manivannan, Bhargavi Zaveri-Shah</span></div>
+        <div class="blog-entry-title">How did courts respond to the pandemic lockdowns: evidence from the NCLT</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2021</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2021/12/the-footprint-of-union-government.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Dec 2021</span><span class="blog-entry-co">with Anjali Sharma</span></div>
+        <div class="blog-entry-title">The footprint of union government procurement in India</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2021/11/lessons-from-covid-19-vaccine.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Nov 2021</span><span class="blog-entry-co">with Charmi Mehta</span></div>
+        <div class="blog-entry-title">Lessons from the COVID-19 vaccine procurement of 2021</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2021/10/but-clouds-got-in-my-way-bias-and-bias.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Oct 2021</span><span class="blog-entry-co">with Ayush Patnaik, Ajay Shah, Anshul Tayal</span></div>
+        <div class="blog-entry-title">But clouds got in my way: Bias and bias correction of nighttime lights data in the presence of clouds</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2019</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2019/03/delays-in-liquidated-and-resolved-firms.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Mar 2019</span><span class="blog-entry-co">with Anjali Sharma</span></div>
+        <div class="blog-entry-title">Delays in liquidated and resolved firms: Visualisation of an output measure of the Indian bankruptcy reform</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2019/03/the-geography-of-firms-and-firm.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Mar 2019</span><span class="blog-entry-co">with Manish Kumar Singh</span></div>
+        <div class="blog-entry-title">The geography of firms and firm formation in India</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2018</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2018/12/the-indian-bankruptcy-reform-state-of.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Dec 2018</span></div>
+        <div class="blog-entry-title">The Indian bankruptcy reform: The state of the art, 2018</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2018/09/watching-markets-work-structural-change.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Sep 2018</span><span class="blog-entry-co">with Anjali Sharma</span></div>
+        <div class="blog-entry-title">Watching markets work: Structural change in the Nifty implied volatility</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2017</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2017/07/the-indian-bankruptcy-reform-state-of.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Jul 2017</span></div>
+        <div class="blog-entry-title">The Indian bankruptcy reform: The state of the art, 2017</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2016</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2016/12/watching-markets-work-dramatic-events.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Dec 2016</span></div>
+        <div class="blog-entry-title">Watching markets work: The dramatic events of 8 November 2016</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2016/11/direct-participation-in-indian-equity.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Nov 2016</span><span class="blog-entry-co">with Renuka Sane</span></div>
+        <div class="blog-entry-title">Direct participation in the Indian equity market: First estimates of some basic facts</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2016/11/watching-markets-work-surgical-strikes.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Nov 2016</span></div>
+        <div class="blog-entry-title">Watching markets work: The surgical strikes of 29 September 2016</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2016/05/indian-bankruptcy-reforms-where-we-are.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">May 2016</span></div>
+        <div class="blog-entry-title">India's bankruptcy reforms: Where we are, and where we go next</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2015</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2015/09/is-india-hospitable-environment-for.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Sep 2015</span><span class="blog-entry-co">with Anjali Sharma</span></div>
+        <div class="blog-entry-title">Is India a hospitable environment for India-related finance</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2015/08/witch-hunt-against-pns-considered.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Aug 2015</span></div>
+        <div class="blog-entry-title">Witch hunt against PNs considered harmful</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="blog-year-group">
+    <div class="blog-year-label">2014</div>
+    <div class="blog-year-entries">
+
+      <a href="https://blog.theleapjournal.org/2014/10/how-to-strengthen-nps.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Oct 2014</span><span class="blog-entry-co">with Renuka Sane</span></div>
+        <div class="blog-entry-title">How to strengthen the National Pension System</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2014/09/what-role-is-played-by-commodity.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Sep 2014</span><span class="blog-entry-co">with Nidhi Aggarwal</span></div>
+        <div class="blog-entry-title">What role is played by commodity futures in India?</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2014/09/what-does-algorithmic-trading-do-to.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Sep 2014</span><span class="blog-entry-co">with Nidhi Aggarwal</span></div>
+        <div class="blog-entry-title">What does algorithmic trading do to market quality?</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2014/08/npas-processed-by-asset-reconstruction.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Aug 2014</span><span class="blog-entry-co">with Anjali Sharma</span></div>
+        <div class="blog-entry-title">NPAs processed by asset reconstruction companies — where did we go wrong?</div>
+      </a>
+
+      <a href="https://blog.theleapjournal.org/2014/07/concerns-about-individual-investors-on.html" target="_blank" class="blog-entry">
+        <div class="blog-entry-meta"><span class="blog-entry-date">Jul 2014</span><span class="blog-entry-co">with Nidhi Aggarwal</span></div>
+        <div class="blog-entry-title">Concerns about individual investors on the Indian equity derivatives market</div>
+      </a>
+
+    </div>
+  </div>
+
+</div>
+```

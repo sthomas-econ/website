@@ -26,6 +26,4 @@ Why did humans abandon hunting and gathering for sedentary communities dependent
 Scott explores why we avoided sedentism and plow agriculture, the advantages of mobile subsistence, the unforeseeable disease epidemics arising from crowding plants, animals, and grain, and why all early states are based on millets and cereal grains and unfree labor. He also discusses the “barbarians” who long evaded state control, as a way of understanding continuing tension between states and nonsubject peoples.
 
 
-<!--Include social share buttons-->
 
-{{< include /files/includes/_socialshare.qmd >}}

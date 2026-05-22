@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://sthomas-econ.github.io/website/chapters.html</loc>
-    <lastmod>2025-07-24T10:24:51.160Z</lastmod>
-  </url>
-  <url>
     <loc>https://sthomas-econ.github.io/website/car.html</loc>
-    <lastmod>2025-07-24T10:24:51.160Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/expwit.html</loc>
-    <lastmod>2025-07-24T10:24:51.180Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/journal_publications.html</loc>
-    <lastmod>2025-07-24T10:24:51.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/books.html</loc>
-    <lastmod>2025-07-24T10:24:51.160Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/about.html</loc>
-    <lastmod>2025-07-24T10:24:51.160Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/posts/news-title/graph.html</loc>
-    <lastmod>2025-07-24T10:24:51.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/posts/news-title/ibc_book.html</loc>
-    <lastmod>2025-07-24T10:24:51.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/posts/event-title/masani.html</loc>
-    <lastmod>2025-07-24T10:24:51.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/teaching.html</loc>
-    <lastmod>2025-07-24T10:24:51.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/contact.html</loc>
-    <lastmod>2025-07-24T10:24:51.160Z</lastmod>
+    <lastmod>2026-05-20T08:47:11.605Z</lastmod>
   </url>
   <url>
     <loc>https://sthomas-econ.github.io/website/posts.html</loc>
-    <lastmod>2026-05-19T09:25:45.351Z</lastmod>
+    <lastmod>2026-05-20T08:47:11.634Z</lastmod>
   </url>
   <url>
-    <loc>https://sthomas-econ.github.io/website/bod.html</loc>
-    <lastmod>2025-07-24T10:24:51.160Z</lastmod>
-  </url>
-  <url>
-    <loc>https://sthomas-econ.github.io/website/working_papers.html</loc>
-    <lastmod>2025-07-25T08:59:54.252Z</lastmod>
+    <loc>https://sthomas-econ.github.io/website/expwit.html</loc>
+    <lastmod>2026-05-20T08:47:11.629Z</lastmod>
   </url>
   <url>
     <loc>https://sthomas-econ.github.io/website/index.html</loc>
-    <lastmod>2025-07-24T10:24:51.188Z</lastmod>
+    <lastmod>2026-05-22T10:42:43.978Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/posts/news-title/graph.html</loc>
+    <lastmod>2026-05-20T08:47:11.636Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/posts/event-title/masani.html</loc>
+    <lastmod>2026-05-20T09:36:41.469Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/books.html</loc>
+    <lastmod>2026-05-22T10:17:32.423Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/teaching.html</loc>
+    <lastmod>2026-05-22T04:18:16.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/chapters.html</loc>
+    <lastmod>2026-05-22T10:17:34.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/contact.html</loc>
+    <lastmod>2026-05-20T08:47:11.606Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/posts/news-title/10yearsofIBC.html</loc>
+    <lastmod>2026-05-22T03:55:43.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/working_papers.html</loc>
+    <lastmod>2026-05-22T10:17:28.205Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/bod.html</loc>
+    <lastmod>2026-05-20T08:47:11.605Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/about.html</loc>
+    <lastmod>2026-05-20T08:47:11.605Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/blogs.html</loc>
+    <lastmod>2026-05-22T09:44:20.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sthomas-econ.github.io/website/journal_publications.html</loc>
+    <lastmod>2026-05-22T10:17:30.298Z</lastmod>
   </url>
 </urlset>

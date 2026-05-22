@@ -1,14 +1,23 @@
 ---
 title: "Journal Publications"
 description-meta: "Journal Publications"
-#back-to-top-navigation: true
 title-block-banner: false
 page-layout: full
-#css: /custom.css
-bibliography: sue_res.bib
-nocite: |
-  @ShahThomas1999_risk, @Mashelkaretal2024, @Aggarwaletal2023_dtdchange, @Aggarwaletal2023_otrfee, @SaneThomas2020, @ThomasAggarwal2019, @SaneThomas2013_apimpact, @SaneThomas2015_npsspersistence, @Halanetal2014_missellinginsurance, @SaneThomas2012_mfiregs_epw, @ThomasGrover2011_liquidityvix, @Thomas2006_epw-liquidityresilience, @SarmaThomasShah2003_var_selection, @SrinivasThomas2003_lessonspensionfundmanagement_epw, @ShahThomas2000_jgfm
+css: custom.css
+listing:
+  - id: journal-list
+    contents: journals.yml
+    template: paper_card.ejs
+    sort: false
+    categories: true
 ---
 
-::: {#refs}
+<p class="text-muted" style="font-family:'Inter',sans-serif; font-size:0.9rem; margin-top:-0.5rem; margin-bottom:2rem;">
+</p>
+
+:::{#journal-list}
 :::
+
+<div style="margin-top: 2.5rem; font-family:'Inter',sans-serif; font-size:0.82rem; color:var(--text-light);">
+  For a complete list including older unpublished work, see the <a href="files/sue-res.pdf" target="_blank">full CV</a>.
+</div>

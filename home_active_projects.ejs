@@ -1,0 +1,20 @@
+```{=html}
+<% for (const item of items) { %>
+  <div class="home-paper-spotlight" style="margin-bottom: 1.5rem;">
+    <div class="home-paper-meta-bar">
+      <span class="home-paper-type-badge"><%= item.tag || 'Project' %></span>
+      <span class="home-paper-meta"><%= item.status || item.meta || '' %></span>
+    </div>
+    <h3 class="home-paper-title" style="margin-bottom: 0.5rem;">
+      <a href="<%= item.url %>" target="_blank" style="color: inherit; text-decoration: none;"><%= item.title %></a>
+    </h3>
+    <% if (item.authors) { %>
+      <p class="home-paper-authors"><%= item.authors %></p>
+    <% } %>
+    <% if (item.description) { %>
+      <p class="home-paper-abstract"><%= item.description %></p>
+    <% } %>
+    <a href="<%= item.url %>" target="_blank" class="home-paper-readmore" style="margin-top: 1rem; text-decoration: none;">Read more ↗</a>
+  </div>
+<% } %>
+```

@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Susan Thomas">
 <meta name="description" content="Chapters in Books">
 
-<title>Chapters in Books</title>
+<title>Chapters in Books – Susan Thomas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -52,16 +32,18 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-add48d76f47d9469bd107619ce0b2151.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-10722fefd809da47ab1c11c47adb13ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -90,6 +72,35 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-chapters-list .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-year','listing-meta','listing-authors','listing-url','listing-abstract','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-year","listing-meta","listing-authors","listing-url","listing-abstract","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-chapters-list'] = new List('listing-chapters-list', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -120,13 +131,43 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="custom.css">
-<meta property="og:title" content="Chapters in Books">
+<meta property="og:title" content="Chapters in Books – Susan Thomas">
 <meta property="og:image" content="https://sthomas-econ.github.io/website/files/images/XKDR_Logomark_RGB_Full_Colour.png">
+<meta property="og:site_name" content="Susan Thomas">
 <meta property="og:image:height" content="612">
 <meta property="og:image:width" content="866">
-<meta name="twitter:title" content="Chapters in Books">
+<meta name="twitter:title" content="Chapters in Books – Susan Thomas">
 <meta name="twitter:image" content="https://sthomas-econ.github.io/website/files/images/XKDR_Logomark_RGB_Full_Colour.png">
 <meta name="twitter:image-height" content="612">
 <meta name="twitter:image-width" content="866">
@@ -139,12 +180,17 @@ https://badge.dimensions.ai/
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Susan Thomas</span>
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
@@ -157,7 +203,7 @@ https://badge.dimensions.ai/
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Research</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
         <li>
     <a class="dropdown-item" href="./journal_publications.html">
  <span class="dropdown-text">Journal Publications</span></a>
@@ -166,13 +212,17 @@ https://badge.dimensions.ai/
     <a class="dropdown-item" href="./working_papers.html">
  <span class="dropdown-text">Working Papers</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./blogs.html">
+ <span class="dropdown-text">Blog Posts</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-books" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Books</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-books">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-books">    
         <li>
     <a class="dropdown-item" href="./books.html">
  <span class="dropdown-text">Books</span></a>
@@ -194,11 +244,11 @@ https://badge.dimensions.ai/
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(21)</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -207,7 +257,7 @@ https://badge.dimensions.ai/
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -219,71 +269,451 @@ https://badge.dimensions.ai/
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-GhoshThomas2023_finclumdeepeningevidence" class="csl-entry" role="listitem">
-Ghosh, Indradeep, and Susan Thomas. 2023. <span>“<span class="nocase">Financial Inclusion Measurement: Deepening the Evidence</span>.”</span> In <em><span>17th Inclusive Finance India Report</span></em>, edited by N. S. Vishwanathan, 117–25. <span>Access Publishers</span>. <a href="https://inclusivefinanceindia.org/wp-content/uploads/2023/01/Inclusive-Finance-India-Summit-Report-2022.pdf">https://inclusivefinanceindia.org/wp-content/uploads/2023/01/Inclusive-Finance-India-Summit-Report-2022.pdf</a>.
+<div id="listing-chapters-list" class="quarto-listing quarto-listing-container-custom">
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2023</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          <a href="https://papers.xkdr.org/papers/2023ThomasZaveri-Shah_Chapter21-TechnologyandAnalyticsforLawandJustice.pdf" target="_blank" class="book-title-link">Estimating capacity requirements of the National Company Law Tribunal: Notes from the field <span class="book-link-icon">↗</span></a>
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Susan Thomas, Bhargavi Zaveri-Shah</span>
+        <span class="book-publisher">Technology and Analytics for Law and Justice · OakBridge Publishing</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          <a href="https://inclusivefinanceindia.org/wp-content/uploads/2023/01/Inclusive-Finance-India-Summit-Report-2022.pdf" target="_blank" class="book-title-link">Financial Inclusion Measurement: Deepening the Evidence <span class="book-link-icon">↗</span></a>
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Indradeep Ghosh, Susan Thomas</span>
+        <span class="book-publisher">17th Inclusive Finance India Report · Access Publishers</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2020</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          New thinking on resolution of small firms
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">K. P. Krishnan, Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">Insolvency and Bankruptcy regime in India: A Narrative · Insolvency and Bankruptcy Board of India</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2017</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Evolution of the insolvency framework for non-financial firms in India
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Rajeswari Sengupta, Anjali Sharma, Susan Thomas</span>
+        <span class="book-publisher">India Development Report · Oxford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2012</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          <a href="http://www.igidr.ac.in/pdf/publication/IDR-2012-13.pdf" target="_blank" class="book-title-link">Borrowings by Indian firms <span class="book-link-icon">↗</span></a>
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Renuka Sane, Susan Thomas</span>
+        <span class="book-publisher">India Development Report · Oxford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2010</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Derivatives Markets
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Susan Thomas, Jayant Varma</span>
+        <span class="book-publisher">Capital Markets in India · Nomura Institute of Capital Markets Research, Tokyo, and Indian School of Business, Hyderabad</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2007</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Stock market indexes
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Susan Thomas, Ajay Shah</span>
+        <span class="book-publisher">The Oxford Companion to Economics in India · Oxford</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2005</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          How the financial sector in India was reformed
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Susan Thomas</span>
+        <span class="book-publisher">Documenting Reforms: Case Studies from India · Observer Research Foundation</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Commodity Markets
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Susan Thomas</span>
+        <span class="book-publisher">Encyclopedia of India · Charles Scribner's Sons</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2003</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Policy issues in Indian securities markets
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">Reforming India's External, Financial and Fiscal Policies · Stanford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Securities market efficiency
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">Globalization and national financial systems · The World Bank and Oxford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Institutional mechanisms in pension fund management: Lessons from three Indian case studies
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">P. S. Srinivas, Susan Thomas</span>
+        <span class="book-publisher">Rethinking pension provision for India 2003 · Tata McGraw-Hill</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          The jaggery futures market at Muzaffarnagar: Status and policy recommendations
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Susan Thomas</span>
+        <span class="book-publisher">Derivatives markets in India 2003 · Tata McGraw-Hill</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Equity derivatives in India: The state of the art
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">Derivatives markets in India 2003 · Tata McGraw-Hill</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2002</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Interest rates and their markets
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">India Development Report 2002 · Oxford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">2000</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Policy issues in India's capital markets in 2000
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">New economic policies for a new India · ICSSR</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">1999</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Risk and the Indian economy
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">India Development Report 1999 · Oxford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Rethinking prudential regulation
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">India Development Report 1999 · Oxford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Developing the Indian capital market
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">India: A financial sector for the Twenty-first century · Oxford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">1998</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          <a href="http://www.mayin.org/ajayshah/PDFDOCS/ShahThomas1998_cbot.pdf" target="_blank" class="book-title-link">Market microstructure considerations in index construction <span class="book-link-icon">↗</span></a>
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">CBOT Research Symposium Proceedings · Chicago Board of Trade</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
+      </div>
+
+      <div class="wp-year-group">
+        <span class="wp-year-label">1997</span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        
+          Securities Markets
+        
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors">Ajay Shah, Susan Thomas</span>
+        <span class="book-publisher">India Development Report 1997 · Oxford University Press</span>
+      </div>
+      
+      
+    </div>
+  </div>
+
 </div>
-<div id="ref-Krishnanetal2020" class="csl-entry" role="listitem">
-Krishnan, K. P., Ajay Shah, and Susan Thomas. 2020. <span>“New Thinking on Resolution of Small Firms.”</span> In <em><span class="nocase">Insolvency and Bankruptcy regime in India: A Narrative</span></em>, 267–73. <span>Insolvency and Bankruptcy Board of India</span>.
+
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-<div id="ref-SaneThomas2012_idr_firmborrowings" class="csl-entry" role="listitem">
-Sane, Renuka, and Susan Thomas. 2012. <span>“Borrowings by <span>I</span>ndian Firms.”</span> In <em><span>India Development Report</span>, 2012</em>, 151–58. <span>Oxford University Press</span>. <a href="http://www.igidr.ac.in/pdf/publication/IDR-2012-13.pdf">http://www.igidr.ac.in/pdf/publication/IDR-2012-13.pdf</a>.
-</div>
-<div id="ref-Senguptaetal2017_IDRcorpinsolvency" class="csl-entry" role="listitem">
-Sengupta, Rajeswari, Anjali Sharma, and Susan Thomas. 2017. <span>“<span class="nocase">Evolution of the insolvency framework for non-financial firms in India</span>.”</span> In <em><span>India Development Report</span>, 2017</em>. <span>Oxford University Press</span>.
-</div>
-<div id="ref-ShahThomas1997_idr_securities_markets" class="csl-entry" role="listitem">
-Shah, Ajay, and Susan Thomas. 1997. <span>“Securities Markets.”</span> In <em><span>India Development Report</span> 1997</em>, edited by Kirit S. Parikh, 167–92. Oxford University Press.
-</div>
-<div id="ref-ShahThomas1998_cbot" class="csl-entry" role="listitem">
-———. 1998. <span>“Market Microstructure Considerations in Index Construction.”</span> In <em>CBOT Research Symposium Proceedings</em>, 173–93. Chicago Board of Trade. <a href="http://www.mayin.org/ajayshah/PDFDOCS/ShahThomas1998_cbot.pdf">http://www.mayin.org/ajayshah/PDFDOCS/ShahThomas1998_cbot.pdf</a>.
-</div>
-<div id="ref-ShahThomas1999_Indiancapmarket21stcentury" class="csl-entry" role="listitem">
-———. 1999a. <span>“Developing the <span>I</span>ndian Capital Market.”</span> In <em><span class="nocase">India: A financial sector for the Twenty-first century</span></em>, edited by James Hanson and Sanjay Kathuria, 205–65. Oxford University Press.
-</div>
-<div id="ref-ShahThomas1999_micropru" class="csl-entry" role="listitem">
-———. 1999b. <span>“Rethinking Prudential Regulation.”</span> In <em><span>India Development Report</span> 1999</em>, edited by Kirit S. Parikh, 243–55. Oxford University Press.
-</div>
-<div id="ref-ShahThomas1999_risk" class="csl-entry" role="listitem">
-———. 1999c. <span>“Risk and the Indian Economy.”</span> In <em><span>India Development Report</span> 1999</em>, edited by Kirit S. Parikh, 231–42. Oxford University Press.
-</div>
-<div id="ref-ShahThomas2000_policycapmarkets2000_icssr" class="csl-entry" role="listitem">
-———. 2000. <span>“Policy Issues in <span>I</span>ndia’s Capital Markets in 2000.”</span> In <em><span class="nocase">New economic policies for a new India</span></em>, edited by Surjit S. Bhalla, 185–210. ICSSR.
-</div>
-<div id="ref-ShahThomas2002_idr_intrates" class="csl-entry" role="listitem">
-———. 2002. <span>“Interest Rates and Their Markets.”</span> In <em><span>India Development Report</span> 2002</em>, edited by Kirit S. Parikh and R. Radhakrishna, 177–94. Oxford University Press.
-</div>
-<div id="ref-ShahThomas2003_eqderivatives_soa" class="csl-entry" role="listitem">
-———. 2003a. <span>“Equity Derivatives in <span>I</span>ndia: <span>T</span>he State of the Art.”</span> In <em>Derivatives Markets in <span>India</span> 2003</em>, edited by Susan Thomas, 1–25. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
-</div>
-<div id="ref-ShahThomas2003_credpr" class="csl-entry" role="listitem">
-———. 2003b. <span>“Policy Issues in <span>I</span>ndian Securities Markets.”</span> In <em>Reforming <span>I</span>ndia’s <span>E</span>xternal, <span>F</span>inancial and <span>F</span>iscal <span>P</span>olicies</em>, edited by Anne Krueger and Sajjid Z. Chinoy, 129–47. Stanford <span>S</span>tudies in <span>I</span>nternational <span>E</span>conomics and <span>D</span>evelopment. Stanford University Press.
-</div>
-<div id="ref-ShahThomas2003_smallmarkets" class="csl-entry" role="listitem">
-———. 2003c. <span>“Securities Market Efficiency.”</span> In <em>Globalization and National Financial Systems</em>, edited by James A. Hanson, Patrick Honohan, and Giovanni Majnoni, 145–75. The World Bank; Oxford University Press.
-</div>
-<div id="ref-SrinivasThomas2003_lessons_pensionfundmanagement" class="csl-entry" role="listitem">
-Srinivas, P. S., and Susan Thomas. 2003. <span>“Institutional Mechanisms in Pension Fund Management: <span>L</span>essons from Three <span>I</span>ndian Case Studies.”</span> In <em>Rethinking Pension Provision for <span>I</span>ndia 2003</em>, edited by Anand Bordia and Gautam Bhardwaj, 177–204. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
-</div>
-<div id="ref-Thomas2003_muzaffarnagarfutures" class="csl-entry" role="listitem">
-Thomas, Susan. 2003. <span>“The Jaggery Futures Market at <span>M</span>uzaffarnagar: <span>S</span>tatus and Policy Recommendations.”</span> In <em>Derivatives Markets in <span>India</span> 2003</em>, edited by Susan Thomas, 123–42. Invest India – Tata McGraw–Hill Series. Tata McGraw-Hill.
-</div>
-<div id="ref-Thomas2005_commodities_encyclopediaofindia" class="csl-entry" role="listitem">
-———. 2005a. <span>“Commodity <span>M</span>arkets.”</span> In <em>Encyclopedia of <span>India</span></em>, edited by Stanley Wolpert. Charles Scribner’s Sons.
-</div>
-<div id="ref-Thomas2005_financialsectorreforms" class="csl-entry" role="listitem">
-———. 2005b. <span>“How the Financial Sector in <span>I</span>ndia Was Reformed.”</span> In <em><span class="nocase">Documenting Reforms: Case Studies from India</span></em>, edited by S. Narayan. <span>Observer Research Foundation</span>.
-</div>
-<div id="ref-ThomasShah2007_encyc_indexes" class="csl-entry" role="listitem">
-Thomas, Susan, and Ajay Shah. 2007. <span>“Stock Market Indexes.”</span> In <em>The Oxford Companion to Economics in India</em>, edited by Kaushik Basu, 503–4. Oxford.
-</div>
-<div id="ref-ThomasVarma_handbook_nomura" class="csl-entry" role="listitem">
-Thomas, Susan, and Jayant Varma. 2010. <span>“Derivatives <span>M</span>arkets.”</span> In <em>Capital <span>M</span>arkets in <span>I</span>ndia</em>, edited by Rajesh Chakrabarti and Sankar De, 177–224. <span>Nomura Institute of Capital Markets Research, Tokyo, and Indian School of Business, Hyderabad</span>.
-</div>
-<div id="ref-ThomasZaveri-Shah2023_estncltrequirements" class="csl-entry" role="listitem">
-Thomas, Susan, and Bhargavi Zaveri-Shah. 2023. <span>“Estimating Capacity Requirements of the <span class="nocase">National Company Law Tribunal: Notes from the field</span>.”</span> In <em><span class="nocase">Technology and Analytics for Law and Justice</span></em>, edited by DAKSH Centre of Excellence for Law and Justice and IIT Delhi, 431–51. <span>OakBridge Publishing</span>. <a href="https://papers.xkdr.org/papers/2023ThomasZaveri-Shah_Chapter21-TechnologyandAnalyticsforLawandJustice.pdf">https://papers.xkdr.org/papers/2023ThomasZaveri-Shah_Chapter21-TechnologyandAnalyticsforLawandJustice.pdf</a>.
-</div>
-</div>
+
 
 
 

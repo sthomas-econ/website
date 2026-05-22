@@ -1,15 +1,16 @@
 ---
 title: "Chapters in Books"
 description-meta: "Chapters in Books"
-#back-to-top-navigation: true
 title-block-banner: false
 page-layout: full
-#css: /custom.css
-hide_references: true
-bibliography: sue_res.bib
-nocite: |
-    @ThomasZaveri-Shah2023_estncltrequirements @GhoshThomas2023_finclumdeepeningevidence @Krishnanetal2020 @Senguptaetal2017_IDRcorpinsolvency @SaneThomas2012_idr_firmborrowings @ThomasVarma_handbook_nomura @ThomasShah2007_encyc_indexes @Thomas2005_financialsectorreforms @Thomas2005_commodities_encyclopediaofindia @SrinivasThomas2003_lessons_pensionfundmanagement @ShahThomas2003_credpr @ShahThomas2003_smallmarkets @Thomas2003_muzaffarnagarfutures @ShahThomas2003_eqderivatives_soa @ShahThomas2002_idr_intrates @ShahThomas2000_policycapmarkets2000_icssr @ShahThomas1999_risk @ShahThomas1999_micropru @ShahThomas1999_Indiancapmarket21stcentury @ShahThomas1998_cbot @ShahThomas1997_idr_securities_markets
+css: custom.css
+listing:
+  - id: chapters-list
+    contents: chapters.yml
+    template: book_card.ejs
+    sort: false
+    categories: true
 ---
 
-::: {#refs}
+:::{#chapters-list}
 :::

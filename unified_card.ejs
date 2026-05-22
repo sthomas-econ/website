@@ -1,0 +1,41 @@
+```{=html}
+<% for (const item of items) { %>
+
+  <div class="home-paper-spotlight" style="margin-bottom: 1.5rem; display: block;">
+    <div class="home-paper-meta-bar">
+      <% if (item._type) { %>
+        <span class="home-paper-type-badge"><%= item._type %></span>
+      <% } else if (item.date) { %>
+        <span class="home-paper-type-badge">Blog Post</span>
+      <% } else { %>
+        <span class="home-paper-type-badge">Research</span>
+      <% } %>
+      <span class="home-paper-meta"><%= item.meta || item.date || item.year || '' %></span>
+    </div>
+    
+    <h3 class="home-paper-title" style="margin-bottom: 0.5rem;">
+      <a href="<%= item.url || '#' %>" target="<%= item.url ? '_blank' : '_self' %>" style="color: inherit; text-decoration: none;">
+        <%= item.title %>
+      </a>
+    </h3>
+    
+    <% if (item.authors || item.coauthors) { %>
+      <p class="home-paper-authors"><%= item.authors || ('with ' + item.coauthors) %></p>
+    <% } %>
+    
+    <% if (item.abstract) { %>
+      <p class="home-paper-abstract"><%= item.abstract %></p>
+    <% } %>
+    
+    <% if (item.tags && item.tags.length > 0) { %>
+      <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <% for (const tag of item.tags) { %>
+          <a href="#category=<%= encodeURIComponent(tag) %>" class="wp-tag"><%= tag %></a>
+        <% } %>
+      </div>
+    <% } %>
+    
+  </div>
+
+<% } %>
+```

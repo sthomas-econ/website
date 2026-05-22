@@ -1,0 +1,94 @@
+---
+title: "10 Years of the IBC"
+subtitle: "Coming Soon"
+description: "A multi-author volume taking stock of a decade of insolvency and bankruptcy reform in India"
+# image: "/files/images/ibc_book_cover.jpeg"
+categories: [news, book]
+# date: "2025-05-22"
+page-layout: full
+toc: false
+sidebar: false
+---
+
+<!-- ![](/files/images/ibc_book_cover.jpeg) -->
+
+Ten years after the Insolvency and Bankruptcy Code was enacted, this volume brings together researchers, practitioners, and policymakers to assess what the reform has delivered — and what work remains. The chapters span economics, law, and institutional design, tracing how the IBC has reshaped creditor–debtor relations, the courts, and the insolvency profession in India.
+
+---
+
+## Table of Contents
+
+### Part I: The Outcomes
+
+1. **The Economics of the IBC**
+   *Sanjuktha Athreya, Manish Singh, Susan Thomas*
+
+2. **Credit Market Responses: Evidence from Firm-level Data**
+   *Abishek Seth, Manish Singh*
+
+3. **Resolution Applicants and the IBC: Judicial Trends and Interpretive Challenges**
+   *Debanshu Mukherjee, Akash Chandra Jauhari, Arhat Chhabra*
+
+4. **The Evolution of the Insolvency and Bankruptcy Code through the Supreme Court of India**
+   *Renuka Sane, Boon Verma*
+
+---
+
+### Part II: Institutional Ecosystem
+
+5. **NCLT as the Insolvency Adjudicator**
+   *Sanjuktha Athreya, Pavithra Manivannan*
+
+6. **Managing Information under the IBC**
+   *Anjali Sharma, Susan Thomas*
+
+7. **The Insolvency Professional — Design, Reality, and Reform**
+   *Abizer S. Diwanji*
+
+8. **IBBI and the IBC Ecosystem**
+   *Anant Agarwal, Susan Thomas*
+
+---
+
+### Part III: Challenges
+
+9. **Rescue or Liquidation: Market Choice or Policy Bias?**
+   *M.S. Sahoo*
+
+10. **Alternatives to the IBC: Applicability and Efficacy**
+    *Aparna Ravi, Umakanth Varottil*
+
+11. **Timing Matters: Creditor Incentives and Delayed Admission under India's IBC**
+    *Rajeswari Sengupta, Anjali Sharma*
+
+12. **Revisiting Financial Resolution in India**
+    *Pratik Datta, Ajay Shah*
+
+13. **IBC Sectoral Carveouts: A Principle-Based Framework**
+    *Aparna Ravi, M.S. Sahoo, Gokul Sunoj*
+
+14. **Harmonising Statutory Overlaps: Policy Reforms to Strengthen India's Insolvency Framework**
+    *Abhishek Jain, Surya Prakash B.S., Ritima Singh*
+
+15. **How the IBC Has Evolved: The Case for a Structured Amendment Process**
+    *Nevin George, Pavithra Manivannan, Aparna Ravi, Gokul Sunoj*
+
+---
+
+### Part IV: New Frontiers
+
+16. **Personal Guarantors and the Indian Insolvency and Bankruptcy Code**
+    *Adam Feibelman*
+
+17. **Cross-Border Insolvency Law in India**
+    *Risham Garg*
+
+18. **The Bankruptcy Reform: Looking Back, Looking Forward**
+    *Ajay Shah*
+
+---
+
+### Part V: Closing
+
+19. **Learning for Next Stage Reforms**
+    *Aparna Ravi, Anjali Sharma, Susan Thomas*

@@ -1,0 +1,45 @@
+```{=html}
+<%
+  let currentYear = '';
+  for (const item of items) {
+    let itemYear = item.year;
+    if (itemYear !== currentYear) {
+      if (currentYear !== '') {
+%>
+      </div>
+<%    } 
+      currentYear = itemYear;
+%>
+      <div class="wp-year-group">
+        <span class="wp-year-label"><%= currentYear %></span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+<%  } %>
+
+  <div class="wp-card">
+    <div class="wp-card-header">
+      <div class="wp-title"><a href="<%= item.url %>" target="_blank" style="color: inherit; text-decoration: none;"><%= item.title %></a></div>
+      <div class="wp-meta"><%= item.meta %></div>
+    </div>
+    <div class="wp-authors"><%= item.authors %></div>
+    <div class="wp-abstract">
+      <%= item.abstract %>
+    </div>
+    <div class="wp-actions">
+      <a href="<%= item.url %>" target="_blank" class="wp-btn" style="text-decoration: none;">↗ Full paper</a>
+<% if (item.categories) { %>
+  <div class="listing-categories" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+  <% for (const category of item.categories) { %>
+      <a href="#category=<%= encodeURIComponent(category) %>" class="wp-tag listing-category" onclick="window.quartoListingCategory('<%= category %>');"><%= category %></a>
+  <% } %>
+  </div>
+<% } %>
+    </div>
+  </div>
+
+<% } %>
+<% if (items.length > 0) { %>
+</div>
+<% } %>
+```

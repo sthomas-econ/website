@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-add48d76f47d9469bd107619ce0b2151.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-10722fefd809da47ab1c11c47adb13ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
@@ -76,20 +76,76 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
+    const listingTargetEl = window.document.querySelector('#listing-active-projects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-image','listing-status','listing-url','listing-tag',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-description","listing-image","listing-status","listing-url","listing-tag"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
+    window['quarto-listings']['listing-active-projects'] = new List('listing-active-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-latest-paper .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-year','listing-meta','listing-authors','listing-url','listing-abstract','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-year","listing-meta","listing-authors","listing-url","listing-abstract","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-latest-paper'] = new List('listing-latest-paper', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-latest-event .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-image','listing-status','listing-url','listing-tag',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-description","listing-image","listing-status","listing-url","listing-tag"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-latest-event'] = new List('listing-latest-event', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -164,10 +220,9 @@ window.Quarto = {
 
 <link rel="stylesheet" href="custom.css">
 <meta property="og:title" content="Susan Thomas">
-<meta property="og:description" content="Academic Website for Susan Thomas">
 <meta property="og:image" content="https://sthomas-econ.github.io/website/files/images/headshot.jpg">
+<meta property="og:site_name" content="Susan Thomas">
 <meta name="twitter:title" content="Susan Thomas">
-<meta name="twitter:description" content="Academic Website for Susan Thomas">
 <meta name="twitter:image" content="https://sthomas-econ.github.io/website/files/images/headshot.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -178,12 +233,17 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Susan Thomas</span>
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
@@ -196,7 +256,7 @@ window.Quarto = {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Research</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
         <li>
     <a class="dropdown-item" href="./journal_publications.html">
  <span class="dropdown-text">Journal Publications</span></a>
@@ -205,13 +265,17 @@ window.Quarto = {
     <a class="dropdown-item" href="./working_papers.html">
  <span class="dropdown-text">Working Papers</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./blogs.html">
+ <span class="dropdown-text">Blog Posts</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-books" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Books</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-books">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-books">    
         <li>
     <a class="dropdown-item" href="./books.html">
  <span class="dropdown-text">Books</span></a>
@@ -253,84 +317,95 @@ window.Quarto = {
 </header>
     <div class="about-links">
   <a href="https://scholar.google.com/citations?user=0QRD90YAAAAJ&amp;hl=en" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-google-scholar"></i> Google Scholar</span>
+     <span class="about-link-text"><i class="ai  ai-google-scholar"></i></span>
   </a>
   <a href="https://ideas.repec.org/e/pth170.html" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-ideas-repec"></i> Repec</span>
+     <span class="about-link-text"><i class="ai  ai-ideas-repec"></i></span>
   </a>
   <a href="https://orcid.org/0000-0003-3124-6671" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-orcid"></i> ORCID</span>
+     <span class="about-link-text"><i class="ai  ai-orcid"></i></span>
   </a>
   <a href="https://xkdr.org/" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15"> XKDR Forum</span>
+     <span class="about-link-text"><img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Forum" height="15"></span>
   </a>
   <a href="mailto:sthomas.entp@gmail.com" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i> Email</span>
+     <span class="about-link-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i></span>
   </a>
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
-<p>This page is to collaborate with other people. Please check out the work I’m doing and reach out if you are interested</p>
+<p>I am an economist studying markets, institutions and public finance. My work spans market microstructure, public procurement, insolvency law, and climate finance. I collaborate with researchers and policymakers — reach out if our interests overlap.</p>
 </div></div>
 </div>
 
-<div style="margin-top: 50px;">
+<section class="home-section">
+  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem;">
+    <div class="home-section-label" style="margin-bottom: 0;">Active Projects</div>
+    <a href="posts.html" style="font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 500; color: var(--accent); text-decoration: none;">Projects &amp; Initiatives ↗</a>
+  </div>
+<div id="listing-active-projects" class="quarto-listing quarto-listing-container-custom">
 
-</div>
-<section id="active-projects-initiatives" class="level2">
-<h2 data-anchor-id="active-projects-initiatives">Active Projects &amp; Initiatives</h2>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1747852200000" data-listing-file-modified-sort="1753352691188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
-<a href="./posts/news-title/ibc_book.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/ibc_book_cover.jpeg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Insolvency and Bankruptcy Reforms in India
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="ZXZlbnQlMkNib29rJTIwY2x1Yg==" data-listing-date-sort="1747852200000" data-listing-file-modified-sort="1753352691188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="214">
-<a href="./posts/event-title/masani.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/against_the_grain.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Masani reading group
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1747852200000" data-listing-file-modified-sort="1753352691188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
-<a href="./posts/news-title/graph.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/all_growth_rates_histogram_freedman.png" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Placeholder for Graph
-</h5>
-</div>
-</div></a>
-</div>
-</div>
+  <div class="home-paper-spotlight" style="margin-bottom: 1.5rem;">
+    <div class="home-paper-meta-bar">
+      <span class="home-paper-type-badge">Book</span>
+      <span class="home-paper-meta">Coming Soon</span>
+    </div>
+    <h3 class="home-paper-title" style="margin-bottom: 0.5rem;">
+      <a href="posts/news-title/10yearsofIBC.html" target="_blank" style="color: inherit; text-decoration: none;">10 Years of the IBC</a>
+    </h3>
+    
+    
+      <p class="home-paper-abstract">A forthcoming multi-author volume taking stock of a decade of insolvency and bankruptcy reform in India.</p>
+    
+    <a href="posts/news-title/10yearsofIBC.html" target="_blank" class="home-paper-readmore" style="margin-top: 1rem; text-decoration: none;">Read more ↗</a>
+  </div>
+
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p align="right">
-<a href="./posts.html">All projects »</a>
-</p>
-
-
-
-
 </section>
+
+<section class="home-section">
+  <div class="home-section-label">Latest Work</div>
+  <div class="home-activity-strip">
+<div id="listing-latest-paper" class="quarto-listing quarto-listing-container-custom">
+
+  <a href="https://www.xkdr.org/paper/information-extraction-from-fiscal-documents-using-llms" target="_blank" class="home-activity-item">
+    <div class="home-activity-body" style="padding: 1.5rem;">
+      <span class="home-activity-tag">Working Paper</span>
+      <p class="home-activity-title">Information Extraction from Fiscal Documents using LLMs</p>
+      <p class="home-activity-desc" style="font-size: 0.8rem; margin-top: 0.5rem;">Vikram Aggarwal, Jay Kulkarni, Aakriti Narang, Aditi Mascarenhas, Siddarth Raman, Ajay Shah, Susan Thomas</p>
+      <span class="home-activity-status" style="margin-top: 0.5rem;">Read ↗</span>
+    </div>
+  </a>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<div id="listing-latest-event" class="quarto-listing quarto-listing-container-custom">
+
+  <a href="posts/event-title/masani.html" class="home-activity-item" target="_blank">
+    
+    <div class="home-activity-img" style="background-image: url('files/images/against_the_grain.jpg');"></div>
+    
+    <div class="home-activity-body">
+      <span class="home-activity-tag">Reading Group</span>
+      <p class="home-activity-title">Masani Reading Group</p>
+      
+        <p class="home-activity-desc">A monthly discussion group on urban development, state formation, and political economy.</p>
+      
+      
+        <span class="home-activity-status">Ongoing</span>
+      
+    </div>
+  </a>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+  </div>
+</section>
+
+
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

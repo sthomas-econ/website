@@ -1,19 +1,23 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "files/images/*"
 
 # Meta
 description-meta: "Academic webpage for Susan Thomas"
 author-meta: "Susan Thomas"
 
 website:
+  title: "Susan Thomas"
   image: "files/images/XKDR_Logomark_RGB_Full_Colour.png"
   description: "Academic Website for Susan Thomas"
  
   navbar:
     background: light
+    foreground: dark
 
-    left:
+    right:
       - text: Home
         href: index.qmd  
       - text: CV
@@ -23,19 +27,15 @@ website:
           - text: Journal Publications
             href: journal_publications.qmd
           - text: Working Papers
-            href: working_papers.qmd                                
+            href: working_papers.qmd
+          - text: Blog Posts
+            href: blogs.qmd
       - text: Books
         menu:
         - text: Books
           href: books.qmd
         - text: Chapters in Books
           href: chapters.qmd
-#      - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15">'
-#        href: https://xkdr.org/
-#      - icon: linkedin
-#        href: https://in.linkedin.com/in/susan-thomas-417869
-#      - text: "{{< ai google-scholar >}}"
-#        href: https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en
   page-navigation: true
   
   page-footer: 
@@ -75,7 +75,7 @@ bibliography: sue_res.bib
 
 format:
   html:
-    theme: default
+    theme: flatly
     css: custom.css
     toc: true
     footnotes-hover: true

@@ -1,0 +1,16 @@
+```{=html}
+<% for (const item of items) { %>
+<a href="<%= item.url || (item._type === 'Working Paper' ? 'working_papers.html' : 'journal_publications.html') %>"
+   target="<%= item.url ? '_blank' : '_self' %>"
+   class="home-paper-spotlight">
+  <div class="home-paper-meta-bar">
+    <span class="home-paper-type-badge"><%= item._type %></span>
+    <span class="home-paper-meta"><%= item.meta %></span>
+  </div>
+  <h3 class="home-paper-title"><%= item.title %></h3>
+  <p class="home-paper-authors"><%= item.authors %></p>
+  <p class="home-paper-abstract"><%= item.abstract %></p>
+  <span class="home-paper-readmore">Read paper ↗</span>
+</a>
+<% } %>
+```

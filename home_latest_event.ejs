@@ -1,0 +1,19 @@
+```{=html}
+<% for (const item of items) { %>
+  <a href="<%= item.url %>" class="home-activity-item" target="_blank">
+    <% if (item.image) { %>
+    <div class="home-activity-img" style="background-image: url('<%= item.image %>');"></div>
+    <% } %>
+    <div class="home-activity-body">
+      <span class="home-activity-tag"><%= item.tag || 'Event' %></span>
+      <p class="home-activity-title"><%= item.title %></p>
+      <% if (item.description) { %>
+        <p class="home-activity-desc"><%= item.description %></p>
+      <% } %>
+      <% if (item.status) { %>
+        <span class="home-activity-status"><%= item.status %></span>
+      <% } %>
+    </div>
+  </a>
+<% } %>
+```

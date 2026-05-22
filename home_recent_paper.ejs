@@ -1,0 +1,12 @@
+```{=html}
+<% for (const item of items) { %>
+  <a href="<%= item.url || 'working_papers.html' %>" target="<%= item.url ? '_blank' : '_self' %>" class="home-activity-item">
+    <div class="home-activity-body" style="padding: 1.5rem;">
+      <span class="home-activity-tag">Working Paper</span>
+      <p class="home-activity-title"><%= item.title %></p>
+      <p class="home-activity-desc" style="font-size: 0.8rem; margin-top: 0.5rem;"><%= item.authors %></p>
+      <span class="home-activity-status" style="margin-top: 0.5rem;">Read ↗</span>
+    </div>
+  </a>
+<% } %>
+```

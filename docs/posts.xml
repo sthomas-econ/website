@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Susan Thomas</title>
+<link>https://sthomas-econ.github.io/website/posts.html</link>
+<atom:link href="https://sthomas-econ.github.io/website/posts.xml" rel="self" type="application/rss+xml"/>
+<description>Academic Website for Susan Thomas</description>
+<image>
+<url>https://sthomas-econ.github.io/website/files/images/XKDR_Logomark_RGB_Full_Colour.png</url>
+<title>Susan Thomas</title>
+<link>https://sthomas-econ.github.io/website/posts.html</link>
+<height>102</height>
+<width>144</width>
+</image>
+<generator>quarto-1.7.31</generator>
+<lastBuildDate>Wed, 21 May 2025 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Masani reading group</title>
+  <link>https://sthomas-econ.github.io/website/posts/event-title/masani.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p>The Masani reading group is a once-monthly book discussion group focusing on different themes from urban development to anthopology of the state. All are welcome to attend.</p>
+</section>
+<section id="against-the-grain" class="level2">
+<h2 class="anchored" data-anchor-id="against-the-grain">Against the Grain</h2>
+<p>Chapters 1-4 being covered on June 4th.</p>
+<p><img src="https://sthomas-econ.github.io/website/files/images/against_the_grain.jpg" class="img-fluid" style="width:20.0%"></p>
+<p>Why did humans abandon hunting and gathering for sedentary communities dependent on livestock and cereal grains, and governed by precursors of today’s states? Most people believe that plant and animal domestication allowed humans, finally, to settle down and form agricultural villages, towns, and states, which made possible civilization, law, public order, and a presumably secure way of living. But archaeological and historical evidence challenges this narrative. The first agrarian states, says James C. Scott, were born of accumulations of domestications: first fire, then plants, livestock, subjects of the state, captives, and finally women in the patriarchal family—all of which can be viewed as a way of gaining control over reproduction.</p>
+<p>Scott explores why we avoided sedentism and plow agriculture, the advantages of mobile subsistence, the unforeseeable disease epidemics arising from crowding plants, animals, and grain, and why all early states are based on millets and cereal grains and unfree labor. He also discusses the “barbarians” who long evaded state control, as a way of understanding continuing tension between states and nonsubject peoples.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>event</category>
+  <category>book club</category>
+  <guid>https://sthomas-econ.github.io/website/posts/event-title/masani.html</guid>
+  <pubDate>Wed, 21 May 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://sthomas-econ.github.io/website/files/images/against_the_grain.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Placeholder for Graph</title>
+  <link>https://sthomas-econ.github.io/website/posts/news-title/graph.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p><img src="https://sthomas-econ.github.io/website/files/images/all_growth_rates_histogram_freedman.png" class="img-fluid" style="width:60.0%"></p>
+<p>Wow what a fancy graph!!! <!--Include social share buttons--></p>
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://sthomas-econ.github.io/website/posts/news-title/graph.html</guid>
+  <pubDate>Wed, 21 May 2025 18:30:00 GMT</pubDate>
+  <media:content url="https://sthomas-econ.github.io/website/files/images/all_growth_rates_histogram_freedman.png" medium="image" type="image/png" height="72" width="144"/>
+</item>
+<item>
+  <title>10 Years of the IBC</title>
+  <link>https://sthomas-econ.github.io/website/posts/news-title/10yearsofIBC.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<!-- ![](/files/images/ibc_book_cover.jpeg) -->
+<p>Ten years after the Insolvency and Bankruptcy Code was enacted, this volume brings together researchers, practitioners, and policymakers to assess what the reform has delivered — and what work remains. The chapters span economics, law, and institutional design, tracing how the IBC has reshaped creditor–debtor relations, the courts, and the insolvency profession in India.</p>
+<hr>
+<section id="table-of-contents" class="level2">
+<h2 class="anchored" data-anchor-id="table-of-contents">Table of Contents</h2>
+<section id="part-i-the-outcomes" class="level3">
+<h3 class="anchored" data-anchor-id="part-i-the-outcomes">Part I: The Outcomes</h3>
+<ol type="1">
+<li><p><strong>The Economics of the IBC</strong> <em>Sanjuktha Athreya, Manish Singh, Susan Thomas</em></p></li>
+<li><p><strong>Credit Market Responses: Evidence from Firm-level Data</strong> <em>Abishek Seth, Manish Singh</em></p></li>
+<li><p><strong>Resolution Applicants and the IBC: Judicial Trends and Interpretive Challenges</strong> <em>Debanshu Mukherjee, Akash Chandra Jauhari, Arhat Chhabra</em></p></li>
+<li><p><strong>The Evolution of the Insolvency and Bankruptcy Code through the Supreme Court of India</strong> <em>Renuka Sane, Boon Verma</em></p></li>
+</ol>
+<hr>
+</section>
+<section id="part-ii-institutional-ecosystem" class="level3">
+<h3 class="anchored" data-anchor-id="part-ii-institutional-ecosystem">Part II: Institutional Ecosystem</h3>
+<ol start="5" type="1">
+<li><p><strong>NCLT as the Insolvency Adjudicator</strong> <em>Sanjuktha Athreya, Pavithra Manivannan</em></p></li>
+<li><p><strong>Managing Information under the IBC</strong> <em>Anjali Sharma, Susan Thomas</em></p></li>
+<li><p><strong>The Insolvency Professional — Design, Reality, and Reform</strong> <em>Abizer S. Diwanji</em></p></li>
+<li><p><strong>IBBI and the IBC Ecosystem</strong> <em>Anant Agarwal, Susan Thomas</em></p></li>
+</ol>
+<hr>
+</section>
+<section id="part-iii-challenges" class="level3">
+<h3 class="anchored" data-anchor-id="part-iii-challenges">Part III: Challenges</h3>
+<ol start="9" type="1">
+<li><p><strong>Rescue or Liquidation: Market Choice or Policy Bias?</strong> <em>M.S. Sahoo</em></p></li>
+<li><p><strong>Alternatives to the IBC: Applicability and Efficacy</strong> <em>Aparna Ravi, Umakanth Varottil</em></p></li>
+<li><p><strong>Timing Matters: Creditor Incentives and Delayed Admission under India’s IBC</strong> <em>Rajeswari Sengupta, Anjali Sharma</em></p></li>
+<li><p><strong>Revisiting Financial Resolution in India</strong> <em>Pratik Datta, Ajay Shah</em></p></li>
+<li><p><strong>IBC Sectoral Carveouts: A Principle-Based Framework</strong> <em>Aparna Ravi, M.S. Sahoo, Gokul Sunoj</em></p></li>
+<li><p><strong>Harmonising Statutory Overlaps: Policy Reforms to Strengthen India’s Insolvency Framework</strong> <em>Abhishek Jain, Surya Prakash B.S., Ritima Singh</em></p></li>
+<li><p><strong>How the IBC Has Evolved: The Case for a Structured Amendment Process</strong> <em>Nevin George, Pavithra Manivannan, Aparna Ravi, Gokul Sunoj</em></p></li>
+</ol>
+<hr>
+</section>
+<section id="part-iv-new-frontiers" class="level3">
+<h3 class="anchored" data-anchor-id="part-iv-new-frontiers">Part IV: New Frontiers</h3>
+<ol start="16" type="1">
+<li><p><strong>Personal Guarantors and the Indian Insolvency and Bankruptcy Code</strong> <em>Adam Feibelman</em></p></li>
+<li><p><strong>Cross-Border Insolvency Law in India</strong> <em>Risham Garg</em></p></li>
+<li><p><strong>The Bankruptcy Reform: Looking Back, Looking Forward</strong> <em>Ajay Shah</em></p></li>
+</ol>
+<hr>
+</section>
+<section id="part-v-closing" class="level3">
+<h3 class="anchored" data-anchor-id="part-v-closing">Part V: Closing</h3>
+<ol start="19" type="1">
+<li><strong>Learning for Next Stage Reforms</strong> <em>Aparna Ravi, Anjali Sharma, Susan Thomas</em></li>
+</ol>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>news</category>
+  <category>book</category>
+  <guid>https://sthomas-econ.github.io/website/posts/news-title/10yearsofIBC.html</guid>
+  <pubDate>Fri, 22 May 2026 10:32:43 GMT</pubDate>
+</item>
+</channel>
+</rss>

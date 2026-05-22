@@ -2,17 +2,29 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/news-title/ibc_book.html",
-      "/posts/news-title/graph.html",
-      "/posts/event-title/masani.html"
+      "/posts/news-title/10yearsofIBC.html",
+      "/posts/event-title/masani.html",
+      "/posts/news-title/graph.html"
     ]
   },
   {
     "listing": "/index.html",
-    "items": [
-      "/posts/news-title/ibc_book.html",
-      "/posts/event-title/masani.html",
-      "/posts/news-title/graph.html"
-    ]
+    "items": []
+  },
+  {
+    "listing": "/books.html",
+    "items": []
+  },
+  {
+    "listing": "/chapters.html",
+    "items": []
+  },
+  {
+    "listing": "/working_papers.html",
+    "items": []
+  },
+  {
+    "listing": "/journal_publications.html",
+    "items": []
   }
 ]

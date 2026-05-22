@@ -1,0 +1,50 @@
+```{=html}
+<%
+  let currentYear = '';
+  for (const item of items) {
+    let itemYear = item.year;
+    if (itemYear !== currentYear) {
+      if (currentYear !== '') {
+%>
+      </div>
+<%    }
+      currentYear = itemYear;
+%>
+      <div class="wp-year-group">
+        <span class="wp-year-label"><%= currentYear %></span>
+        <div class="wp-year-line"></div>
+      </div>
+      <div class="wp-grid">
+<%  } %>
+
+  <div class="book-card">
+    <div class="book-card-body">
+      <div class="book-title">
+        <% if (item.url) { %>
+          <a href="<%= item.url %>" target="_blank" class="book-title-link"><%= item.title %> <span class="book-link-icon">↗</span></a>
+        <% } else { %>
+          <%= item.title %>
+        <% } %>
+      </div>
+      <div class="book-meta-row">
+        <span class="book-authors"><%= item.authors %></span>
+        <span class="book-publisher"><%= item.meta %></span>
+      </div>
+      <% if (item.abstract) { %>
+      <div class="book-abstract"><%= item.abstract %></div>
+      <% } %>
+      <% if (item.categories && item.categories.length > 0) { %>
+      <div class="book-tags listing-categories" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <% for (const category of item.categories) { %>
+          <a href="#category=<%= encodeURIComponent(category) %>" class="wp-tag listing-category" onclick="window.quartoListingCategory('<%= category %>');"><%= category %></a>
+        <% } %>
+      </div>
+      <% } %>
+    </div>
+  </div>
+
+<% } %>
+<% if (items.length > 0) { %>
+</div>
+<% } %>
+```

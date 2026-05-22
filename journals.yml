@@ -1,0 +1,126 @@
+- title: 'Rethinking innovation policy in India: Amplifying spillovers through contracting-out'
+  year: '2024'
+  meta: Accounting Theory and Practice · December 2024
+  authors: R. A. Mashelkar, Ajay Shah, Susan Thomas
+  url: https://papers.xkdr.org/papers/MashelkarST2024_rethinking_indian_innov.pdf
+  abstract: 'At independence, India committed itself fully to foster, promote and sustain the creation of science and scientific research in all aspects. In this paper, we present first principles reasoning on the case for state action, and the optimal mechanisms for using taxpayer resources, to fulfill this commitment. We argue in favour of a reorientation of public spending on innovation: away from building vertical government organisations, and in favour of a contracting-out strategy. Such a strategy would induce knowledge and capabilities in the society, and through this, induce greater gains for the people of India. We present a preliminary sketch of the path to implementation.'
+  categories:
+  - Innovation
+  - Public Policy
+- title: Do decreases in Distance-to-Default predict rating downgrades?
+  year: '2023'
+  meta: Economic Modelling · December 2023
+  authors: Nidhi Aggarwal, Manish Singh, Susan Thomas
+  url: https://doi.org/10.1016/j.econmod.2023.106558
+  abstract: Credit rating agencies have long been criticized for being slow to downgrade ratings, when the financial health of the firm deteriorates. This stands out in sharp contrast to how security market prices of the firm respond more rapidly, during the same time. In this paper, we ask whether this disparity between the two indicators can be bridged. We estimate a logit model for the probability of a rating downgrade, using a large dataset of firms in India which combines both high frequency market price data and lower frequency accounting data. We find that changes in measures such as the Distance to Default, in combination with firm characteristics such as ownership structure, can predict a higher probability of ratings downgrades, before they are announced. This will be particularly useful for regulated financial firms, which have to re-weight their portfolios to satisfy micro-prudential requirements, based on downgrades in credit ratings.
+  categories:
+  - Credit Ratings
+  - Corporate Finance
+- title: When is the Order to Trade Ratio fee effective?
+  year: '2023'
+  meta: Journal of Financial Markets · January 2023
+  authors: Nidhi Aggarwal, Venkatesh Panchapagesan, Susan Thomas
+  url: 10.1016/j.finmar.2022.100762
+  abstract: Regulators use measures such as a fee on high order-to-trade ratio (OTR) to slow down high-frequency trading. Their impact on market quality is, however, mixed. We study a natural experiment in the Indian stock market where such a fee was introduced twice, with differences in motivation and implementation. Using a difference-in-difference approach, we find that the fee decreased OTR and improved market quality when it was imposed on all orders, while it had little effect when it was imposed selectively on some orders. Improvement in liquidity was driven by a reduction in adverse selection costs following lower OTR.
+  categories:
+  - Market Microstructure
+  - Algorithmic Trading
+- title: 'From Participation to Repurchase: Low Income Households and Micro-Insurance'
+  year: '2020'
+  meta: Journal of Risk & Insurance · September 2020
+  authors: Renuka Sane, Susan Thomas
+  url: https://doi.org/10.1111/jori.12288
+  abstract: The article asks what drives the time to repurchase for life and accident insurance contracts in low income households. We use data on customers of a financial services provider from three states in India and find that the probability of repurchase is highest in the first 2 months after the contract expires, and steadily declines after. This suggests a window of opportunity for financial firms and governments to target customers to ensure continuous insurance purchase. Nonmembership of microfinance groups and poor rainfall in the month of expiry affect the time to repurchase adversely. Customers who take longer to repurchase tend to increase the amount of insurance cover.
+  categories:
+  - Insurance
+  - Household Finance
+- title: When Stock Futures Dominate Price Discovery
+  year: '2019'
+  meta: Journal of Futures Markets · March 2019
+  authors: Nidhi Aggarwal, Susan Thomas
+  url: https://doi.org/10.1002/fut.21973
+  abstract: This paper revisits the role of leverage in price discovery, using one of the most liquid single-stock futures (SSFs) markets in the world. Price discovery is analysed as a dynamic intraday process. We find that the information share of the SSFs is 55% during news arrivals. It increases to 61%, when the news is negative and the futures is preferred because of short-sales restrictions on the spot. A partial equilibrium analysis predicts that the trade-off between leverage and market liquidity determines price discovery across securities. These predictions are validated by empirical evidence.
+  categories:
+  - Derivatives
+  - Price Discovery
+- title: 'The Real Cost of Credit Constraints: Evidence from Micro-Finance'
+  year: '2016'
+  meta: B E Journal of Applied Economic Analysis and Policy · January 2016
+  authors: Renuka Sane, Susan Thomas
+  url: https://doi.org/10.1515/bejeap-2014-0154
+  abstract: The paper studies the effect of a law that banned micro-credit lending in the state of Andhra Pradesh in India. Regions in Andhra Pradesh are matched to regions that did not face the ban. A difference-in-difference estimation of changes in matched regions is used to establish a causal impact on average household consumption in the region. The results show that the average household consumption in the ban-affected regions dropped by 15% immediately after the ban compared to the matched regions, and persisted for four quarters. The result is robust to cross-sectional variations in regional exposure to micro-finance prior to the ban, variation in rural and urban locations and variations in matching strategy. The analysis points to a ban as a sub-optimal intervention to improve customer welfare.
+  categories:
+  - Micro-finance
+  - Household Finance
+- title: 'In Search of Inclusion: Informal Sector Participation in a Voluntary, Defined Contribution Pension System'
+  year: '2015'
+  meta: Journal of Development Studies · 2015
+  authors: Renuka Sane, Susan Thomas
+  url: https://doi.org/10.1080/00220388.2014.997220
+  abstract: This paper examines who contributes and who persists in contributing in a national, voluntary, defined contributory pension programme, where the government provides the incentive of matching contributions of a minimum amount (USD 16). The paper uses proprietary data from a financial services firm where 12 per cent of customers (37,000 individuals) chose to participate in this programme. The evidence shows that only about 50 per cent of contributors reach the minimum amount for the co-contribution, but that participants persist in contributing even if they failed to contribute the minimum amount in a given year. While this paper does not provide causal estimates, it does present evidence of considerable interest among the informal sector in a state-run voluntary pension programme in an emerging market where access to formal finance is otherwise poor.
+  categories:
+  - Pensions
+  - Household Finance
+- title: 'The case of the missing billions: estimating losses to customers due to mis-sold life insurance policies'
+  year: '2014'
+  meta: Journal of Economic Policy Reform · 2014
+  authors: Monika Halan, Renuka Sane, Susan Thomas
+  url: https://doi.org/10.1080/17487870.2014.971797
+  abstract: Regulation of retail finance has been the subject of policy interventions in several countries, including India. Much of the regulatory change in India has been carried out with little support of empirical evidence. This paper is motivated by questions of the evidence of losses due to mis-sales of financial products. It constructs two measures of the loss to customers due to mis-selling of life insurance policies. The first is calculated using the value of lapsed policies, and the second uses the persistence of premium payments. Both arrive at estimates of around USD 28 billion lost between 2004 and 2011.
+  categories:
+  - Insurance
+  - Consumer Protection
+- title: What should regulation do in the field of micro-finance?
+  year: '2013'
+  meta: Economic and Political Weekly · 2013
+  authors: Renuka Sane, Susan Thomas
+  abstract: Recent events in India have brought a fresh focus on the appropriate regulatory stance towards micro-finance. In this paper, we review facts and recent experience about Indian microfinance. We analyse the puzzles of financial regulation in this field from first principles, and argue that the mainstream mechanisms of consumer protection and micro-prudential regulation need to be modified owing to joint-liability groups. From this perspective, we suggest regulatory strategies that need to be adopted for dealing with micro-credit and financial distribution that focuses on the poor. This analysis and conceptual framework also helps analyse the two policy responses till date, the Malegam report and the draft Microfinance Bill, 2011.
+  url: ''
+  categories:
+  - Micro-finance
+  - Regulation
+- title: Liquidity considerations in estimating volatility indexes
+  year: '2012'
+  meta: Journal of Futures Markets · 2012
+  authors: Rohini Grover, Susan Thomas
+  url: https://doi.org/10.1002/fut.21543
+  abstract: Option markets have significant variation in liquidity across different option series. Illiquidity reduces the informativeness of the price. Price information for illiquid options is more noisy, and thus the implied volatilities (IVs) based on these prices are more noisy. In this study, we propose weighting schemes to estimate IV, which reduce the importance attached to illiquid options. The two indexes using liquidity weights are SVIX, which is a spread-adjusted volatility index, and TVVIX, which is a traded volume weighted VIX. We find SVIX outperforms TVVIX, the conventional schemes such as the traditional VXO, or vega weights, and volatility elasticity weights.
+  categories:
+  - Derivatives
+  - Volatility
+- title: Resilience of liquidity in Indian securities markets
+  year: '2006'
+  meta: Economic and Political Weekly · August 2006
+  authors: Susan Thomas
+  url: https://www.jstor.org/stable/4418547
+  abstract: 'Liquid securities markets are a core goal of financial sector reforms, and this has two dimensions: low impact cost and high resilience. We employ elements of evidence to suggest that equity market liquidity is robust to negative price shocks. However, bond market liquidity appears fragile when faced with negative price shocks.'
+  categories:
+  - Liquidity
+  - Market Microstructure
+- title: Selection of Value at Risk models
+  year: '2003'
+  meta: Journal of Forecasting · 2003
+  authors: Mandira Sarma, Susan Thomas, Ajay Shah
+  url: http://dx.doi.org/10.1002/for.868
+  abstract: Value-at-Risk (VaR) is widely used as a tool for measuring the market risk of asset portfolios. However, alternative VaR implementations are known to yield fairly different VaR forecasts. Hence, every use of VaR requires choosing among alternative forecasting models. This paper undertakes two case studies in model selection, for the S&P 500 index and India's NSE-50 index, at the 95% and 99% levels. We employ a two-stage model selection procedure. In the first stage we test a class of models for statistical accuracy. If multiple models survive rejection with the tests, we perform a second stage filtering of the surviving models using subjective loss functions. This two-stage model selection procedure does prove to be useful in choosing a VaR model, while only incompletely addressing the problem. These case studies give us some evidence about the strengths and limitations of present knowledge on estimation and testing for VaR.
+  categories:
+  - Risk Management
+  - Econometrics
+- title: 'Institutional mechanisms in pension fund management: Lessons from three Indian case studies'
+  year: '2003'
+  meta: Economic and Political Weekly · February 2003
+  authors: P. S. Srinivas, Susan Thomas
+  url: https://www.jstor.org/stable/4413241
+  abstract: 'Retirement income plans in India face one or more of three common problems: poor funding, inadequate diversification, and weak governance. This paper discusses policy issues raised by these problems in the context of three case studies - the Indian Railways Pension Fund, the Employees Provident Fund, and the Seamen''s Provident Fund. It examines means to reform these pension funds, drawing upon both Indian and international evidence and experience. Using these case studies as a basis, it offers general recommendations for pension reform in India.'
+  categories:
+  - Pensions
+  - Institutional Investors
+- title: 'David and Goliath: Displacing a primary market'
+  year: '2000'
+  meta: Journal of Global Financial Markets · Spring 2000
+  authors: Ajay Shah, Susan Thomas
+  url: http://www.mayin.org/ajayshah/PDFDOCS/ShahThomas2000_jgfm.pdf
+  abstract: ''
+  categories:
+  - Market Microstructure
+  - Exchanges

@@ -1,17 +1,19 @@
 ---
 title: "Books"
 description-meta: "Books"
-#back-to-top-navigation: true
 title-block-banner: false
 page-layout: full
-#css: /custom.css
-hide_references: true
-bibliography: sue_res.bib
-nocite: |
-    @Thomas2022_ibcreforms @ShahThomasGorham2008 @Thomas2003_dbook @Thomas1998_dbook @Thomas1998_fmbook
+css: custom.css
+listing:
+  - id: books-list
+    contents: books.yml
+    template: book_card.ejs
+    sort: false
+    categories: true
 ---
-::: {#refs}
+
+<p class="text-muted" style="font-family:'Inter',sans-serif; font-size:0.9rem; margin-top:-0.5rem; margin-bottom:2rem;">Hover over any item to read a brief description and access the full text.
+</p>
+
+:::{#books-list}
 :::
-
-
-
