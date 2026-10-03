@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - "files/images/*"
+    - "files/sue-res.pdf"
 
 # Meta
 description-meta: "Academic webpage for Susan Thomas"
