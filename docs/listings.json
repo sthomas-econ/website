@@ -1,6 +1,10 @@
 [
   {
-    "listing": "/reading.html",
+    "listing": "/research.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
     "items": [
       "/masani/gunsgermsandsteel.html",
       "/masani/fallofmoondustandalgernon.html",
@@ -15,15 +19,11 @@
     ]
   },
   {
-    "listing": "/research.html",
-    "items": []
-  },
-  {
     "listing": "/books.html",
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/reading.html",
     "items": [
       "/masani/gunsgermsandsteel.html",
       "/masani/fallofmoondustandalgernon.html",
