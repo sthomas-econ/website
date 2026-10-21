@@ -1,0 +1,39 @@
+---
+title: Guns, Germs and Steel
+subtitle: by Jared Diamond
+date: '2026-09-28'
+---
+
+SCHEDULE 
+
+Session 1 (28 Sept): The Research Design & Natural Experiments
+
+Reading: Prologue & Part 1 (Chapters 1–3)
+A kickoff meeting focused on methodology and framing. It’s a light reading load, so the discussion should focus heavily on Diamond's premise as a research proposal.
+
+Discussion:
+Deconstructing Yali’s Question (30 mins): Treat the Prologue like a problem statement in a research paper. Is "Why did human development proceed at such different rates?" a well-framed question for diagnosing modern social problems?
+
+The Chatham Islands as a Model (45 mins): Focus intensely on Chapter 2. Have the group critique this "natural experiment." Discuss how modern quantitative researchers isolate variables (like geography and climate) when the starting population (the Polynesians) is held constant.
+
+The Baseline of Conquest (15 mins): Use Chapter 3 to discuss the immediate advantages of early technological disparity before diving into why those disparities existed in the next session.
+
+Session 2 (10 Nov): Spatial Data, Density, & Systems Economics
+
+Reading: Part 2 (Chapters 4–10) and Part 3 (Chapters 11–14)
+The core analytical session. Because this covers 11 chapters, you must split the meeting into two distinct halves to prevent the conversation from becoming a disorganized sprawl.
+Discussion Organization:
+
+First Half: Geographic Determinism & Resource Economics (45 mins): Focus on Chapters 4–10. Discuss the "East-West axis" theory as a spatial data model. How do environmental baselines (domesticable plants/animals) act as the initial capital that dictates the carrying capacity of early settlements?
+
+Second Half: Urbanization, Epidemics, & State Capacity (45 mins): Focus on Chapters 11–14. This is the most critical section for urban planners. Discuss Chapter 11 through the lens of urban epidemiology—how did early density create both innovation and catastrophic disease vectors? Transition to Chapter 14 to debate the institutional economics of centralized power, taxation, and the structural inequalities necessary to maintain complex states.
+
+Session 3 (21 Dec): Regional Peer Review & The Science of History
+
+Reading: Part 4 (Chapters 15–19) and Epilogue
+A wrap-up and macro-level critique. The reading load is moderate, and the timing fits well with a relaxed, end-of-year review.
+Discussion Organization:
+
+Regional Case Studies (45 mins): Treat Part 4 as a series of applied literature reviews. Assign different members to briefly "present" on how well Diamond's framework held up when applied specifically to Australia, China, the Americas, and Africa. Where does his model oversimplify regional complexities?
+
+The Capstone Debate (45 mins): Focus on the Epilogue. Diamond argues that history and social development can be studied with the same scientific and quantitative rigor as physics or biology. Ask your group: Based on the data proxies and methodologies used in the book, did he succeed? What modern urban planning or economic datasets would you apply today to test his theories further?

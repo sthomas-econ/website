@@ -1,8 +1,6 @@
 _site/
 .quarto/
 /.luarc.json
-masani/*.qmd
-masani/*/
 data/
 
 /.quarto/

@@ -1,0 +1,52 @@
+---
+title: The Long Divergence
+subtitle: by Timur Kuran
+date: '2026-02-01'
+---
+
+(The final calendar entry for the 29 July reading:)
+
+On 29th June, we wrapped up discussing “The long divergence” by Timur Kuran. The book's strength lies in what it promises: why did the middle eastern countries develop slowly compared to their western counterparts, despite being richer in the 13th century.  The book presents a lot of research to answer this, but really struggles with finding a plausible answer. It also struggles with finding it's identity. Is it a historical narrative?  Is it an economic narrative, seeking to establish a causal story?  Perhaps an interested reader should just read the last part (Conclusion).  It has a summary of the features of Islamic law+the cultural preferences of the people of the Middle East that were in place at the start of the 13th century, and  a summary of the three (BIG) features that Kuran is persuaded created the long divergence.  But since all this was true for other regions, which didn't end up in the same place as the Islamic countries, the puzzle is left unresolved. The book has a hopeful end about the Middle East though: that many of the features of the Middle Eastern countries/society that has been attributed to the growth gap are being replaced *and* adopted integrally with modern institutions. So in the future, these societies will be as vibrant as anywhere in the world. And the long divergence will be a small blip in the sands of history. 
+
+Both Pillai's "Guns, Gods and Missionaries" and Kuran's "Long Divergence" have been heavy, brain wracking efforts.  For the next reading, we plan to read fiction. Science fiction.  Two books (because I couldn't choose, and couldn't find a coin to flip).  
+
+1. “Flowers for Algernon”, by Daniel Keyes
+
+2. “A fall of moondust”, by Arthur C. Clarke
+
+Read one or read both. But come and let's figure what science fiction is all about before we revert to our regular schedule!  
+
+When: 5:15-7:15pm, 29th July (Wednesday)
+
+Where: Artha Global conference room
+
+(What was the first entry on the Long divergence:)
+
+We are reading “The long divergence” by Timur Kuran.  The puzzle that the book explores is why did the middle eastern countries grow so much more slowly than their western (European) counterparts.  They both started at the same level in the 5th and the 6th centuries, but by the 17th/18th century,  European societies were far more wealthy and more developed. Why did the industrial revolution happen in Europe rather than in the Middle East (ME).  Kuran's thesis starts from identifying Islam as the force that brought together, and kept together, the nomadic tribes of the ME, and that the source of the long divergence is the religion/the religious texts. So far as Parts I and II goes, he identifies the institutional features of Islamic partnership organisations - the waqf - as a key culprit, although these were how orgs started in Europe as well. So the ME got equal rights for all, including women, in inheritance but no long lived firms, that could readily pool diversified capital. They were in an equilibrium that they couldn't break out of, unlike the societies in Europe. Banks appeared in European organically, and had to be imported into the ME with courts that worked along the lines of the European courts of dispute resolution. Was it because contract enforcement can not be visibly implemented in a society with "equal rights"? Was the lack of credit markets with differential interest rates a result of this, and in turn, the cause of the lack of long tenor credit contracts? By the end of Part II, Kuran seems to have fleshed out the puzzle of the Long Divergence in great detail but not really identified a credible reason. Which makes me curious about the second half. Let's meet and discuss how he concludes on the 29th.
+
+(The first long entry for the 29th July reading, which summarised The long divergence below.)
+
+On 29th June, we wrapped up discussing “The long divergence” by Timur Kuran. The book's strength lies in what it promises: why did the middle eastern countries develop slowly compared to their western counterparts, despite being richer in the 13th century.  They were as smart, as interested in being rich, wanted to be more egalitarian (for example, their inheritance laws that gave equal parts of the property to all immediate family members, regardless of gender). What they were not was open to explicit dissociation with the Islamic law. When the law said corporations cannot expand from their original contributions/contributors, or that different ethnic/religious groups should have their own laws and enforcement mechanisms, this stuck as part of their culture. Kuran presents this as an absolute barrier to growth in the region. But he presents many things as *equally* absolute barriers to this growth. This rapidly confuses the reader because surely not everything can be an *absolute barrier* to growth.  There is a *lot* of research and documentation in the book that is pitched as critical as an answer to the puzzle, but it is left to the reader to craft her own answer with little guidance of what is more important, or less.  What makes this especially difficult is the repeating appearance of the same argument at different places with different references, different contexts. The book really struggles with finding it's identity. Is it a historical narrative?  Is it an economic narrative, seeking to establish a causal story?  The book reads as if each of the two identities fought, won and made an appearance at different places in the book.  
+
+Perhaps an interested, sympathetic reader, should just read the last part (Conclusion).  It has a summary of the features of Islamic law+the cultural preferences of the people of the Middle East that were in place at the start of the 13th century, and  a summary of the three (BIG) features that Kuran is persuaded created the long divergence.  But even he admits that the same was true for other regions, which didn't end up in the same place as the Islamic countries. The puzzle is left unresolved. The book has a hopeful end about the Middle East though: that many of the features of the Middle Eastern countries/society that has been attributed to the growth gap are being replaced *and* adopted integrally with modern institutions. And that in the future, these societies will be as vibrant as anywhere in the world. And the long divergence will be a small blip in the sands of history. 
+
+Both Pillai's "Guns, Gods and Missionaries" and Kuran's "Long Divergence" have been heavy, brain wracking efforts.  For the next reading, we plan to read fiction. Science fiction.  Two books (because I couldn't choose, and couldn't find a coin to flip).  
+
+1. “Flowers for Algernon”, by Daniel Keyes
+
+2. “A fall of moondust”, by Arthur C. Clarke
+
+Read one or read both. But come and let's figure what science fiction is all about before we revert to our regular schedule!  
+
+When: 5:15-7:15pm, 29th July (Wednesday)
+
+Where: Artha Global conference room
+
+
+(Notes while reading the book:
+
+* Chapters/sections that resonates the most: Part III -- Sections 11,12 which describes most honestly how there started a separation of dispute resolution/judicial processes for 'non-Muslims'+'foreigners'. The Islamic society obsessed with being illiterates who would be conned into signing something that he did not know or get cheated because he couldn't read. So the system (a) contracted only with known parties - like the financial transactions on the BSE - (b) insisted on witness accounts in hearing cases in the Islamic courts, (c) and explicitly chose oral evidence over documents to the point that even when documents existed, oral evidence was required in the case hearings. This last part also helped the obfuscation of state legibility, which would have made it less possible for the state to protect and provide for, in that role of state. In the section titled "Islam and the documentation of contracts", there is an account of what happened to Crete when the Ottomans took it over from the Venetians in the mid-17th century. Venetians used professional notaries to record all maritime agreements. This declined when the Ottomans took over, to the extent that even the use of receipts for money transfers became sporadic. What is sloppy is that he doesn't follow up with what happened to maritime trade through Crete as a consequence. Instead, he sallies forth into showing that the Quran did preach the importance of documentation, and that the Islamic society chose the opposite in living their life. Kuran then goes into a long winded rant against the "capitulations" that the rulers permitted to foreigners so that they could have their cake and eat it too, and how it all backfired on them and the Islamic society in the long run. But this seems to me a story that has similar origins in the countries of the west as well, and they seemed to have come out on the better/auccesful side of history. It was not the religion. And Kuran hasn't figured out what else it is, other than perhaps the peopls of this region being/believing that they are dominantly illiterate. We should not (continue to) make the same mistake.
+
+* In the Section titled "The absence of middle eastern consuls" (and the previous one on "Foreign privileges as facilitators of impersonal exchange"), there is the idea of associations of traders coming together to pool resources for collective bargaining.  Usually to bargain with state(s).  They did this to grow economies of scale from limited resources. In this, the states were supportive because they benefitted from a growth in trade. In the Middle East, long distance traders did not form associations/guilds because their states saw nothing to gain from them (on trade?).
+
+8 Curious: for all that inheritance laws gave women equal access to the family wealth, why was there no difference in gender equality in the ME compared with the West? In fact, why did it emerge as worse?? For instance, could a woman start / manage a waqf? Kuran doesn't seem interested in such questions.)

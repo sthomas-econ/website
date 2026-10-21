@@ -20,13 +20,18 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "masani"
 
 def export_notes():
-    """Download the notes from SVN into a temporary folder. Returns it, or None if that is not possible."""
+    """Download the notes from SVN into a temporary folder. Returns it, or None if that is not possible.
+    The repository needs a login: on this computer the saved SVN login is used; on GitHub the read-only
+    login comes from the SVN_USER and SVN_PASSWORD secrets."""
     if not shutil.which("svn"):
         print("masani: the 'svn' program is not installed", file=sys.stderr)
         return None
+    login = []
+    if os.environ.get("SVN_USER"):
+        login = ["--username", os.environ["SVN_USER"], "--password", os.environ.get("SVN_PASSWORD", ""), "--no-auth-cache"]
     dest = Path(tempfile.mkdtemp()) / "notes"
     for attempt in range(1, 4):                      # the server sometimes answers 5xx for a moment
-        if subprocess.run(["svn", "export", "--quiet", "--non-interactive", URL, str(dest)]).returncode == 0:
+        if subprocess.run(["svn", "export", "--quiet", "--non-interactive", *login, URL, str(dest)]).returncode == 0:
             return dest
         shutil.rmtree(dest, ignore_errors=True)
         if attempt < 3:
@@ -34,21 +39,28 @@ def export_notes():
     return None
 
 
-# Where the notes come from: a folder given on the command line or in MASANI_DIR (any local SVN checkout,
-# kept anywhere), otherwise a fresh download from SVN. Nothing needs to be saved on the computer in advance.
+# The generated pages in masani/ are saved in the repository, so the site can always be built from them.
+# They are refreshed from SVN whenever the notes can be reached: here with a saved SVN login, on GitHub
+# with the SVN_USER / SVN_PASSWORD secrets. A local checkout kept anywhere also works (argument or MASANI_DIR).
+have_pages = any(OUT.glob("*.qmd"))
 local = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("MASANI_DIR")
 src = Path(local).expanduser() if local else None
-if src is None and any(OUT.glob("*.qmd")) and is_fresh("masani", 0.5):
+if src is None and have_pages and is_fresh("masani", 0.5):
     print("masani: using the pages built in the last 30 minutes")
     sys.exit(0)
+if src is None and os.environ.get("CI") and not os.environ.get("SVN_USER"):
+    if have_pages:
+        print("masani: no SVN login on GitHub, using the saved Masani pages")
+        sys.exit(0)
+    sys.exit("error: no saved Masani pages and no SVN login, so the Masani books cannot be built")
 if src is None:
     src = export_notes()
     if src is None:
-        if any(OUT.glob("*.qmd")):                   # keep the pages from the last successful import
-            print("warning: SVN unreachable, keeping the Masani pages already built", file=sys.stderr)
+        if have_pages:                               # keep the saved pages
+            print("warning: SVN not reachable, using the saved Masani pages", file=sys.stderr)
             sys.exit(0)
-        if os.environ.get("CI"):                     # on GitHub: stop rather than publish a site without the books
-            sys.exit("error: cannot reach the Masani SVN repository, so the site was not rebuilt")
+        if os.environ.get("CI"):
+            sys.exit("error: cannot reach the Masani SVN repository and there are no saved pages")
         print("warning: no access to the Masani notes; building the site without the Masani books", file=sys.stderr)
         sys.exit(0)
     mark_fresh("masani")
