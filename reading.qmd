@@ -1,0 +1,10 @@
+---
+title: "Masani Reading Group"
+listing:
+  contents: "masani/*.qmd"
+  template: masani.ejs
+  sort: "date desc"
+  date-format: "MMM YYYY"
+---
+
+A reading group that meets to discuss one book each quarter, ranging from urban development to the anthropology of the state. All are welcome. Notes from each discussion are posted here.

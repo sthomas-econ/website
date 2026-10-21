@@ -1,0 +1,20 @@
+<script>
+/* Small sleeping cats beside her name in the navbar and in the footer; each wakes when you point at it. */
+document.addEventListener("DOMContentLoaded", function () {
+  if (!window.makeCat) return;
+  function place(host, wrap, cls, hoverOn, prepend) {
+    if (!host) return;
+    var box = document.createElement("span");
+    box.className = wrap;
+    var cat = window.makeCat(cls);
+    box.appendChild(cat);
+    if (prepend) host.insertBefore(box, host.firstChild); else host.appendChild(box);
+    hoverOn.addEventListener("mouseenter", function () { cat.setAttribute("class", "cat awake"); });
+    hoverOn.addEventListener("mouseleave", function () { cat.setAttribute("class", "cat " + cls); });
+  }
+  var brand = document.querySelector(".navbar-brand");
+  place(brand, "nav-cat", "sleep", brand || document, true);
+  var foot = document.getElementById("cat-foot");
+  place(foot, "cat-wrap", "sleep", foot || document, false);
+});
+</script>

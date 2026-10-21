@@ -1,0 +1,28 @@
+<!-- The cat: one outline drawing, reused (loading, empty lists, 404, footer). Animation lives in custom.css. -->
+<template id="cat-tpl">
+<svg viewBox="0 0 96 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <g class="cat-tail"><path d="M76 54 C91 54 94 39 85 33"/></g>
+  <g class="cat-body">
+    <path class="fill" d="M15 58 C11 42 24 31 43 31 C63 31 79 41 79 53 C79 56.500 77 58 74 58 Z"/>
+    <path d="M26 58 V50"/>
+  </g>
+  <g class="cat-head">
+    <path d="M18 25 L16 11 L27 20"/><path d="M29 20 L40 11 L38 26"/>
+    <ellipse class="fill" cx="28" cy="32" rx="12" ry="11"/>
+    <g class="eyes-open"><circle cx="23" cy="31" r="1.500" fill="currentColor" stroke="none"/><circle cx="33" cy="31" r="1.500" fill="currentColor" stroke="none"/></g>
+    <g class="eyes-shut"><path d="M20 32 q3 3 6 0"/><path d="M30 32 q3 3 6 0"/></g>
+    <path d="M26.500 35.500 h3 l-1.500 1.800 z" fill="currentColor" stroke-width="1"/>
+    <path class="mouth-shut" d="M25 39 q3 2 6 0"/>
+    <ellipse class="mouth-open" cx="28" cy="40.500" rx="3.200" ry="4"/>
+  </g>
+  <g class="cat-z"><text x="46" y="20" font-size="11" fill="currentColor" stroke="none" font-family="Inter, sans-serif" font-weight="600">z</text><text x="56" y="11" font-size="8" fill="currentColor" stroke="none" font-family="Inter, sans-serif" font-weight="600">z</text></g>
+</svg>
+</template>
+<script>
+/* makeCat("") plays once: asleep, stretch, yawn, awake.  "sleep" stays asleep.  "awake" is just sitting. */
+window.makeCat = function (mode) {
+  var s = document.getElementById("cat-tpl").content.firstElementChild.cloneNode(true);
+  s.setAttribute("class", "cat " + (mode || ""));
+  return s;
+};
+</script>

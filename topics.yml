@@ -1,0 +1,15 @@
+# Topics shown as filters on the Research page.
+# Each entry gets every topic where one of its words appears in the title, abstract or LEAP labels.
+# Words match whole words (plural is fine). End a word with * to match any ending: procure* matches procurement.
+# To force topics for one entry, add  keywords = {Public procurement, Courts and insolvency}  in sue_res.bib.
+# To add a topic, add a line here: the name, then its words.
+Public procurement: [procure*, tender, government buying, contracting, make vs, public contract]
+Courts and insolvency: [court, tribunal, litigant, litigation, insolven*, bankrupt*, NCLT, debt recovery, judicia*, resolution of]
+Financial markets: [derivative, futures, equity, stock, trading, exchange, price discovery, volatil*, liquidity, securities, capital market, commodity, microstructure, Nifty, order to trade, index, indexes, markets work, BSE, NSE, primary market]
+Banking and credit: [bank, banks, banking, credit, lending, lend*, loan, loans, rating, ratings, borrow*, NPA, asset reconstruction, interest rate]
+Households and inclusion: [household, households, inclusion, micro-finance, microfinance, insurance, pension, pensions, savings, consumption]
+Public finance: [fiscal, budget, subsid*, tax, taxes, public finance, expenditure, state capacity, guarantee scheme, public debt, government debt]
+Measurement and data: [measur*, nighttime lights, night-time lights, satellite, survey, LLM, language model]
+Climate and energy: [climate, ESG, electricity, energy, renewable, carbon]
+Law and regulation: [regulat*, legal, legislat*, constitution, Code]
+Technology and innovation: [innovat*, technolog*, digital, IT, LLM, algorithmic, science policy]

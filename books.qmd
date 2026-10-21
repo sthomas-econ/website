@@ -1,19 +1,21 @@
 ---
 title: "Books"
-description-meta: "Books"
-title-block-banner: false
-page-layout: full
-css: custom.css
 listing:
-  - id: books-list
-    contents: books.yml
-    template: book_card.ejs
+  - id: bookshelf
+    contents: data/bookshelf.yml
+    template: entry.ejs
     sort: false
-    categories: true
 ---
 
-<p class="text-muted" style="font-family:'Inter',sans-serif; font-size:0.9rem; margin-top:-0.5rem; margin-bottom:2rem;">Hover over any item to read a brief description and access the full text.
-</p>
+Books and chapters in edited volumes, newest first.
 
-:::{#books-list}
+```{=html}
+<nav class="rail type-rail" id="type-rail" aria-label="Filter by type"></nav>
+<nav class="rail topic-rail" id="topic-rail" aria-label="Filter by topic"></nav>
+<nav class="rail year-rail" id="year-rail" aria-label="Jump to year"></nav>
+<script src="filters.js"></script>
+<div class="cat-wait" id="cat-wait"><script>document.currentScript.parentNode.prepend(makeCat(""));</script><span>Still waking up&hellip;</span></div>
+```
+
+:::{#bookshelf}
 :::

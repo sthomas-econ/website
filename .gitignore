@@ -1,1 +1,10 @@
+_site/
+.quarto/
+/.luarc.json
+masani/*.qmd
+masani/*/
+data/
+
 /.quarto/
+__pycache__/
+*.pyc

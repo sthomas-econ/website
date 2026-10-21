@@ -1,0 +1,12 @@
+# Fallback metadata for Masani books whose SVN folder has no book.yml.
+# Key = SVN folder name. date = when the group started the book (approximate where marked).
+TYRANNYOFEXPERTS:        {title: "The Tyranny of Experts", author: "William Easterly", date: "2024-08"}
+TRIUMPOFTHECITY:         {title: "Triumph of the City", author: "Edward Glaeser", date: "2024-12-16"}
+EXITVOICEANDLOYALTY:     {title: "Exit, Voice and Loyalty", author: "Albert O. Hirschman", date: "2025-04-21"}
+AGAINSTTHEGRAIN:         {title: "Against the Grain", author: "James C. Scott", date: "2025-06-04", cover: "files/images/against_the_grain.jpg"}
+PEOPLESCONSTITUTION:     {title: "A People's Constitution", author: "Rohit De", date: "2025-08-06"}
+IDEAOFINDIA:             {title: "The Idea of India", author: "Sunil Khilnani", date: "2025-10-22"}
+SHATTEREDLANDS:          {title: "Shattered Lands", author: "William Dalrymple", date: "2025-12-12"}
+THELONGDIVERGENCE:       {title: "The Long Divergence", author: "Timur Kuran", date: "2026-02-01"}
+FALLOFMOONDUSTANDALGERNON: {title: "A Fall of Moondust / Flowers for Algernon", author: "Arthur C. Clarke / Daniel Keyes", date: "2026-08-03"}
+GUNSGERMSANDSTEEL:       {title: "Guns, Germs and Steel", author: "Jared Diamond", date: "2026-09-28"}

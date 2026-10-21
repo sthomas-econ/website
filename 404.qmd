@@ -1,7 +1,11 @@
 ---
-title: Page Unplugged
+title: "Page not found"
+toc: false
 ---
 
-The page you requested cannot be found (perhaps it was unplugged).
+```{=html}
+<div class="cat-empty"><script>document.currentScript.parentNode.prepend(makeCat(""));</script>
+<span>That page isn't here. Perhaps the cat has it.</span></div>
+```
 
-You may want to try searching to find the page's new plug.
+[Back to the home page](index.qmd)

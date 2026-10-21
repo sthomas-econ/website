@@ -6,8 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Susan Thomas">
-<meta name="description" content="Academic Website for Susan Thomas">
 
 <title>Susan Thomas</title>
 <style>
@@ -38,27 +36,25 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-10722fefd809da47ab1c11c47adb13ed.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
-  "type": "textbox",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -76,20 +72,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-active-projects .list');
+    const listingTargetEl = window.document.querySelector('#listing-recent-papers .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-image','listing-status','listing-url','listing-tag',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-section','listing-year','listing-title','listing-authors','listing-meta','listing-url','listing-abstract','listing-topics','listing-related',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-image","listing-status","listing-url","listing-tag"],
+      searchColumns: ["listing-section","listing-year","listing-title","listing-authors","listing-meta","listing-url","listing-abstract","listing-topics","listing-related"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-active-projects'] = new List('listing-active-projects', options);
+    window['quarto-listings']['listing-recent-papers'] = new List('listing-recent-papers', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -104,48 +100,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest-paper .list');
+    const listingTargetEl = window.document.querySelector('#listing-current-book .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-year','listing-meta','listing-authors','listing-url','listing-abstract','listing-categories',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-project','listing-website','listing-from','listing-format','listing-language','listing-title','listing-subtitle','listing-date','listing-image','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-year","listing-meta","listing-authors","listing-url","listing-abstract","listing-categories"],
+      searchColumns: ["listing-project","listing-website","listing-from","listing-format","listing-language","listing-title","listing-subtitle","listing-date","listing-image","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest-paper'] = new List('listing-latest-paper', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-latest-event .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-image','listing-status','listing-url','listing-tag',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-description","listing-image","listing-status","listing-url","listing-tag"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-latest-event'] = new List('listing-latest-event', options);
+    window['quarto-listings']['listing-current-book'] = new List('listing-current-book', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -158,35 +126,6 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
-
-<script type="text/javascript">
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '', { 'anonymize_ip': true});
-</script>
-
-<!-- 
-Load Academicons v1: https://jpswalsh.github.io/academicons/
--->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
-<!---
-The following code are needed to show dimension citation and altmetrics.
-https://api.altmetric.com/embeds.html
-https://badge.dimensions.ai/
---->
-
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-
-<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -219,15 +158,10 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="custom.css">
-<meta property="og:title" content="Susan Thomas">
-<meta property="og:image" content="https://sthomas-econ.github.io/website/files/images/headshot.jpg">
-<meta property="og:site_name" content="Susan Thomas">
-<meta name="twitter:title" content="Susan Thomas">
-<meta name="twitter:image" content="https://sthomas-econ.github.io/website/files/images/headshot.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="palettes/sage-berry.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -252,40 +186,18 @@ window.Quarto = {
     <a class="nav-link" href="./files/sue-res.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="./journal_publications.html">
- <span class="dropdown-text">Journal Publications</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./working_papers.html">
- <span class="dropdown-text">Working Papers</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./books.html"> 
+<span class="menu-text">Books</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./blogs.html">
- <span class="dropdown-text">Blog Posts</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./reading.html"> 
+<span class="menu-text">Reading</span></a>
   </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-books" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Books</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-books">    
-        <li>
-    <a class="dropdown-item" href="./books.html">
- <span class="dropdown-text">Books</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./chapters.html">
- <span class="dropdown-text">Chapters in Books</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -294,122 +206,174 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+<!-- The cat: one outline drawing, reused (loading, empty lists, 404, footer). Animation lives in custom.css. -->
+<template id="cat-tpl">
+<svg viewbox="0 0 96 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <g class="cat-tail"><path d="M76 54 C91 54 94 39 85 33"></path></g>
+  <g class="cat-body">
+    <path class="fill" d="M15 58 C11 42 24 31 43 31 C63 31 79 41 79 53 C79 56.500 77 58 74 58 Z"></path>
+    <path d="M26 58 V50"></path>
+  </g>
+  <g class="cat-head">
+    <path d="M18 25 L16 11 L27 20"></path><path d="M29 20 L40 11 L38 26"></path>
+    <ellipse class="fill" cx="28" cy="32" rx="12" ry="11"></ellipse>
+    <g class="eyes-open"><circle cx="23" cy="31" r="1.500" fill="currentColor" stroke="none"></circle><circle cx="33" cy="31" r="1.500" fill="currentColor" stroke="none"></circle></g>
+    <g class="eyes-shut"><path d="M20 32 q3 3 6 0"></path><path d="M30 32 q3 3 6 0"></path></g>
+    <path d="M26.500 35.500 h3 l-1.500 1.800 z" fill="currentColor" stroke-width="1"></path>
+    <path class="mouth-shut" d="M25 39 q3 2 6 0"></path>
+    <ellipse class="mouth-open" cx="28" cy="40.500" rx="3.200" ry="4"></ellipse>
+  </g>
+  <g class="cat-z"><text x="46" y="20" font-size="11" fill="currentColor" stroke="none" font-family="Inter, sans-serif" font-weight="600">z</text><text x="56" y="11" font-size="8" fill="currentColor" stroke="none" font-family="Inter, sans-serif" font-weight="600">z</text></g>
+</svg>
+</template>
+<script>
+/* makeCat("") plays once: asleep, stretch, yawn, awake.  "sleep" stays asleep.  "awake" is just sitting. */
+window.makeCat = function (mode) {
+  var s = document.getElementById("cat-tpl").content.firstElementChild.cloneNode(true);
+  s.setAttribute("class", "cat " + (mode || ""));
+  return s;
+};
+</script>
 
-
-
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="files/images/headshot.jpg" class="about-image
-  rounded " style="width: 40%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Susan Thomas</h1>
 </div>
-<div class="quarto-title-meta column-page">
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://scholar.google.com/citations?user=0QRD90YAAAAJ&amp;hl=en" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-google-scholar"></i></span>
-  </a>
-  <a href="https://ideas.repec.org/e/pth170.html" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-ideas-repec"></i></span>
-  </a>
-  <a href="https://orcid.org/0000-0003-3124-6671" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-orcid"></i></span>
-  </a>
-  <a href="https://xkdr.org/" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Forum" height="15"></span>
-  </a>
-  <a href="mailto:sthomas.entp@gmail.com" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i></span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<p>I am an economist studying markets, institutions and public finance. My work spans market microstructure, public procurement, insolvency law, and climate finance. I collaborate with researchers and policymakers — reach out if our interests overlap.</p>
-</div></div>
-</div>
 
-<section class="home-section">
-  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem;">
-    <div class="home-section-label" style="margin-bottom: 0;">Active Projects</div>
-    <a href="posts.html" style="font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 500; color: var(--accent); text-decoration: none;">Projects &amp; Initiatives ↗</a>
-  </div>
-<div id="listing-active-projects" class="quarto-listing quarto-listing-container-custom">
 
-  <div class="home-paper-spotlight" style="margin-bottom: 1.5rem;">
-    <div class="home-paper-meta-bar">
-      <span class="home-paper-type-badge">Book</span>
-      <span class="home-paper-meta">Coming Soon</span>
+<div class="hero">
+<p><img src="files/images/headshot.jpg" class="headshot img-fluid" width="192"></p>
+<div class="hero-text">
+<p>I am an economist.</p>
+<p><a href="https://scholar.google.com/citations?user=0QRD90YAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://ideas.repec.org/e/pth170.html">RePEc</a> · <a href="https://orcid.org/0000-0003-3124-6671">ORCID</a> · <a href="mailto:sthomas.entp@gmail.com">Email</a></p>
+</div>
+</div>
+<section id="recent-research" class="level2 section">
+<h2 class="section anchored" data-anchor-id="recent-research">Recent research</h2>
+<div id="listing-recent-papers" class="quarto-listing quarto-listing-container-custom">
+<ul class="entries">
+
+  <li data-type="" data-types="" data-topics="Public procurement|Technology and innovation">
+    <span class="yr" data-y="2026">2026</span>
+    <div class="body">
+      <div class="title"><a href="https://www.xkdr.org/paper/better-public-procurement-for-it-in-india" target="_blank">Better public procurement for IT in India</a></div>
+      <div class="meta">Ashok Pal Singh, Karthik Suresh, Susan Thomas · XKDR Forum Working Paper 51 · Oct 2026</div>
+      <div class="tags"><a href="#" class="tag" data-topic="Public procurement">Public procurement</a><a href="#" class="tag" data-topic="Technology and innovation">Technology and innovation</a></div>
+      <div class="related"><a href="https://blog.theleapjournal.org/2026/10/better-public-procurement-for-it-in.html" target="_blank">LEAP blog post</a></div>
+      <details><summary>Abstract</summary><p>Information technology (IT) systems are now ubiquitous in government. The Government of India has tripled its spending in real terms on IT procurement over the last fifteen years. IT procurement is tricky because these systems need continuous maintenance and refinement, and traditional systems of procurement are unsuitable for solving the incomplete contract problem that follows IT procurement. We build on three case studies from India – Aadhaar, Passport Seva, and MCA-21 – to make the case for why we need new thinking on IT procurement. Our solutions hinge around the fact that the government needs to build robust internal technical expertise even when system development has been outsourced. We make the case for flexible contracting, early concept verification, and strategic investments in state HR capabilities to successfully navigate the marketplace for digital services.</p></details>
     </div>
-    <h3 class="home-paper-title" style="margin-bottom: 0.5rem;">
-      <a href="posts/news-title/10yearsofIBC.html" target="_blank" style="color: inherit; text-decoration: none;">10 Years of the IBC</a>
-    </h3>
-    
-    
-      <p class="home-paper-abstract">A forthcoming multi-author volume taking stock of a decade of insolvency and bankruptcy reform in India.</p>
-    
-    <a href="posts/news-title/10yearsofIBC.html" target="_blank" class="home-paper-readmore" style="margin-top: 1rem; text-decoration: none;">Read more ↗</a>
-  </div>
+  </li>
 
+  <li data-type="" data-types="" data-topics="Households and inclusion|Public finance|Measurement and data">
+    <span class="yr" data-y="2026"></span>
+    <div class="body">
+      <div class="title"><a href="https://www.xkdr.org/paper/better-methods-of-running-subsidy-programs-evidence-from-the-karnataka-schemes-of-2023" target="_blank">Better methods of running subsidy programs: Evidence from the Karnataka schemes of 2023</a></div>
+      <div class="meta">Jay Kulkarni, Ajay Shah, Susan Thomas · XKDR Forum Working Paper 50 · Aug 2026</div>
+      <div class="tags"><a href="#" class="tag" data-topic="Households and inclusion">Households and inclusion</a><a href="#" class="tag" data-topic="Public finance">Public finance</a><a href="#" class="tag" data-topic="Measurement and data">Measurement and data</a></div>
+      
+      <details><summary>Abstract</summary><p>Governments in developing countries spend heavily on subsidies, yet much of the money never reaches households: the macro–micro gap. We measure this gap in Karnataka, India, across a natural experiment. Karnataka has been delivering conditional Direct Benefit Transfers (DBT) for about a decade now. In July 2023 the state introduced new “guarantee” schemes, and directed much of its DBT allocation to a near-unconditional scheme. Because administrative records are endogenous to the state that produces them, we measure household receipts independently, from the CMIE Consumer Pyramids Household Survey. We compare robust population estimates from this survey against the state’s reported expenditure on DBTs in both periods. The gap averaged about 78% over the seven pre-2023 years and fell to about 17% after the shift. The paper contributes independently measured evidence on subsidy delivery in India and a replicable method for auditing welfare programs in the presence of longitudinal data.</p></details>
+    </div>
+  </li>
+
+  <li data-type="" data-types="" data-topics="Public procurement|Public finance|Technology and innovation">
+    <span class="yr" data-y="2026"></span>
+    <div class="body">
+      <div class="title"><a href="https://odi.org/en/about/our-work/public-finance-in-the-digital-era-emerging-themes-2026/" target="_blank">Better procurement for government IT systems</a></div>
+      <div class="meta">Susan Thomas · Public finance in the digital era: Emerging themes 2026, ODI Global · Jun 2026</div>
+      <div class="tags"><a href="#" class="tag" data-topic="Public procurement">Public procurement</a><a href="#" class="tag" data-topic="Public finance">Public finance</a><a href="#" class="tag" data-topic="Technology and innovation">Technology and innovation</a></div>
+      
+      <details><summary>Abstract</summary><p>IT systems procurement in government is no longer a back-office support function, but a critical requirement of modern state capacity. Traditional public procurement frameworks are ill-equipped for digital infrastructure. Rapid technological evolution creates an "incomplete contract" problem, rendering perfect ex-ante requirements impossible and leading to frequent change requests that trigger costly lifecycle disruptions. The continuous need for system iteration blurs the "make-or-buy" boundary, because robust internal technical expertise is needed even when development is outsourced. Building on three case-studies of public IT procurement in India, this article argues for a paradigm shift in how governments plan, procure, and maintain IT systems. It outlines an responsive framework centered on flexible contracting, early concept verification, expert-led dispute resolution, and strategic investments in state HR capabilities to successfully navigate the digital marketplace.</p></details>
+    </div>
+  </li>
+
+  <li data-type="" data-types="" data-topics="Financial markets|Banking and credit|Households and inclusion|Public finance">
+    <span class="yr" data-y="2026"></span>
+    <div class="body">
+      <div class="title"><a href="https://www.xkdr.org/paper/when-households-first-borrow-causes-and-consequences" target="_blank">When households first borrow: Causes and consequences</a></div>
+      <div class="meta">Geetika Palta, Renuka Sane, Susan Thomas · XKDR Forum Working Paper 49 · Jun 2026</div>
+      <div class="tags"><a href="#" class="tag" data-topic="Financial markets">Financial markets</a><a href="#" class="tag" data-topic="Banking and credit">Banking and credit</a><a href="#" class="tag" data-topic="Households and inclusion">Households and inclusion</a><a href="#" class="tag" data-topic="Public finance">Public finance</a></div>
+      
+      <details><summary>Abstract</summary><p>We examine the impact of borrowing on consumption smoothing for households entering credit markets for the first time, using a large panel dataset with income, expenditure and financial choices of 150,000 households in India. Compared to households that never borrow, first-time borrowers are poorer, younger, less educated, and face higher income volatility. Their decision to borrow is often preceded by a change in income or consumption, regardless of whether it is a decrease or an increase. The act of borrowing increases both the level and the volatility of consumption expenditure. Credit does not help to smooth consumption, even for first time borrowers with no shocks to income and consumption. Higher volatility of consumption persists after borrowing, particularly for expenditure on non-durable goods such as food or planned household expenditure. This suggests that new borrowers use credit as one component of a broader risk-management strategy that involves multiple adjustments within their consumption portfolio.</p></details>
+    </div>
+  </li>
+
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+<p><a href="./research.html">All research →</a></p>
 </section>
+<section id="now-reading" class="level2 section">
+<h2 class="section anchored" data-anchor-id="now-reading">Now reading</h2>
+<p>The Masani Reading Group meets to discuss one book each quarter.</p>
+<div id="listing-current-book" class="quarto-listing quarto-listing-container-custom">
+<ul class="entries books">
 
-<section class="home-section">
-  <div class="home-section-label">Latest Work</div>
-  <div class="home-activity-strip">
-<div id="listing-latest-paper" class="quarto-listing quarto-listing-container-custom">
-
-  <a href="https://www.xkdr.org/paper/information-extraction-from-fiscal-documents-using-llms" target="_blank" class="home-activity-item">
-    <div class="home-activity-body" style="padding: 1.5rem;">
-      <span class="home-activity-tag">Working Paper</span>
-      <p class="home-activity-title">Information Extraction from Fiscal Documents using LLMs</p>
-      <p class="home-activity-desc" style="font-size: 0.8rem; margin-top: 0.5rem;">Vikram Aggarwal, Jay Kulkarni, Aakriti Narang, Aditi Mascarenhas, Siddarth Raman, Ajay Shah, Susan Thomas</p>
-      <span class="home-activity-status" style="margin-top: 0.5rem;">Read ↗</span>
+  <li>
+    <span class="yr">Sep 2026</span>
+    <div class="body">
+      <div class="title"><a href="./masani/gunsgermsandsteel.html">Guns, Germs and Steel</a></div>
+      <div class="meta">by Jared Diamond</div>
     </div>
-  </a>
+  </li>
 
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<div id="listing-latest-event" class="quarto-listing quarto-listing-container-custom">
+<p><a href="./reading.html">All past books and notes →</a></p>
 
-  <a href="posts/event-title/masani.html" class="home-activity-item" target="_blank">
-    
-    <div class="home-activity-img" style="background-image: url('files/images/against_the_grain.jpg');"></div>
-    
-    <div class="home-activity-body">
-      <span class="home-activity-tag">Reading Group</span>
-      <p class="home-activity-title">Masani Reading Group</p>
-      
-        <p class="home-activity-desc">A monthly discussion group on urban development, state formation, and political economy.</p>
-      
-      
-        <span class="home-activity-status">Ongoing</span>
-      
-    </div>
-  </a>
 
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-  </div>
+
 </section>
-
-
-
-
 
 </main> <!-- /main -->
+<script>
+/* Small sleeping cats beside her name in the navbar and in the footer; each wakes when you point at it. */
+document.addEventListener("DOMContentLoaded", function () {
+  if (!window.makeCat) return;
+  function place(host, wrap, cls, hoverOn, prepend) {
+    if (!host) return;
+    var box = document.createElement("span");
+    box.className = wrap;
+    var cat = window.makeCat(cls);
+    box.appendChild(cat);
+    if (prepend) host.insertBefore(box, host.firstChild); else host.appendChild(box);
+    hoverOn.addEventListener("mouseenter", function () { cat.setAttribute("class", "cat awake"); });
+    hoverOn.addEventListener("mouseleave", function () { cat.setAttribute("class", "cat " + cls); });
+  }
+  var brand = document.querySelector(".navbar-brand");
+  place(brand, "nav-cat", "sleep", brand || document, true);
+  var foot = document.getElementById("cat-foot");
+  place(foot, "cat-wrap", "sleep", foot || document, false);
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -473,7 +437,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("^(?:http:|https:)\/\/sthomas-econ\.github\.io\/website");
+        var filterRegex = new RegExp("https:\/\/sthomas-econ\.github\.io\/website\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -487,11 +451,6 @@ window.Quarto = {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -809,29 +768,24 @@ window.Quarto = {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<a href="https://github.com/sthomas-econ">Susan Thomas</a> ©
-<script>document.write(new Date().getFullYear())</script>
+<p>Susan Thomas</p>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
-    </div>
+<p><span id="cat-foot" class="cat-foot"></span></p>
+</div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://in.linkedin.com/in/susan-thomas-417869">
+    <a class="nav-link" href="https://www.linkedin.com/in/susan-thomas-417869/">
       <i class="bi bi-linkedin" role="img">
 </i> 
     </a>
   </li>  
-    <li class="nav-item">
+    <li class="nav-item compact">
     <a class="nav-link" href="https://scholar.google.com/citations?user=0QRD90YAAAAJ&amp;hl=en">
-<p><i class="ai  ai-google-scholar"></i></p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="https://xkdr.org/">
-<p><img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Logo" height="15"></p>
-</a>
+      <i class="bi bi-mortarboard-fill" role="img">
+</i> 
+    </a>
   </li>  
 </ul>
     </div>

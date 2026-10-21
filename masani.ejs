@@ -1,0 +1,13 @@
+```{=html}
+<ul class="entries books">
+<% for (const item of items) { %>
+  <li>
+    <span class="yr"><%= item.date %></span>
+    <div class="body">
+      <div class="title"><a href="<%= item.path %>"><%= item.title %></a></div>
+      <div class="meta"><%= item.subtitle %></div>
+    </div>
+  </li>
+<% } %>
+</ul>
+```

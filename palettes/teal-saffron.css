@@ -1,0 +1,10 @@
+/* Deep teal with saffron, on warm cream, in Source Serif 4.
+   To use a palette, put its file name in the css: list of _quarto.yml (see README). */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap");
+
+:root {
+  --serif: "Source Serif 4", Georgia, serif; --title-weight: 500;
+  --ink: #1d2b2e; --muted: #5d6e70; --base: #0f5c63; --accent: #e0a526; --yr: #a97c12;
+  --bg: #fbf7ee; --band: #f0e9d6;
+  --nav-bg: #0f5c63; --nav-fg: #ffffff; --nav-hover: #e0a526;
+}

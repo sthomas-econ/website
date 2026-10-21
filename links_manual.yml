@@ -1,0 +1,7 @@
+# Pairs of a paper and its LEAP blog post that the build cannot match by itself.
+# Paper and blog posts are normally linked automatically (same title, or the post links to the paper).
+# To add one by hand, give the blog post's address and a distinctive part of the paper's title:
+#
+# - blog: https://blog.theleapjournal.org/2022/11/the-litigant-perspective-upon-courts.html
+#   paper: "litigant's lens"
+[]

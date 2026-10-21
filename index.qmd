@@ -1,73 +1,43 @@
 ---
 title: "Susan Thomas"
-description-meta: "Academic Website for Susan Thomas"
-image: "files/images/headshot.jpg"
-toc: false
-sidebar: false
-page-layout: full
+page-layout: article
 listing:
-  - id: active-projects
-    contents: active_projects.yml
-    template: home_active_projects.ejs
+  - id: recent-papers
+    contents: data/recent.yml
+    template: entry.ejs
     sort: false
-  - id: latest-paper
-    contents: papers.yml
-    template: home_recent_paper.ejs
+  - id: current-book
+    contents: "masani/*.qmd"
+    template: masani.ejs
+    sort: "date desc"
     max-items: 1
-    sort: false
-  - id: latest-event
-    contents: latest_event.yml
-    template: home_latest_event.ejs
-    sort: false
-about:
-  id: hero-heading
-  template: trestles
-  image-width: 40%
-  links:
-    - text: "{{< ai google-scholar >}}"
-      href: https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en
-      target: _blank
-    - text: "{{< ai ideas-repec >}}"
-      href: https://ideas.repec.org/e/pth170.html
-      target: _blank
-    - text: "{{< ai orcid >}}"
-      href: https://orcid.org/0000-0003-3124-6671
-      target: _blank
-    - text: '<img src="files/images/XKDR_Logomark_RGB_Full_Colour.png" alt="XKDR Forum" height="15">'
-      href: https://xkdr.org/
-      target: _blank
-    - text: "{{< fa envelope >}}"
-      href: mailto:sthomas.entp@gmail.com
-      target: _blank
+    date-format: "MMM YYYY"
 ---
 
+::::: {.hero}
+![](files/images/headshot.jpg){.headshot width=192px}
 
-:::{#hero-heading}
+::: {.hero-text}
+I am an economist.
 
-I am an economist studying markets, institutions and public finance. My work spans market microstructure, public procurement, insolvency law, and climate finance. I collaborate with researchers and policymakers — reach out if our interests overlap.
+[Google Scholar](https://scholar.google.com/citations?user=0QRD90YAAAAJ&hl=en) · [RePEc](https://ideas.repec.org/e/pth170.html) · [ORCID](https://orcid.org/0000-0003-3124-6671) · [Email](mailto:sthomas.entp@gmail.com)
+:::
+:::::
+
+## Recent research {.section}
+
+
+
+:::{#recent-papers}
 :::
 
-```{=html}
-<section class="home-section">
-  <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem;">
-    <div class="home-section-label" style="margin-bottom: 0;">Active Projects</div>
-    <a href="posts.html" style="font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 500; color: var(--accent); text-decoration: none;">Projects & Initiatives ↗</a>
-  </div>
-```
-:::{#active-projects}
-:::
-```{=html}
-</section>
+[All research →](research.qmd)
 
-<section class="home-section">
-  <div class="home-section-label">Latest Work</div>
-  <div class="home-activity-strip">
-```
-:::{#latest-paper}
+## Now reading {.section}
+
+The Masani Reading Group meets to discuss one book each quarter.
+
+:::{#current-book}
 :::
-:::{#latest-event}
-:::
-```{=html}
-  </div>
-</section>
-```
+
+[All past books and notes →](reading.qmd)

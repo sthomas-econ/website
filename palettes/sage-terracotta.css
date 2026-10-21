@@ -1,0 +1,10 @@
+/* Sage green with a terracotta accent, in Source Serif 4.
+   To use a palette, put its file name in the css: list of _quarto.yml (see README). */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap");
+
+:root {
+  --serif: "Source Serif 4", Georgia, serif; --title-weight: 500;
+  --ink: #232b26; --muted: #66736b; --base: #35624f; --accent: #cb6a45; --yr: #a94c2a;
+  --bg: #faf7f0; --band: #e3ebe0;
+  --nav-bg: #3f6a56; --nav-fg: #fbf7f0; --nav-hover: #f6d5c4;
+}

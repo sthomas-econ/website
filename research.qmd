@@ -1,0 +1,21 @@
+---
+title: "Research"
+listing:
+  - id: research
+    contents: data/research.yml
+    template: entry.ejs
+    sort: false
+---
+
+Journal articles, working papers, op-eds and blog posts, newest first. Filter by type and topic, or jump to a year. For older work and chapters see [Books](books.qmd) and the [CV](files/sue-res.pdf).
+
+```{=html}
+<nav class="rail type-rail" id="type-rail" aria-label="Filter by type"></nav>
+<nav class="rail topic-rail" id="topic-rail" aria-label="Filter by topic"></nav>
+<nav class="rail year-rail" id="year-rail" aria-label="Jump to year"></nav>
+<script src="filters.js"></script>
+<div class="cat-wait" id="cat-wait"><script>document.currentScript.parentNode.prepend(makeCat(""));</script><span>Still waking up&hellip;</span></div>
+```
+
+:::{#research}
+:::

@@ -1,0 +1,24 @@
+# Op-eds and newspaper columns. Add the newest at the top.
+# Fields: title, outlet, date ("Mon YYYY"), url, coauthors (optional).
+- title: "Improved government buying"
+  outlet: "Business Standard"
+  date: "May 2025"
+  url: "https://www.mayin.org/ajayshah/MEDIA/2025/foreign_procurement.html"
+  coauthors: "Ajay Shah"
+
+- title: "A new direction in science policy"
+  outlet: "Indian Express"
+  date: "Feb 2025"
+  url: "https://www.mayin.org/ajayshah/MEDIA/2025/new_science_policy.html"
+  coauthors: "R. A. Mashelkar, Ajay Shah"
+
+- title: "The problem of greenwashing in ESG investments in finance"
+  outlet: "BQ Prime"
+  date: "Feb 2023"
+  url: "https://www.bqprime.com/opinion/the-problem-of-greenwashing-in-esg-investments-in-finance"
+
+- title: "Automation, competition and the BSE"
+  outlet: "Business Standard"
+  date: "Mar 1996"
+  url: "https://www.mayin.org/ajayshah/MEDIA/1996/bolt.html"
+  coauthors: "Ajay Shah"

@@ -1,0 +1,13 @@
+# Blog posts are fetched automatically from the LEAP blog (posts labelled "author: Susan Thomas").
+# Use this file only for exceptions.
+
+# Posts to leave out (a full URL each):
+skip:
+  - https://blog.theleapjournal.org/2015/01/opportunities-in-analytical-and-policy.html
+
+# Posts to add that LEAP has not labelled with her name:
+add:
+  - title: "Rethinking innovation policy in India: amplifying spillovers through contracting-out"
+    url: "https://blog.theleapjournal.org/2024/03/rethinking-innovation-policy-in-india.html"
+    date: "Mar 2024"
+    coauthors: "R. A. Mashelkar, Ajay Shah"

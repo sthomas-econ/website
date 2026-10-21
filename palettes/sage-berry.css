@@ -1,0 +1,10 @@
+/* Sage green with a berry accent, in Libre Caslon Text. THE ACTIVE PALETTE.
+   To use a palette, put its file name in the css: list of _quarto.yml (see README). */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap");
+
+:root {
+  --serif: "Libre Caslon Text", "Iowan Old Style", Georgia, serif; --title-weight: 400;
+  --ink: #232b26; --muted: #66736b; --base: #35624f; --accent: #a0446f; --yr: #8c3860;
+  --bg: #faf7f0; --band: #e3ebe0;
+  --nav-bg: #3f6a56; --nav-fg: #fbf7f0; --nav-hover: #f2cfdd;
+}
