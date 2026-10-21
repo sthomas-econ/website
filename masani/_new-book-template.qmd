@@ -1,0 +1,16 @@
+---
+title: "Title of the book"
+subtitle: "by Author Name"
+date: "2026-12-01"        # when the group started the book (year-month-day); newest book is shown on the Home page
+---
+
+<!--
+  TO ADD A BOOK
+  1. Copy this file in the masani folder and give the copy a short name, e.g. mybook.qmd
+     (a file whose name starts with an underscore is ignored by the site, so keep the copy's name free of one).
+  2. Change the title, author and date above, and write the notes below.
+  3. Save, commit and push. The Reading page and the Home page pick it up by themselves.
+  A PDF or other file can go in a folder next to it and be linked like this:  [Reading](mybook/chapter1.pdf)
+-->
+
+Notes from the first meeting go here. A blank line starts a new paragraph.

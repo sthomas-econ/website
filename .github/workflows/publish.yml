@@ -29,12 +29,7 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - run: sudo apt-get update && sudo apt-get install -y subversion
-      - name: Render the site
-        env:
-          SVN_USER: ${{ secrets.SVN_USER }}          # optional: a read-only login for the Masani SVN repository
-          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-        run: quarto render --output-dir docs   # the published site goes in docs/ (local previews use _site/)
+      - run: quarto render --output-dir docs   # the published site goes in docs/ (local previews use _site/)   # the published site goes in docs/ (local previews use _site/)
       - name: Commit the rebuilt site
         run: |
           git config user.name "github-actions[bot]"
