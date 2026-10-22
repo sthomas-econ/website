@@ -1,24 +1,68 @@
-# Projects shown on the Projects page. Each one gets its own page (<name>.qmd) listing
-# the entries from the Research and Books pages that belong to it.
+# Projects shown on the Projects page. Each one gets its own page (<name>.qmd).
 #
-# Membership by hand, in either of two ways (these work with or without the automatic words):
-#  1. Papers, books, chapters: add  keywords = {Work on Exit}  to the entry in sue_res.bib
-#     (the project's title; several are comma-separated).
-#  2. Anything, including blog posts and op-eds: list it under "include:" below, by its web address
-#     or by a distinctive part of its title.
+# Selection is entirely by hand. Nothing is added automatically.
 #
-# Automatic matching is ON for now so the pages are not empty. To pause it, put a # in front of a
-# project's "words:" line. An entry joins when one of those words is in its title or abstract.
-# Words match whole words (plural is fine). End a word with * to match any ending.
+# include:  entries already on the Research or Books pages that belong to the project.
+#           Write the exact title, or the web address. To drop an entry, delete its line.
+#           To add one, copy its title from the Research or Books page.
+# items:    things that are not on those pages (Datasets, Case studies, ...). Each needs a type and a title;
+#           year (or date: "Mon YYYY"), url, authors, meta and abstract are optional. Example:
+#
+#   items:
+#     - type: Dataset              # or: Case study (another type also needs a line in TYPES in filters.js)
+#       title: "Name of the dataset"
+#       date: "Mar 2026"
+#       url: https://example.org/dataset
+#       authors: Susan Thomas, Ajay Shah
+#       meta: XKDR Data Portal
+#       abstract: "One or two sentences."
+
+
 exit:
   title: Work on Exit
-  include: []
-  # include:
-  #   - https://blog.theleapjournal.org/2022/11/the-litigant-perspective-upon-courts.html
-  #   - Indian bankruptcy reform
-  words: [exit*, IBC, insolven*, bankrupt*, NCLT, liquidation, resolution of, debt recovery, creditor*, distress*]
+  include:
+    - "Evaluating courts from a litigant's perspective: A project report"   # Working paper, 2023
+    - "Estimating capacity requirements of the National Company Law Tribunal: Notes from the field"   # Chapter, 2023
+    - "Evaluating contract enforcement by courts in India: a litigant's lens"   # Working paper, 2022
+    - "How did courts respond to the pandemic lockdowns: evidence from the NCLT"   # Blog post, 2022
+    - "Insolvency and bankruptcy reforms in India"   # Book, 2022
+    - "New thinking on resolution of small firms"   # Chapter, 2020
+    - "Delays in liquidated and resolved firms: Visualisation of an output measure of the Indian bankruptcy reform"   # Blog post, 2019
+    - "The Indian bankruptcy reform: The state of the art, 2018"   # Blog post, 2018
+    - "Evolution of the insolvency framework for non-financial firms in India"   # Chapter, 2017
+    - "The Indian bankruptcy reform: The state of the art, 2017"   # Blog post, 2017
+    - "Indian bankruptcy reforms: Where we are and where we go next"   # Blog post, 2016
+    - "A systematic approach to identify systemically important firms"   # Working paper, 2013
+  items: []
 
 securities:
   title: Securities Markets
-  include: []
-  words: [securit*, derivative, futures, stock market, stock futures, equity market, capital market, price discovery, primary market, algorithmic trading, order to trade, call auction, SME exchange]
+  include:
+    - "Do decreases in Distance-to-Default predict rating downgrades?"   # Journal article, 2023
+    - "When is the Order to Trade Ratio fee effective?"   # Journal article, 2023
+    - "When stock futures dominate price discovery"   # Journal article, 2019
+    - "Response of firms to listing: evidence from SME exchanges"   # Working paper, 2017
+    - "Assessing the impact of a commodity transactions tax"   # Working paper, 2017
+    - "Direct participation in the Indian equity market: First estimates of some basic facts"   # Blog post, 2016
+    - "What role is played by the commodity futures in India?"   # Blog post, 2014
+    - "What does algorithmic trading do to market quality?"   # Blog post, 2014
+    - "The causal impact of algorithmic trading on market quality"   # Working paper, 2014
+    - "Concerns about individual investors on the Indian equity derivatives market"   # Blog post, 2014
+    - "Do futures markets help in price discovery and risk management"   # Working paper, 2014
+    - "Measuring and analysing the asymmetry of liquidity"   # Working paper, 2012
+    - "Call auctions: A solution to some difficulties in Indian finance"   # Working paper, 2010
+    - "Derivatives Markets"   # Chapter, 2010
+    - "Stock market indexes"   # Chapter, 2007
+    - "Resilience of liquidity in Indian securities markets"   # Journal article, 2006
+    - "Equity derivatives in India: The state of the art"   # Chapter, 2003
+    - "The jaggery futures market at Muzaffarnagar: Status and policy recommendations"   # Chapter, 2003
+    - "Securities market efficiency"   # Chapter, 2003
+    - "Policy issues in Indian securities markets"   # Chapter, 2003
+    - "Derivatives markets in India 2003"   # Book, 2003
+    - "The stock market response to the Union Budget"   # Journal article, 2002
+    - "David and Goliath: Displacing a primary market"   # Journal article, 2000
+    - "Policy issues in India's capital markets in 2000"   # Chapter, 2000
+    - "Developing the Indian capital market"   # Chapter, 1999
+    - "Derivatives markets in India 1998"   # Book, 1998
+    - "Securities Markets"   # Chapter, 1997
+  items: []

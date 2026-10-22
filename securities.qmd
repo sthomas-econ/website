@@ -7,7 +7,7 @@ listing:
     sort: false
 ---
 
-Papers, books, op-eds and blog posts on this project in one place, newest first. Part of [Projects](projects.qmd); the full lists are on [Research](research.qmd) and [Books](books.qmd).
+Papers, books, op-eds, blog posts, datasets and case studies on this project in one place, newest first. Part of [Projects](projects.qmd); the full lists are on [Research](research.qmd) and [Books](books.qmd).
 
 ```{=html}
 <nav class="rail type-rail" id="type-rail" aria-label="Filter by type"></nav>

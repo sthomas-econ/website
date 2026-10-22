@@ -7,7 +7,8 @@
   var typeRail = document.getElementById("type-rail"), topicRail = document.getElementById("topic-rail"), yearRail = document.getElementById("year-rail");
   if (!yearRail) return;
   var TYPES = [["Journal article", "Journal articles"], ["Working paper", "Working papers"], ["Op-ed", "Op-eds"],
-               ["Blog post", "Blog posts"], ["Book", "Books"], ["Chapter", "Chapters"]];
+               ["Blog post", "Blog posts"], ["Book", "Books"], ["Chapter", "Chapters"],
+               ["Dataset", "Datasets"], ["Case study", "Case studies"]];
   var RECENT_FROM = new Date().getFullYear() - 4;
   var state = { type: "", topic: "", earlier: false, sawOlder: false };
   var rows = function () { return Array.prototype.slice.call(document.querySelectorAll("ul.entries li")); };

@@ -250,19 +250,26 @@ recent = [r for r in rows if r["new"] and r["section"] not in ("books", "blogs")
 dump("recent", recent)
 
 
-def in_project(r, project):
-    """Listed under a project when its name is in the bib keywords, it is named in the project's include list, or one of its words is in the title or abstract."""
-    if project["title"] in [k.strip() for k in re.split(r"[;,]", r.get("_keywords", ""))]:
-        return True
-    for inc in project.get("include") or []:   # by hand in projects.yml: a web address, or part of the title
-        if inc.lower() == r.get("url", "").lower() or (not inc.startswith("http") and inc.lower() in r["title"].lower()):
-            return True
-    pats = [_word(w) for w in project.get("words") or []]
-    return any(p.search(r["title"] + " " + r.get("abstract", "")) for p in pats)
+def make_item(it, project):
+    """A hand-written entry (Dataset, Case study, ...) from the project's items list in projects.yml."""
+    m = re.match(r"(\w{3})\w*\s+(\d{4})", str(it.get("date", "")))
+    y = int(m.group(2)) if m else int(re.search(r"\d{4}", str(it.get("year", ""))).group())
+    mo = MONTHS.get(m.group(1).lower(), 0) if m else 0
+    return {"sort": y * 12 + mo, "year": str(y), "title": it["title"], "authors": it.get("authors", ""),
+            "meta": it.get("meta") or (f"{m.group(1).title()} {y}" if m else ""), "url": it.get("url", ""),
+            "abstract": it.get("abstract", ""), "topics": [], "type": it["type"], "types": [it["type"]]}
 
 
-# Projects page: one list per project, drawn from everything on the Research and Books pages.
+# Projects page: the lists are chosen by hand in projects.yml ("include" and "items"); nothing is matched automatically.
+listed = [r for r in rows if r["section"] in {**LABEL, **SHELF} and not (r["section"] == "blogs" and r.get("related"))]
 for slug, project in (yaml.safe_load((ROOT / "projects.yml").read_text()) or {}).items():
-    dump(slug, [dict(r, type=LABEL.get(r["section"]) or SHELF[r["section"]], types=research_row(r)["types"] if r["section"] in LABEL else [SHELF[r["section"]]])
-                for r in rows if r["section"] in {**LABEL, **SHELF} and not (r["section"] == "blogs" and r.get("related")) and in_project(r, project)])
+    chosen = []
+    for inc in project.get("include") or []:
+        hits = [r for r in listed if _norm(inc) == _norm(r["title"]) or inc.lower().rstrip("/") == r["url"].lower().rstrip("/")]
+        if not hits:
+            print(f"warning: {project['title']}: not found on Research or Books: {inc}", file=sys.stderr)
+        chosen += [r for r in hits if r not in chosen]
+    chosen = [dict(r, type=LABEL.get(r["section"]) or SHELF[r["section"]],
+                   types=research_row(r)["types"] if r["section"] in LABEL else [SHELF[r["section"]]]) for r in chosen]
+    dump(slug, sorted(chosen + [make_item(i, project) for i in project.get("items") or []], key=lambda r: -r["sort"]))
 print(f"bib: {len(rows)} entries, {len(recent)} recent")
