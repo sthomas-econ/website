@@ -4,10 +4,6 @@
     "items": []
   },
   {
-    "listing": "/books.html",
-    "items": []
-  },
-  {
     "listing": "/reading.html",
     "items": [
       "/masani/gunsgermsandsteel.html",
@@ -23,14 +19,6 @@
     ]
   },
   {
-    "listing": "/securities.html",
-    "items": []
-  },
-  {
-    "listing": "/exit.html",
-    "items": []
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/masani/gunsgermsandsteel.html",
@@ -44,5 +32,17 @@
       "/masani/triumpofthecity.html",
       "/masani/tyrannyofexperts.html"
     ]
+  },
+  {
+    "listing": "/books.html",
+    "items": []
+  },
+  {
+    "listing": "/securities.html",
+    "items": []
+  },
+  {
+    "listing": "/exit.html",
+    "items": []
   }
 ]
