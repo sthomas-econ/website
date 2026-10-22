@@ -4,6 +4,21 @@
     "items": []
   },
   {
+    "listing": "/reading.html",
+    "items": [
+      "/masani/gunsgermsandsteel.html",
+      "/masani/fallofmoondustandalgernon.html",
+      "/masani/thelongdivergence.html",
+      "/masani/shatteredlands.html",
+      "/masani/ideaofindia.html",
+      "/masani/peoplesconstitution.html",
+      "/masani/againstthegrain.html",
+      "/masani/exitvoiceandloyalty.html",
+      "/masani/triumpofthecity.html",
+      "/masani/tyrannyofexperts.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/masani/gunsgermsandsteel.html",
@@ -23,18 +38,11 @@
     "items": []
   },
   {
-    "listing": "/reading.html",
-    "items": [
-      "/masani/gunsgermsandsteel.html",
-      "/masani/fallofmoondustandalgernon.html",
-      "/masani/thelongdivergence.html",
-      "/masani/shatteredlands.html",
-      "/masani/ideaofindia.html",
-      "/masani/peoplesconstitution.html",
-      "/masani/againstthegrain.html",
-      "/masani/exitvoiceandloyalty.html",
-      "/masani/triumpofthecity.html",
-      "/masani/tyrannyofexperts.html"
-    ]
+    "listing": "/securities.html",
+    "items": []
+  },
+  {
+    "listing": "/exit.html",
+    "items": []
   }
 ]
