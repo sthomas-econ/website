@@ -21,9 +21,7 @@
 exit:
   title: Work on Exit
   include:
-    - "Evaluating courts from a litigant's perspective: A project report"   # Working paper, 2023
     - "Estimating capacity requirements of the National Company Law Tribunal: Notes from the field"   # Chapter, 2023
-    - "Evaluating contract enforcement by courts in India: a litigant's lens"   # Working paper, 2022
     - "How did courts respond to the pandemic lockdowns: evidence from the NCLT"   # Blog post, 2022
     - "Insolvency and bankruptcy reforms in India"   # Book, 2022
     - "New thinking on resolution of small firms"   # Chapter, 2020
