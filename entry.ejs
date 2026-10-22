@@ -7,13 +7,14 @@
     const url = item.url || '';
     const people = item.authors || (item.coauthors ? 'with ' + item.coauthors : '');
     const meta = item.meta || item.date || '';
+    const SHOW_TOPIC_TAGS = false;   // topic filter is paused: set to true together with the topic-rail in the .qmd pages
 %>
   <li data-type="<%= item.type || '' %>" data-types="<%= (item.types || [item.type]).join('|') %>" data-topics="<%= (item.topics || []).join('|') %>">
     <span class="yr" data-y="<%= y %>"><%= y !== last ? y : '' %></span>
     <div class="body">
       <div class="title"><% if (url) { %><a href="<%= url %>" target="_blank"><%= item.title %></a><% } else { %><%= item.title %><% } %></div>
       <div class="meta"><%= [item.type, people, meta].filter(Boolean).join(' · ') %></div>
-      <% if (item.topics && item.topics.length) { %><div class="tags"><% for (const t of item.topics) { %><a href="#" class="tag" data-topic="<%= t %>"><%= t %></a><% } %></div><% } %>
+      <% if (SHOW_TOPIC_TAGS && item.topics && item.topics.length) { %><div class="tags"><% for (const t of item.topics) { %><a href="#" class="tag" data-topic="<%= t %>"><%= t %></a><% } %></div><% } %>
       <% if (item.related && item.related.length) { %><div class="related"><% for (const r of item.related) { %><a href="<%= r.url %>" target="_blank"><%= r.label %></a><% } %></div><% } %>
       <% if (item.abstract) { %><details><summary>Abstract</summary><p><%= item.abstract %></p></details><% } %>
     </div>
