@@ -7,10 +7,12 @@ listing:
     sort: false
 ---
 
-Journal articles, working papers, op-eds and blog posts, newest first. Filter by type and topic, or jump to a year. For older work and chapters see [Books](books.qmd), the [CV](files/sue-res.pdf) and the [Finance Research Group website](https://ifrogs.org/index.html).
+Journal articles, working papers, op-eds and blog posts, newest first. Filter by topic, or jump to a year. For older work and chapters see [Books](books.qmd), the [CV](files/sue-res.pdf) and the [Finance Research Group website](https://ifrogs.org/index.html).
 
 ```{=html}
+<!-- Type filter paused; remove these comment marks to bring it back.
 <nav class="rail type-rail" id="type-rail" aria-label="Filter by type"></nav>
+-->
 <nav class="rail topic-rail" id="topic-rail" aria-label="Filter by topic"></nav>
 <nav class="rail year-rail" id="year-rail" aria-label="Jump to year"></nav>
 <script src="filters.js"></script>
