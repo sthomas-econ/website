@@ -7,7 +7,7 @@ listing:
     sort: false
 ---
 
-Books and chapters in edited volumes, newest first.
+Books and chapters in edited volumes, newest first. Older material is on the [Finance Research Group website](https://ifrogs.org/index.html).
 
 ```{=html}
 <nav class="rail type-rail" id="type-rail" aria-label="Filter by type"></nav>

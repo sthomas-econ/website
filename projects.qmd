@@ -1,0 +1,10 @@
+---
+title: "Projects"
+---
+
+Bodies of work that cut across papers, books and posts. Each project gathers everything in one place and updates by itself as new work is added.
+
+- [Work on Exit](exit.qmd)
+- [Securities Markets](securities.qmd)
+
+Older work is on the [Finance Research Group website (ifrogs.org)](https://ifrogs.org/index.html).

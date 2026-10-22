@@ -1,0 +1,20 @@
+---
+title: "Work on Exit"
+listing:
+  - id: exit
+    contents: data/exit.yml
+    template: entry.ejs
+    sort: false
+---
+
+Papers, books, op-eds and blog posts on this project in one place, newest first. Part of [Projects](projects.qmd); the full lists are on [Research](research.qmd) and [Books](books.qmd).
+
+```{=html}
+<nav class="rail topic-rail" id="topic-rail" aria-label="Filter by topic"></nav>
+<nav class="rail year-rail" id="year-rail" aria-label="Jump to year"></nav>
+<script src="filters.js"></script>
+<div class="cat-wait" id="cat-wait"><script>document.currentScript.parentNode.prepend(makeCat(""));</script><span>Still waking up&hellip;</span></div>
+```
+
+:::{#exit}
+:::

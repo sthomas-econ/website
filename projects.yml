@@ -1,0 +1,24 @@
+# Projects shown on the Projects page. Each one gets its own page (<name>.qmd) listing
+# the entries from the Research and Books pages that belong to it.
+#
+# For now, membership is by hand only, in either of two ways:
+#  1. Papers, books, chapters: add  keywords = {Work on Exit}  to the entry in sue_res.bib
+#     (the project's title; several are comma-separated).
+#  2. Anything, including blog posts and op-eds: list it under "include:" below, by its web address
+#     or by a distinctive part of its title.
+#
+# Automatic matching is paused. To turn it back on, remove the # in front of a project's "words:"
+# line: an entry then also joins when one of those words is in its title or abstract.
+# Words match whole words (plural is fine). End a word with * to match any ending.
+exit:
+  title: Work on Exit
+  include: []
+  # include:
+  #   - https://blog.theleapjournal.org/2022/11/the-litigant-perspective-upon-courts.html
+  #   - Indian bankruptcy reform
+  # words: [exit*, IBC, insolven*, bankrupt*, NCLT, liquidation, resolution of, debt recovery, creditor*, distress*]
+
+securities:
+  title: Securities Markets
+  include: []
+  # words: [securit*, derivative, futures, stock market, stock futures, equity market, capital market, price discovery, primary market, algorithmic trading, order to trade, call auction, SME exchange]

@@ -138,6 +138,7 @@ for kind, key, f in entries:
         "abstract": clean(f.get("abstract", "")),
         "topics": topics_for(clean(f["title"]), clean(f.get("abstract", "")), (), clean(f.get("keywords", ""))),
         "new": y * 12 + mo >= cutoff and mo > 0,  # used only for the Home "recent" list
+        "_keywords": clean(f.get("keywords", "")),
     })
 
 def load(*names):
@@ -227,7 +228,7 @@ out.mkdir(exist_ok=True)
 
 
 def dump(name, items):
-    items = [{k: v for k, v in r.items() if k not in ("sort", "new", "_links", "_key", "_published")} for r in items]
+    items = [{k: v for k, v in r.items() if k not in ("sort", "new", "_links", "_key", "_published", "_keywords")} for r in items]
     write_if_changed(out / f"{name}.yml", yaml.safe_dump(items, sort_keys=False, allow_unicode=True, width=10**6) if items else "[]\n")
 
 
@@ -247,4 +248,21 @@ SHELF = {"books": "Book", "chapters": "Chapter"}
 dump("bookshelf", [dict(r, type=SHELF[r["section"]]) for r in rows if r["section"] in SHELF])
 recent = [r for r in rows if r["new"] and r["section"] not in ("books", "blogs")] or rows[:3]
 dump("recent", recent)
+
+
+def in_project(r, project):
+    """Listed under a project when its name is in the bib keywords, it is named in the project's include list, or one of its words is in the title or abstract."""
+    if project["title"] in [k.strip() for k in re.split(r"[;,]", r.get("_keywords", ""))]:
+        return True
+    for inc in project.get("include") or []:   # by hand in projects.yml: a web address, or part of the title
+        if inc.lower() == r.get("url", "").lower() or (not inc.startswith("http") and inc.lower() in r["title"].lower()):
+            return True
+    pats = [_word(w) for w in project.get("words") or []]
+    return any(p.search(r["title"] + " " + r.get("abstract", "")) for p in pats)
+
+
+# Projects page: one list per project, drawn from everything on the Research and Books pages.
+for slug, project in (yaml.safe_load((ROOT / "projects.yml").read_text()) or {}).items():
+    dump(slug, [dict(r, type=LABEL.get(r["section"]) or SHELF[r["section"]], types=research_row(r)["types"] if r["section"] in LABEL else [SHELF[r["section"]]])
+                for r in rows if r["section"] in {**LABEL, **SHELF} and not (r["section"] == "blogs" and r.get("related")) and in_project(r, project)])
 print(f"bib: {len(rows)} entries, {len(recent)} recent")

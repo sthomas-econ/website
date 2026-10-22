@@ -167,3 +167,6 @@ ul.entries li { display: grid; grid-template-columns: var(--s-11) 1fr; padding: 
 .nav-cat .cat { width: var(--s-9); height: var(--s-7); color: var(--nav-fg); }
 .nav-cat .cat .fill { fill: var(--nav-bg); }
 .nav-cat .cat-z { display: none; }
+
+/* Home "Recent research": title and abstract only */
+#recent-papers .tags, #recent-papers .related { display: none; }

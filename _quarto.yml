@@ -20,6 +20,8 @@ website:
         href: files/sue-res.pdf
       - text: Research
         href: research.qmd
+      - text: Projects
+        href: projects.qmd
       - text: Books
         href: books.qmd
       - text: Reading
