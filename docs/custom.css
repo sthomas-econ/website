@@ -168,5 +168,5 @@ ul.entries li { display: grid; grid-template-columns: var(--s-11) 1fr; padding: 
 .nav-cat .cat .fill { fill: var(--nav-bg); }
 .nav-cat .cat-z { display: none; }
 
-/* Home "Recent research": title and abstract only */
-#recent-papers .tags, #recent-papers .related { display: none; }
+/* Home "Recent research": no topic tags or related links */
+#listing-recent-papers .tags, #listing-recent-papers .related { display: none; }
